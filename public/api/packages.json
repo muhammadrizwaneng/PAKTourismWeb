@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "title": "Hunza 7-Day Explorer",
+    "slug": "hunza-7-day-explorer",
+    "description": "A complete 7-day tour of Hunza Valley.",
+    "destinationId": 1,
+    "price": 45000,
+    "durationDays": 7,
+    "maxPeople": 12,
+    "featuredImage": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800",
+    "gallery": null,
+    "includes": "[\"Accommodation\",\"Breakfast\"]",
+    "excludes": "[\"Airfare\"]",
+    "isFeatured": true,
+    "createdAt": "2026-03-17T07:30:05.123Z",
+    "updatedAt": "2026-03-17T07:30:05.123Z",
+    "destination": {
+      "title": "Hunza Valley"
+    }
+  },
+  {
+    "id": 2,
+    "title": "Lahore 5 Day Tour",
+    "slug": "lahore-5-day-tour",
+    "description": "",
+    "destinationId": 2,
+    "price": 50000,
+    "durationDays": 5,
+    "maxPeople": 10,
+    "featuredImage": "https://res.cloudinary.com/dnrqj5cgh/image/upload/v1773768625/pak-tourism/yrs0xz2h3fafcr3ulx7j.png",
+    "gallery": "[]",
+    "includes": "[]",
+    "excludes": "[]",
+    "isFeatured": false,
+    "createdAt": "2026-03-17T17:30:59.724Z",
+    "updatedAt": "2026-03-17T17:30:59.724Z",
+    "destination": {
+      "title": "Lahore"
+    }
+  }
+]

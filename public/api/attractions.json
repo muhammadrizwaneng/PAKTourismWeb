@@ -1,0 +1,690 @@
+[
+  {
+    "id": 1,
+    "title": "Badshahi Mosque",
+    "slug": "badshahi-mosque",
+    "description": "One of the largest mosques in the world, a masterpiece of Mughal architecture.",
+    "destinationId": 2,
+    "entryFee": "Free",
+    "timings": "9 AM - 8PM",
+    "gallery": "[\"https://res.cloudinary.com/dnrqj5cgh/image/upload/v1773765033/pak-tourism/d39itbbsew2ebi7iky4c.png\",\"https://res.cloudinary.com/dnrqj5cgh/image/upload/v1773765035/pak-tourism/thvlz0vxladuzrqnqb5r.png\",\"https://res.cloudinary.com/dnrqj5cgh/image/upload/v1773765034/pak-tourism/k8by0ysasy0fdncwbire.png\",\"https://res.cloudinary.com/dnrqj5cgh/image/upload/v1773765033/pak-tourism/tp4dgqj8tyrtbpuoycy1.png\",\"https://res.cloudinary.com/dnrqj5cgh/image/upload/v1773765035/pak-tourism/uymp2othgxvfskef2drg.png\",\"https://res.cloudinary.com/dnrqj5cgh/image/upload/v1773765033/pak-tourism/ntyixkpyl74vhstlvarr.png\",\"https://res.cloudinary.com/dnrqj5cgh/image/upload/v1773765035/pak-tourism/stcv3hqfakl6oxyxmidi.png\",\"https://res.cloudinary.com/dnrqj5cgh/image/upload/v1773765035/pak-tourism/mnwumpogoupfqnky9z4i.png\",\"https://res.cloudinary.com/dnrqj5cgh/image/upload/v1773765035/pak-tourism/ycy8attzvyuy8oa1aky8.png\",\"https://res.cloudinary.com/dnrqj5cgh/image/upload/v1773765040/pak-tourism/ta4erahfdctuf9hohs4b.png\",\"https://res.cloudinary.com/dnrqj5cgh/image/upload/v1773765037/pak-tourism/t0nrqolpzgxa2al7w5ro.png\",\"https://res.cloudinary.com/dnrqj5cgh/image/upload/v1773765041/pak-tourism/sqpfd41c6lnseaqsblvg.png\",\"https://res.cloudinary.com/dnrqj5cgh/image/upload/v1773765037/pak-tourism/l10wigse5zyohfy3bjeo.png\"]",
+    "taxonomyId": 5,
+    "createdAt": "2026-03-17T16:23:57.449Z",
+    "updatedAt": "2026-03-17T17:56:22.270Z",
+    "destination": {
+      "title": "Lahore"
+    }
+  },
+  {
+    "id": 2,
+    "title": "Shalimar Gardens",
+    "slug": "shalimar-gardens",
+    "description": "Mughal garden complex completed in 1642 AD.",
+    "destinationId": 2,
+    "entryFee": "free",
+    "timings": "8 AM - 5 PM",
+    "gallery": "[\"https://res.cloudinary.com/dnrqj5cgh/image/upload/v1773766034/pak-tourism/tewc2gqna5y1foh8lm1b.png\",\"https://res.cloudinary.com/dnrqj5cgh/image/upload/v1773766033/pak-tourism/h9hmrcve5uuynyzcnm5h.png\",\"https://res.cloudinary.com/dnrqj5cgh/image/upload/v1773766034/pak-tourism/vmb5vhqsyielblutpsik.png\",\"https://res.cloudinary.com/dnrqj5cgh/image/upload/v1773766033/pak-tourism/xhxd99wuxmcmffbxsuwk.png\",\"https://res.cloudinary.com/dnrqj5cgh/image/upload/v1773766033/pak-tourism/rz7cfrxuilxixmbrjymk.png\",\"https://res.cloudinary.com/dnrqj5cgh/image/upload/v1773766034/pak-tourism/oqxjxh0zob7rmphihbkt.png\",\"https://res.cloudinary.com/dnrqj5cgh/image/upload/v1773766035/pak-tourism/ea7xppsd81yrzlgofxko.png\",\"https://res.cloudinary.com/dnrqj5cgh/image/upload/v1773766035/pak-tourism/f1qnv76chofyoq2mvlec.png\",\"https://res.cloudinary.com/dnrqj5cgh/image/upload/v1773766035/pak-tourism/iybbdbkmbn0fn6tkrrdy.png\",\"https://res.cloudinary.com/dnrqj5cgh/image/upload/v1773766035/pak-tourism/rv9dkj2ujurtxon7rqew.png\"]",
+    "taxonomyId": 3,
+    "createdAt": "2026-03-17T16:23:57.453Z",
+    "updatedAt": "2026-03-17T17:56:22.273Z",
+    "destination": {
+      "title": "Lahore"
+    }
+  },
+  {
+    "id": 3,
+    "title": "Lahore Fort",
+    "slug": "lahore-fort",
+    "description": "A massive citadel and a UNESCO World Heritage site.",
+    "destinationId": 2,
+    "entryFee": "50",
+    "timings": "6 AM - 6 PM",
+    "gallery": "[\"https://res.cloudinary.com/dnrqj5cgh/image/upload/v1773765946/pak-tourism/cmokuzrwoczb4xtornsp.png\",\"https://res.cloudinary.com/dnrqj5cgh/image/upload/v1773765946/pak-tourism/u4pkxj4phsczopt8bg6h.png\",\"https://res.cloudinary.com/dnrqj5cgh/image/upload/v1773765945/pak-tourism/ozoezi4d8x4faowoedil.png\",\"https://res.cloudinary.com/dnrqj5cgh/image/upload/v1773765946/pak-tourism/rvenril9zwcvoupvhgou.png\",\"https://res.cloudinary.com/dnrqj5cgh/image/upload/v1773765947/pak-tourism/ln619iltijnrnzjsqvyg.png\",\"https://res.cloudinary.com/dnrqj5cgh/image/upload/v1773765945/pak-tourism/jesrjfwuuxtbhnsv00sm.png\",\"https://res.cloudinary.com/dnrqj5cgh/image/upload/v1773765946/pak-tourism/y0vorwoydmvrjdgniuey.png\",\"https://res.cloudinary.com/dnrqj5cgh/image/upload/v1773765949/pak-tourism/nb6jhlwip8lumtzgi044.png\",\"https://res.cloudinary.com/dnrqj5cgh/image/upload/v1773765948/pak-tourism/wugxnzuetmlr1lbsftnv.png\",\"https://res.cloudinary.com/dnrqj5cgh/image/upload/v1773765947/pak-tourism/tkejx7ncitmqbwdm7pcb.png\"]",
+    "taxonomyId": 3,
+    "createdAt": "2026-03-17T16:23:57.455Z",
+    "updatedAt": "2026-03-17T17:56:22.275Z",
+    "destination": {
+      "title": "Lahore"
+    }
+  },
+  {
+    "id": 4,
+    "title": "Faisal Mosque",
+    "slug": "faisal-mosque",
+    "description": "The largest mosque in Pakistan, located on the foothills of Margalla Hills.",
+    "destinationId": 4,
+    "entryFee": null,
+    "timings": null,
+    "gallery": "[\"https://source.unsplash.com/600x400/?Faisal Mosque\"]",
+    "taxonomyId": 6,
+    "createdAt": "2026-03-17T16:23:57.459Z",
+    "updatedAt": "2026-03-17T17:56:22.279Z",
+    "destination": {
+      "title": "Islamabad"
+    }
+  },
+  {
+    "id": 5,
+    "title": "Margalla Hills",
+    "slug": "margalla-hills",
+    "description": "Hill range part of the lesser Himalayas.",
+    "destinationId": 4,
+    "entryFee": null,
+    "timings": null,
+    "gallery": "[\"https://source.unsplash.com/600x400/?Margalla Hills\"]",
+    "taxonomyId": 4,
+    "createdAt": "2026-03-17T16:23:57.461Z",
+    "updatedAt": "2026-03-17T17:56:22.281Z",
+    "destination": {
+      "title": "Islamabad"
+    }
+  },
+  {
+    "id": 6,
+    "title": "Daman-e-Koh",
+    "slug": "daman-e-koh",
+    "description": "A viewing point and hill garden with panoramic views of Islamabad.",
+    "destinationId": 4,
+    "entryFee": null,
+    "timings": null,
+    "gallery": "[\"https://source.unsplash.com/600x400/?Daman-e-Koh\"]",
+    "taxonomyId": 4,
+    "createdAt": "2026-03-17T16:23:57.463Z",
+    "updatedAt": "2026-03-17T17:56:22.282Z",
+    "destination": {
+      "title": "Islamabad"
+    }
+  },
+  {
+    "id": 7,
+    "title": "Patriata (New Murree)",
+    "slug": "patriata",
+    "description": "Famous for its chairlift and cable car rides.",
+    "destinationId": 5,
+    "entryFee": null,
+    "timings": null,
+    "gallery": "[\"https://source.unsplash.com/600x400/?Patriata (New Murree)\"]",
+    "taxonomyId": 4,
+    "createdAt": "2026-03-17T16:23:57.467Z",
+    "updatedAt": "2026-03-17T17:56:22.286Z",
+    "destination": {
+      "title": "Murree"
+    }
+  },
+  {
+    "id": 8,
+    "title": "Shrine of Shah Rukn-e-Alam",
+    "slug": "rukn-e-alam",
+    "description": "One of the most impressive examples of funerary architecture in the world.",
+    "destinationId": 6,
+    "entryFee": null,
+    "timings": null,
+    "gallery": "[\"https://source.unsplash.com/600x400/?Shrine of Shah Rukn-e-Alam\"]",
+    "taxonomyId": 6,
+    "createdAt": "2026-03-17T16:23:57.471Z",
+    "updatedAt": "2026-03-17T17:56:22.291Z",
+    "destination": {
+      "title": "Multan"
+    }
+  },
+  {
+    "id": 9,
+    "title": "Derawar Fort",
+    "slug": "derawar-fort",
+    "description": "A large square fortress in the Cholistan Desert.",
+    "destinationId": 7,
+    "entryFee": null,
+    "timings": null,
+    "gallery": "[\"https://source.unsplash.com/600x400/?Derawar Fort\"]",
+    "taxonomyId": 3,
+    "createdAt": "2026-03-17T16:23:57.474Z",
+    "updatedAt": "2026-03-17T17:56:22.294Z",
+    "destination": {
+      "title": "Bahawalpur"
+    }
+  },
+  {
+    "id": 10,
+    "title": "Lal Suhanra National Park",
+    "slug": "lal-suhanra",
+    "description": "One of the largest national parks in South Asia.",
+    "destinationId": 7,
+    "entryFee": null,
+    "timings": null,
+    "gallery": "[\"https://source.unsplash.com/600x400/?Lal Suhanra National Park\"]",
+    "taxonomyId": 4,
+    "createdAt": "2026-03-17T16:23:57.476Z",
+    "updatedAt": "2026-03-17T17:56:22.296Z",
+    "destination": {
+      "title": "Bahawalpur"
+    }
+  },
+  {
+    "id": 11,
+    "title": "Katas Raj Temples",
+    "slug": "katas-raj",
+    "description": "A complex of several Hindu temples connected by walkways.",
+    "destinationId": 9,
+    "entryFee": null,
+    "timings": null,
+    "gallery": "[\"https://source.unsplash.com/600x400/?Katas Raj Temples\"]",
+    "taxonomyId": 6,
+    "createdAt": "2026-03-17T16:23:57.481Z",
+    "updatedAt": "2026-03-17T17:56:22.302Z",
+    "destination": {
+      "title": "Chakwal"
+    }
+  },
+  {
+    "id": 12,
+    "title": "Soon Valley",
+    "slug": "soon-valley",
+    "description": "A beautiful valley with lakes and waterfalls.",
+    "destinationId": 9,
+    "entryFee": null,
+    "timings": null,
+    "gallery": "[\"https://source.unsplash.com/600x400/?Soon Valley\"]",
+    "taxonomyId": 4,
+    "createdAt": "2026-03-17T16:23:57.483Z",
+    "updatedAt": "2026-03-17T17:56:22.304Z",
+    "destination": {
+      "title": "Chakwal"
+    }
+  },
+  {
+    "id": 13,
+    "title": "Clifton Beach",
+    "slug": "clifton-beach",
+    "description": "One of the most popular beaches in Karachi.",
+    "destinationId": 10,
+    "entryFee": null,
+    "timings": null,
+    "gallery": "[\"https://source.unsplash.com/600x400/?Clifton Beach\"]",
+    "taxonomyId": 3,
+    "createdAt": "2026-03-17T16:23:57.486Z",
+    "updatedAt": "2026-03-17T17:56:22.308Z",
+    "destination": {
+      "title": "Karachi"
+    }
+  },
+  {
+    "id": 14,
+    "title": "Quaid-e-Azam Mausoleum",
+    "slug": "mazar-e-quaid",
+    "description": "The final resting place of Muhammad Ali Jinnah.",
+    "destinationId": 10,
+    "entryFee": null,
+    "timings": null,
+    "gallery": "[\"https://source.unsplash.com/600x400/?Quaid-e-Azam Mausoleum\"]",
+    "taxonomyId": 5,
+    "createdAt": "2026-03-17T16:23:57.488Z",
+    "updatedAt": "2026-03-17T17:56:22.309Z",
+    "destination": {
+      "title": "Karachi"
+    }
+  },
+  {
+    "id": 15,
+    "title": "Makli Necropolis",
+    "slug": "makli",
+    "description": "One of the largest funerary sites in the world, a UNESCO site.",
+    "destinationId": 12,
+    "entryFee": null,
+    "timings": null,
+    "gallery": "[\"https://source.unsplash.com/600x400/?Makli Necropolis\"]",
+    "taxonomyId": 3,
+    "createdAt": "2026-03-17T16:23:57.494Z",
+    "updatedAt": "2026-03-17T17:56:22.315Z",
+    "destination": {
+      "title": "Thatta"
+    }
+  },
+  {
+    "id": 16,
+    "title": "Lansdowne Bridge",
+    "slug": "lansdowne-bridge",
+    "description": "A 19th-century railway bridge.",
+    "destinationId": 13,
+    "entryFee": null,
+    "timings": null,
+    "gallery": "[\"https://source.unsplash.com/600x400/?Lansdowne Bridge\"]",
+    "taxonomyId": 5,
+    "createdAt": "2026-03-17T16:23:57.497Z",
+    "updatedAt": "2026-03-17T17:56:22.319Z",
+    "destination": {
+      "title": "Sukkur"
+    }
+  },
+  {
+    "id": 17,
+    "title": "Sukkur Barrage",
+    "slug": "sukkur-barrage",
+    "description": "The landmark of Sukkur city.",
+    "destinationId": 13,
+    "entryFee": null,
+    "timings": null,
+    "gallery": "[\"https://source.unsplash.com/600x400/?Sukkur Barrage\"]",
+    "taxonomyId": 5,
+    "createdAt": "2026-03-17T16:23:57.499Z",
+    "updatedAt": "2026-03-17T17:56:22.321Z",
+    "destination": {
+      "title": "Sukkur"
+    }
+  },
+  {
+    "id": 18,
+    "title": "Qissa Khwani Bazaar",
+    "slug": "qissa-khwani",
+    "description": "The famous \"Street of Storytellers\".",
+    "destinationId": 15,
+    "entryFee": null,
+    "timings": null,
+    "gallery": "[\"https://source.unsplash.com/600x400/?Qissa Khwani Bazaar\"]",
+    "taxonomyId": 3,
+    "createdAt": "2026-03-17T16:23:57.504Z",
+    "updatedAt": "2026-03-17T17:56:22.327Z",
+    "destination": {
+      "title": "Peshawar"
+    }
+  },
+  {
+    "id": 19,
+    "title": "Bala Hisar Fort",
+    "slug": "bala-hisar",
+    "description": "A historic fortress overlooking Peshawar city.",
+    "destinationId": 15,
+    "entryFee": null,
+    "timings": null,
+    "gallery": "[\"https://source.unsplash.com/600x400/?Bala Hisar Fort\"]",
+    "taxonomyId": 3,
+    "createdAt": "2026-03-17T16:23:57.505Z",
+    "updatedAt": "2026-03-17T17:56:22.329Z",
+    "destination": {
+      "title": "Peshawar"
+    }
+  },
+  {
+    "id": 20,
+    "title": "Malam Jabba",
+    "slug": "malam-jabba",
+    "description": "The only ski resort in Pakistan.",
+    "destinationId": 16,
+    "entryFee": null,
+    "timings": null,
+    "gallery": "[\"https://source.unsplash.com/600x400/?Malam Jabba\"]",
+    "taxonomyId": 4,
+    "createdAt": "2026-03-17T16:23:57.508Z",
+    "updatedAt": "2026-03-17T17:56:22.333Z",
+    "destination": {
+      "title": "Swat Valley"
+    }
+  },
+  {
+    "id": 21,
+    "title": "Fizagat Park",
+    "slug": "fizagat-park",
+    "description": "A popular recreational park in Mingora.",
+    "destinationId": 16,
+    "entryFee": null,
+    "timings": null,
+    "gallery": "[\"https://source.unsplash.com/600x400/?Fizagat Park\"]",
+    "taxonomyId": 4,
+    "createdAt": "2026-03-17T16:23:57.510Z",
+    "updatedAt": "2026-03-17T17:56:22.334Z",
+    "destination": {
+      "title": "Swat Valley"
+    }
+  },
+  {
+    "id": 22,
+    "title": "Kalash Valley",
+    "slug": "kalash-valley",
+    "description": "Home to the Kalash people and their ancient culture.",
+    "destinationId": 17,
+    "entryFee": null,
+    "timings": null,
+    "gallery": "[\"https://source.unsplash.com/600x400/?Kalash Valley\"]",
+    "taxonomyId": 3,
+    "createdAt": "2026-03-17T16:23:57.513Z",
+    "updatedAt": "2026-03-17T17:56:22.338Z",
+    "destination": {
+      "title": "Chitral"
+    }
+  },
+  {
+    "id": 23,
+    "title": "Chitral Gol National Park",
+    "slug": "chitral-gol",
+    "description": "A beautiful national park home to Markhors.",
+    "destinationId": 17,
+    "entryFee": null,
+    "timings": null,
+    "gallery": "[\"https://source.unsplash.com/600x400/?Chitral Gol National Park\"]",
+    "taxonomyId": 4,
+    "createdAt": "2026-03-17T16:23:57.514Z",
+    "updatedAt": "2026-03-17T17:56:22.340Z",
+    "destination": {
+      "title": "Chitral"
+    }
+  },
+  {
+    "id": 24,
+    "title": "Nathiagali",
+    "slug": "nathiagali",
+    "description": "A popular hill station with hiking trails.",
+    "destinationId": 18,
+    "entryFee": null,
+    "timings": null,
+    "gallery": "[\"https://source.unsplash.com/600x400/?Nathiagali\"]",
+    "taxonomyId": 1,
+    "createdAt": "2026-03-17T16:23:57.518Z",
+    "updatedAt": "2026-03-17T17:56:22.344Z",
+    "destination": {
+      "title": "Abbottabad"
+    }
+  },
+  {
+    "id": 25,
+    "title": "Lake Saif ul Malook",
+    "slug": "saif-ul-malook",
+    "description": "A legendary high-altitude lake.",
+    "destinationId": 19,
+    "entryFee": null,
+    "timings": null,
+    "gallery": "[\"https://source.unsplash.com/600x400/?Lake Saif ul Malook\"]",
+    "taxonomyId": 7,
+    "createdAt": "2026-03-17T16:23:57.521Z",
+    "updatedAt": "2026-03-17T17:56:22.349Z",
+    "destination": {
+      "title": "Naran & Kaghan Valley"
+    }
+  },
+  {
+    "id": 26,
+    "title": "Hanna Lake",
+    "slug": "hanna-lake",
+    "description": "A beautiful lake surrounded by hills.",
+    "destinationId": 20,
+    "entryFee": null,
+    "timings": null,
+    "gallery": "[\"https://source.unsplash.com/600x400/?Hanna Lake\"]",
+    "taxonomyId": 7,
+    "createdAt": "2026-03-17T16:23:57.524Z",
+    "updatedAt": "2026-03-17T17:56:22.353Z",
+    "destination": {
+      "title": "Quetta"
+    }
+  },
+  {
+    "id": 27,
+    "title": "Urak Valley",
+    "slug": "urak-valley",
+    "description": "Famous for its fruit orchards.",
+    "destinationId": 20,
+    "entryFee": null,
+    "timings": null,
+    "gallery": "[\"https://source.unsplash.com/600x400/?Urak Valley\"]",
+    "taxonomyId": 4,
+    "createdAt": "2026-03-17T16:23:57.526Z",
+    "updatedAt": "2026-03-17T17:56:22.354Z",
+    "destination": {
+      "title": "Quetta"
+    }
+  },
+  {
+    "id": 28,
+    "title": "Hammerhead",
+    "slug": "hammerhead",
+    "description": "A massive rock formation along the coast.",
+    "destinationId": 21,
+    "entryFee": null,
+    "timings": null,
+    "gallery": "[\"https://source.unsplash.com/600x400/?Hammerhead\"]",
+    "taxonomyId": 4,
+    "createdAt": "2026-03-17T16:23:57.529Z",
+    "updatedAt": "2026-03-17T17:56:22.358Z",
+    "destination": {
+      "title": "Gwadar"
+    }
+  },
+  {
+    "id": 29,
+    "title": "Quaid-e-Azam Residency",
+    "slug": "quaid-residency",
+    "description": "The wooden building where Jinnah spent his last days.",
+    "destinationId": 22,
+    "entryFee": null,
+    "timings": null,
+    "gallery": "[\"https://source.unsplash.com/600x400/?Quaid-e-Azam Residency\"]",
+    "taxonomyId": 5,
+    "createdAt": "2026-03-17T16:23:57.533Z",
+    "updatedAt": "2026-03-17T17:56:22.362Z",
+    "destination": {
+      "title": "Ziarat"
+    }
+  },
+  {
+    "id": 30,
+    "title": "Princess of Hope",
+    "slug": "princess-of-hope",
+    "description": "A naturally formed rock statue.",
+    "destinationId": 23,
+    "entryFee": null,
+    "timings": null,
+    "gallery": "[\"https://source.unsplash.com/600x400/?Princess of Hope\"]",
+    "taxonomyId": 4,
+    "createdAt": "2026-03-17T16:23:57.537Z",
+    "updatedAt": "2026-03-17T17:56:22.365Z",
+    "destination": {
+      "title": "Hingol National Park"
+    }
+  },
+  {
+    "id": 31,
+    "title": "Shangrila Resort",
+    "slug": "shangrila-resort",
+    "description": "A scenic resort by the Lower Kachura Lake.",
+    "destinationId": 25,
+    "entryFee": null,
+    "timings": null,
+    "gallery": "[\"https://source.unsplash.com/600x400/?Shangrila Resort\"]",
+    "taxonomyId": 4,
+    "createdAt": "2026-03-17T16:23:57.542Z",
+    "updatedAt": "2026-03-17T17:56:22.371Z",
+    "destination": {
+      "title": "Skardu"
+    }
+  },
+  {
+    "id": 32,
+    "title": "Deosai National Park",
+    "slug": "deosai-park",
+    "description": "The Land of Giants, a high altitude plateau.",
+    "destinationId": 25,
+    "entryFee": null,
+    "timings": null,
+    "gallery": "[\"https://source.unsplash.com/600x400/?Deosai National Park\"]",
+    "taxonomyId": 4,
+    "createdAt": "2026-03-17T16:23:57.544Z",
+    "updatedAt": "2026-03-17T17:56:22.373Z",
+    "destination": {
+      "title": "Skardu"
+    }
+  },
+  {
+    "id": 33,
+    "title": "Attabad Lake",
+    "slug": "attabad-lake",
+    "description": "A vibrant turquoise lake.",
+    "destinationId": 26,
+    "entryFee": null,
+    "timings": null,
+    "gallery": "[\"https://source.unsplash.com/600x400/?Attabad Lake\"]",
+    "taxonomyId": 7,
+    "createdAt": "2026-03-17T16:23:57.547Z",
+    "updatedAt": "2026-03-17T17:56:22.377Z",
+    "destination": {
+      "title": "Hunza"
+    }
+  },
+  {
+    "id": 34,
+    "title": "Passu Cones",
+    "slug": "passu-cones",
+    "description": "Sharp mountain peaks along the KKH.",
+    "destinationId": 26,
+    "entryFee": null,
+    "timings": null,
+    "gallery": "[\"https://source.unsplash.com/600x400/?Passu Cones\"]",
+    "taxonomyId": 1,
+    "createdAt": "2026-03-17T16:23:57.548Z",
+    "updatedAt": "2026-03-17T17:56:22.378Z",
+    "destination": {
+      "title": "Hunza"
+    }
+  },
+  {
+    "id": 35,
+    "title": "Khaplu Fort",
+    "slug": "khaplu-fort",
+    "description": "A 19th century fort and palace.",
+    "destinationId": 28,
+    "entryFee": null,
+    "timings": null,
+    "gallery": "[\"https://source.unsplash.com/600x400/?Khaplu Fort\"]",
+    "taxonomyId": 3,
+    "createdAt": "2026-03-17T16:23:57.554Z",
+    "updatedAt": "2026-03-17T17:56:22.384Z",
+    "destination": {
+      "title": "Khaplu"
+    }
+  },
+  {
+    "id": 36,
+    "title": "Shigar Fort",
+    "slug": "shigar-fort",
+    "description": "A heritage hotel and palace.",
+    "destinationId": 29,
+    "entryFee": null,
+    "timings": null,
+    "gallery": "[\"https://source.unsplash.com/600x400/?Shigar Fort\"]",
+    "taxonomyId": 3,
+    "createdAt": "2026-03-17T16:23:57.558Z",
+    "updatedAt": "2026-03-17T17:56:22.388Z",
+    "destination": {
+      "title": "Shigar"
+    }
+  },
+  {
+    "id": 37,
+    "title": "Red Fort",
+    "slug": "red-fort-ajk",
+    "description": "A historic fort overlooking the city.",
+    "destinationId": 30,
+    "entryFee": null,
+    "timings": null,
+    "gallery": "[\"https://source.unsplash.com/600x400/?Red Fort\"]",
+    "taxonomyId": 3,
+    "createdAt": "2026-03-17T16:23:57.561Z",
+    "updatedAt": "2026-03-17T17:56:22.392Z",
+    "destination": {
+      "title": "Muzaffarabad"
+    }
+  },
+  {
+    "id": 38,
+    "title": "Arang Kel",
+    "slug": "arang-kel",
+    "description": "A lush green village known as the pearl of Neelum Valley.",
+    "destinationId": 31,
+    "entryFee": null,
+    "timings": null,
+    "gallery": "[\"https://source.unsplash.com/600x400/?Arang Kel\"]",
+    "taxonomyId": 4,
+    "createdAt": "2026-03-17T16:23:57.564Z",
+    "updatedAt": "2026-03-17T17:56:22.395Z",
+    "destination": {
+      "title": "Neelum Valley"
+    }
+  },
+  {
+    "id": 39,
+    "title": "Banjosa Lake",
+    "slug": "banjosa-lake",
+    "description": "An artificial lake and a popular tourist spot.",
+    "destinationId": 32,
+    "entryFee": null,
+    "timings": null,
+    "gallery": "[\"https://source.unsplash.com/600x400/?Banjosa Lake\"]",
+    "taxonomyId": 7,
+    "createdAt": "2026-03-17T16:23:57.568Z",
+    "updatedAt": "2026-03-17T17:56:22.399Z",
+    "destination": {
+      "title": "Rawalakot"
+    }
+  },
+  {
+    "id": 40,
+    "title": "Toli Pir",
+    "slug": "toli-pir",
+    "description": "The highest hilltop in the region.",
+    "destinationId": 32,
+    "entryFee": null,
+    "timings": null,
+    "gallery": "[\"https://source.unsplash.com/600x400/?Toli Pir\"]",
+    "taxonomyId": 4,
+    "createdAt": "2026-03-17T16:23:57.569Z",
+    "updatedAt": "2026-03-17T17:56:22.401Z",
+    "destination": {
+      "title": "Rawalakot"
+    }
+  },
+  {
+    "id": 41,
+    "title": "Minar-e-Pakistan",
+    "slug": "minar-e-pakistan",
+    "description": "Minar-e-Pakistan is a national monument located in Lahore’s Greater Iqbal Park, built between 1960 and 1968 to commemorate the 1940 Lahore Resolution—the first formal call for a separate homeland for the Muslims of British India. Designed by architect Nasreddin Murat-Khan, it has become one of Pakistan’s most iconic symbols of nationhood and independence.\n\nKey facts\nLocation: Iqbal Park, Lahore, Punjab, Pakistan\n\nHeight: ~70 meters (230 feet)\n\nConstruction: 1960–1968\n\nArchitect: Nasreddin Murat-Khan\n\nPurpose: Commemorates the 1940 Lahore (Pakistan) Resolution\n\nHistorical significance\nThe Minar marks the site where the All-India Muslim League passed the Lahore Resolution on March 23, 1940, an event that laid the ideological foundation for Pakistan’s creation in 1947. The monument was commissioned under President Ayub Khan to enshrine that political milestone in stone and serve as a national reminder of the struggle for independence.\n\nArchitecture and symbolism\nThe tower blends Mughal, Islamic, and modern design influences. Rising from a star-shaped base, its four platforms—made from rough stone, chiseled stone, polished stone, and white marble—symbolize stages of the Muslims’ struggle, from oppression to independence. Inscriptions on marble tablets include Quranic verses, the 99 names of Allah, the national anthem, and speeches by Muhammad Ali Jinnah and Allama Iqbal in multiple languages.\n\nCultural and political role\nBeyond its historic value, Minar-e-Pakistan remains a central stage for political gatherings, national celebrations, and civic demonstrations. Major parties—including Pakistan Muslim League (Nawaz), Pakistan Peoples Party, and Pakistan Tehreek-e-Insaf—have held mass rallies here, underlining its enduring symbolic link between political aspiration and popular will.\n\nPresent setting\nEncircled by the landscaped Greater Iqbal Park, the Minar overlooks Badshahi Mosque and Lahore Fort. The park includes gardens, fountains, and a lake, making the monument both a historical landmark and a popular recreation site for residents and visitors alike.",
+    "destinationId": 2,
+    "entryFee": "Free",
+    "timings": "8 AM - 10 PM",
+    "gallery": "[\"https://res.cloudinary.com/dnrqj5cgh/image/upload/v1773766484/pak-tourism/dkvjwjnifkfrivfglmec.png\",\"https://res.cloudinary.com/dnrqj5cgh/image/upload/v1773766484/pak-tourism/mdiwskhwefxn4ce6axcn.png\",\"https://res.cloudinary.com/dnrqj5cgh/image/upload/v1773766484/pak-tourism/lzfleuvogsxvdpibim87.png\",\"https://res.cloudinary.com/dnrqj5cgh/image/upload/v1773766484/pak-tourism/il9hb31grnhn7mbzpsyz.png\",\"https://res.cloudinary.com/dnrqj5cgh/image/upload/v1773766484/pak-tourism/d8tle3j9tpwmsv5vm2q2.png\",\"https://res.cloudinary.com/dnrqj5cgh/image/upload/v1773766484/pak-tourism/zodkzqf4ii9k8aha8rkq.png\",\"https://res.cloudinary.com/dnrqj5cgh/image/upload/v1773766485/pak-tourism/niudfenhlyiudc8eqnub.png\"]",
+    "taxonomyId": 3,
+    "createdAt": "2026-03-17T16:54:50.806Z",
+    "updatedAt": "2026-03-17T16:55:14.148Z",
+    "destination": {
+      "title": "Lahore"
+    }
+  },
+  {
+    "id": 42,
+    "title": "Lahore Museum",
+    "slug": "lahore-museum",
+    "description": "The Lahore Museum is a major cultural and historical museum located on Mall Road, Pakistan. Established in 1865 and reopened in 1894 in its current Indo-Saracenic red-brick building, it is among the oldest and most visited museums in South Asia. It preserves a vast collection of artifacts spanning prehistoric, Buddhist, Islamic, Sikh, and colonial eras, reflecting the subcontinent’s rich heritage.\n\nKey facts\nFounded: 1865 (moved to current site 1894)\n\nLocation: Mall Road, Anarkali, Lahore, Punjab, Pakistan\n\nArchitectural style: Indo-Saracenic (Mughal–British fusion)\n\nNotable exhibit: Fasting Buddha (Gandhara period)\n\nVisiting hours: 9 a.m.–3:30 p.m., closed Fridays\n\nHistory and Architecture\nOriginally called the “Central Museum,” it was established during British colonial rule and designed in the Indo-Saracenic style that blends Mughal domes and arches with Victorian elements. The Zamzama Gun, famously featured in Kim, stands at its entrance. The museum building itself, protected under Punjab’s Special Premises Ordinance, remains a landmark of late-19th-century civic architecture.\n\nCollections and Galleries\nThe museum holds more than 20 galleries displaying objects from the Indus Valley Civilization to the modern era. Highlights include Greco-Buddhist sculptures from Gandhara, Mughal and Pahari miniature paintings, Islamic manuscripts and calligraphy, arms, coins, ethnographic displays, and colonial-era artifacts. The Fasting Buddha, carved from schist, is one of its most celebrated pieces.\n\nCultural Significance\nAs Pakistan’s premier repository of art and archaeology, the Lahore Museum illustrates the region’s religious and artistic diversity—housing Hindu, Buddhist, Sikh, and Islamic relics side by side. It serves as an educational hub for scholars and visitors alike, offering insight into South Asia’s complex cultural continuum.\n\nVisitor Information\nLocated centrally near the National College of Arts, the museum is accessible by public transport. Admission fees are modest—approximately PKR 50 for locals and PKR 1,000 for foreign nationals. Most visitors spend two to three hours exploring its exhibits.",
+    "destinationId": 2,
+    "entryFee": "Free",
+    "timings": "9 AM - 2PM",
+    "gallery": "[\"https://res.cloudinary.com/dnrqj5cgh/image/upload/v1773766915/pak-tourism/gzjwwdqfqyjhlf1gisyd.png\",\"https://res.cloudinary.com/dnrqj5cgh/image/upload/v1773766915/pak-tourism/wujnb9qa78modjpcqnkv.png\",\"https://res.cloudinary.com/dnrqj5cgh/image/upload/v1773766915/pak-tourism/jvgjbotql58wlsx0erii.png\",\"https://res.cloudinary.com/dnrqj5cgh/image/upload/v1773766915/pak-tourism/bsnuj9rjln10cx0alymf.png\",\"https://res.cloudinary.com/dnrqj5cgh/image/upload/v1773766915/pak-tourism/rwgag0nbc8soha4rvldr.png\",\"https://res.cloudinary.com/dnrqj5cgh/image/upload/v1773766915/pak-tourism/kit8aycbbdcv7jn2xeaa.png\",\"https://res.cloudinary.com/dnrqj5cgh/image/upload/v1773766916/pak-tourism/g8sobecjt5lagfrojxtr.png\",\"https://res.cloudinary.com/dnrqj5cgh/image/upload/v1773766916/pak-tourism/qiurb5jlkgntgldhehm5.png\",\"https://res.cloudinary.com/dnrqj5cgh/image/upload/v1773766916/pak-tourism/p4idqollbd3i12otves4.png\",\"https://res.cloudinary.com/dnrqj5cgh/image/upload/v1773766916/pak-tourism/qxn6v5bsyxbbxq2dhmge.png\",\"https://res.cloudinary.com/dnrqj5cgh/image/upload/v1773766917/pak-tourism/vair1mczntwalthfng1h.png\",\"https://res.cloudinary.com/dnrqj5cgh/image/upload/v1773766917/pak-tourism/tavhyq2dswusarjaofdu.png\"]",
+    "taxonomyId": 3,
+    "createdAt": "2026-03-17T17:03:02.032Z",
+    "updatedAt": "2026-03-17T17:07:57.047Z",
+    "destination": {
+      "title": "Lahore"
+    }
+  },
+  {
+    "id": 43,
+    "title": "Wagah Border",
+    "slug": "wagah-border",
+    "description": "The Wagah Border is a ceremonial and operational border crossing between India and Pakistan, located between Amritsar in Indian Punjab and Lahore in Pakistani Punjab. It is famed for its daily flag-lowering ceremony that symbolizes both rivalry and cooperation between the two nations.\n\nKey facts\nLocation: Between Amritsar, India, and Lahore, Pakistan\n\nOpened: 1947, after Partition of British India\n\nPrimary crossing: Between India’s Amritsar and Pakistan’s Lahore\n\nCeremony start: 1959\n\nMain participants: Border Security Force and Pakistan Rangers\n\nHistorical background\nEstablished following the 1947 Partition, the Wagah Border became one of the key gateways for migration and later for controlled cross-border trade. It sits on the Grand Trunk Road, historically a major route connecting South and Central Asia. The border gained symbolic significance as a site representing the geopolitical division and shared heritage of India and Pakistan.\n\nThe Beating Retreat ceremony\nEvery evening before sunset, both countries’ forces perform the “Beating Retreat” or flag-lowering ceremony. This synchronized parade features elaborate marching, high kicks, and nationalistic displays. The ceremony, often attended by hundreds of spectators on each side, has become a popular patriotic and tourist event, symbolizing both tension and respect.\n\nTourism and infrastructure\nThe Indian side, known as the Attari–Wagah Border, includes large spectator stands and visitor facilities. It is managed by the Border Security Force, which coordinates crowd control and ceremonial arrangements. Visitors require valid identification, and the event remains one of the top tourist attractions in Amritsar, drawing both domestic and international audiences.\n\nSymbolism and significance\nThe Wagah Border stands as a daily reminder of the complex relationship between India and Pakistan—marked by historical conflict yet shared culture. The ceremony’s disciplined choreography and mutual salutes convey coexistence amid rivalry, turning the border into a rare space of ritualized diplomacy.",
+    "destinationId": 2,
+    "entryFee": "Free",
+    "timings": "9 AM - 6 PM",
+    "gallery": "[\"https://res.cloudinary.com/dnrqj5cgh/image/upload/v1773767421/pak-tourism/buafiqjon1z1ytcr26rc.png\",\"https://res.cloudinary.com/dnrqj5cgh/image/upload/v1773767421/pak-tourism/mfxk56mkaqvwa9pwl6fl.png\",\"https://res.cloudinary.com/dnrqj5cgh/image/upload/v1773767422/pak-tourism/hzwggsiijangtfabn8mc.png\",\"https://res.cloudinary.com/dnrqj5cgh/image/upload/v1773767422/pak-tourism/jhuswwym8p1wr33yganm.png\",\"https://res.cloudinary.com/dnrqj5cgh/image/upload/v1773767432/pak-tourism/rll9iyziwzgjlsh9hvjv.png\",\"https://res.cloudinary.com/dnrqj5cgh/image/upload/v1773767424/pak-tourism/q6uc7rwntthugziwkbhv.png\",\"https://res.cloudinary.com/dnrqj5cgh/image/upload/v1773767422/pak-tourism/dkcdfw1p9ohr3zqa9hir.png\",\"https://res.cloudinary.com/dnrqj5cgh/image/upload/v1773767425/pak-tourism/epasi0golip0aifciizc.png\",\"https://res.cloudinary.com/dnrqj5cgh/image/upload/v1773767424/pak-tourism/g8lfdtpex4lvtrzmhjxn.png\",\"https://res.cloudinary.com/dnrqj5cgh/image/upload/v1773767424/pak-tourism/aed4ge4y1xbrbbbe7y6d.png\"]",
+    "taxonomyId": 3,
+    "createdAt": "2026-03-17T17:10:51.627Z",
+    "updatedAt": "2026-03-17T18:19:35.621Z",
+    "destination": {
+      "title": "Lahore"
+    }
+  }
+]

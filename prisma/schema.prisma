@@ -1,0 +1,198 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+// ─── Taxonomies ────────────────────────────────────────────────────────────
+model Taxonomy {
+  id          Int           @id @default(autoincrement())
+  name        String
+  type        String        // "destination" | "attraction"
+  createdAt   DateTime      @default(now())
+  updatedAt   DateTime      @updatedAt
+
+  destinations Destination[] @relation("DestinationType")
+  attractions  Attraction[]  @relation("AttractionType")
+}
+
+// ─── Destination ───────────────────────────────────────────────────────────
+model Destination {
+  id             Int          @id @default(autoincrement())
+  title          String
+  slug           String       @unique
+  description    String?
+  city           String?
+  province       String?
+  bestTime       String?
+  latitude       Float?
+  longitude      Float?
+  featuredImage  String?
+  galleryImages  String?      // JSON array of URLs
+  taxonomyId     Int?
+  taxonomy       Taxonomy?    @relation("DestinationType", fields: [taxonomyId], references: [id])
+  isFeatured     Boolean      @default(false)
+  createdAt      DateTime     @default(now())
+  updatedAt      DateTime     @updatedAt
+
+  attractions  Attraction[]
+  hotels       Hotel[]
+  packages     TourPackage[]
+  reviews      Review[]
+  plans        Plan[]
+}
+
+// ─── Attraction ────────────────────────────────────────────────────────────
+model Attraction {
+  id            Int          @id @default(autoincrement())
+  title         String
+  slug          String       @unique
+  description   String?
+  destinationId Int
+  destination   Destination  @relation(fields: [destinationId], references: [id], onDelete: Cascade)
+  entryFee      String?
+  timings       String?
+  gallery       String?      // JSON array of URLs
+  taxonomyId    Int?
+  taxonomy      Taxonomy?    @relation("AttractionType", fields: [taxonomyId], references: [id])
+  createdAt     DateTime     @default(now())
+  updatedAt     DateTime     @updatedAt
+}
+
+// ─── Hotel ─────────────────────────────────────────────────────────────────
+model Hotel {
+  id            Int          @id @default(autoincrement())
+  title         String
+  slug          String       @unique
+  description   String?
+  destinationId Int
+  destination   Destination  @relation(fields: [destinationId], references: [id], onDelete: Cascade)
+  address       String?
+  latitude      Float?
+  longitude     Float?
+  starRating    Int?         @default(3)
+  phone         String?
+  email         String?
+  website       String?
+  whatsapp      String?
+  priceRange    String?
+  gallery       String?      // JSON array of URLs
+  createdAt     DateTime     @default(now())
+  updatedAt     DateTime     @updatedAt
+
+  reviews Review[]
+  plans   Plan[]   @relation("PlanHotels")
+}
+
+// ─── Tour Package ──────────────────────────────────────────────────────────
+model TourPackage {
+  id            Int          @id @default(autoincrement())
+  title         String
+  slug          String       @unique
+  description   String?
+  destinationId Int
+  destination   Destination  @relation(fields: [destinationId], references: [id], onDelete: Cascade)
+  price         Float
+  durationDays  Int
+  maxPeople     Int?         @default(10)
+  featuredImage String?
+  gallery       String?      // JSON array of URLs
+  includes      String?      // JSON array of strings
+  excludes      String?      // JSON array of strings
+  isFeatured    Boolean      @default(false)
+  createdAt     DateTime     @default(now())
+  updatedAt     DateTime     @updatedAt
+
+  bookings Booking[]
+  reviews  Review[]
+}
+
+// ─── Booking ───────────────────────────────────────────────────────────────
+model Booking {
+  id          Int          @id @default(autoincrement())
+  userId      String?      // can be anonymous
+  packageId   Int
+  package     TourPackage  @relation(fields: [packageId], references: [id])
+  bookingDate DateTime     @default(now())
+  travelDate  DateTime
+  numPeople   Int
+  totalPrice  Float
+  status      String       @default("pending") // pending | confirmed | cancelled
+  name        String
+  email       String
+  phone       String?
+  notes       String?
+  createdAt   DateTime     @default(now())
+  updatedAt   DateTime     @updatedAt
+}
+
+// ─── Review ────────────────────────────────────────────────────────────────
+model Review {
+  id            Int          @id @default(autoincrement())
+  userId        String?
+  userName      String
+  rating        Int          // 1-5
+  comment       String?
+  destinationId Int?
+  destination   Destination? @relation(fields: [destinationId], references: [id])
+  hotelId       Int?
+  hotel         Hotel?       @relation(fields: [hotelId], references: [id])
+  packageId     Int?
+  package       TourPackage? @relation(fields: [packageId], references: [id])
+  createdAt     DateTime     @default(now())
+  updatedAt     DateTime     @updatedAt
+}
+
+// ─── Tour Guide ────────────────────────────────────────────────────────────
+model TourGuide {
+  id          Int      @id @default(autoincrement())
+  name        String
+  slug        String   @unique
+  city        String?  // Matching "City Hub"
+  address     String?  // Matching "Location / Address"
+  description String?  // Matching "Best For"
+  photo       String?
+  phone       String?
+  email       String?
+  whatsapp    String?
+  languages   String?  // JSON array
+  rating      Float?   @default(0)
+  reviewsText String?  // JSON array of review objects
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+// ─── Plan ──────────────────────────────────────────────────────────────────
+model Plan {
+  id            Int         @id @default(autoincrement())
+  title         String
+  destinationId Int
+  destination   Destination @relation(fields: [destinationId], references: [id])
+  attractionIds String?     // JSON array of attraction IDs
+  hotelIds      String?     // JSON array of hotel IDs
+  durationDays  Int?
+  notes         String?
+  createdAt     DateTime    @default(now())
+  updatedAt     DateTime    @updatedAt
+
+  hotels Hotel[] @relation("PlanHotels")
+}
+
+// ─── Banner ────────────────────────────────────────────────────────────────
+model Banner {
+  id        Int      @id @default(autoincrement())
+  title     String
+  subtitle  String?
+  imageUrl  String
+  linkUrl   String?
+  isActive  Boolean  @default(true)
+  sortOrder Int      @default(0)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
