@@ -1,8 +1,10 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { prisma } from '@/lib/db';
-import { MapPin, Clock, Ticket, ArrowLeft, Share2, Info } from 'lucide-react';
+import { MapPin, Clock, Ticket, ArrowLeft, Share2, Info, Compass } from 'lucide-react';
+import { PointOfInterestGrid } from '@/components/PointOfInterestGrid';
+import { DEFAULT_TOURISM_IMAGE } from '@/lib/constants';
+import SafeImage from '@/components/SafeImage';
 
 async function getAttraction(id: string) {
   const attraction = await prisma.attraction.findUnique({
@@ -10,6 +12,7 @@ async function getAttraction(id: string) {
     include: {
       destination: true,
       taxonomy: true,
+      pointsOfInterest: true,
     }
   });
 
@@ -22,13 +25,13 @@ export default async function AttractionDetailPage({ params }: { params: { id: s
   if (!attraction) notFound();
 
   const gallery = attraction.gallery ? JSON.parse(attraction.gallery) : [];
-  const featuredImage = gallery[0] || '/placeholder.png';
+  const featuredImage = gallery[0] || DEFAULT_TOURISM_IMAGE;
 
   return (
     <div className="pb-24 bg-white dark:bg-black">
       {/* Hero Header */}
       <div className="relative h-[60vh] w-full overflow-hidden">
-        <Image 
+        <SafeImage 
           src={featuredImage} 
           alt={attraction.title}
           fill
@@ -92,13 +95,31 @@ export default async function AttractionDetailPage({ params }: { params: { id: s
               </p>
             </section>
 
+            {attraction.pointsOfInterest && attraction.pointsOfInterest.length > 0 && (
+              <section className="space-y-8">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center space-x-3 text-gray-900 dark:text-white">
+                    <div className="w-12 h-12 bg-primary-50 dark:bg-primary-900/20 rounded-2xl flex items-center justify-center text-primary-600">
+                      <Compass size={24} />
+                    </div>
+                    <h2 className="text-3xl font-extrabold tracking-tight">Nearby Points of Interest</h2>
+                  </div>
+                  <span className="px-4 py-1.5 bg-gray-100 dark:bg-gray-800 rounded-full text-sm font-bold text-gray-600 dark:text-gray-400">
+                    {attraction.pointsOfInterest.length} Locations
+                  </span>
+                </div>
+                
+                <PointOfInterestGrid pois={attraction.pointsOfInterest} />
+              </section>
+            )}
+
             {gallery.length > 1 && (
               <section>
                 <h2 className="text-3xl font-extrabold text-gray-900 dark:text-white mb-8">Visual Journey</h2>
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                    {gallery.map((img: string, i: number) => (
                      <div key={i} className={`relative rounded-3xl overflow-hidden shadow-lg ${i % 3 === 0 ? 'md:col-span-2 h-80' : 'h-80'}`}>
-                        <Image src={img} alt={`${attraction.title} gallery ${i}`} fill className="object-cover transition-transform duration-700 hover:scale-105" />
+                        <SafeImage src={img} alt={`${attraction.title} gallery ${i}`} fill className="object-cover transition-transform duration-700 hover:scale-105" />
                      </div>
                    ))}
                 </div>

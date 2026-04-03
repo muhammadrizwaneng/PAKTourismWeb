@@ -3,6 +3,8 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { prisma } from '@/lib/db';
 import { MapPin, Star, Phone, Globe, MessageSquare, ArrowLeft, Building2, CheckCircle2 } from 'lucide-react';
+import { DEFAULT_TOURISM_IMAGE } from '@/lib/constants';
+import SafeImage from '@/components/SafeImage';
 
 async function getHotel(id: string) {
   const hotel = await prisma.hotel.findUnique({
@@ -21,13 +23,13 @@ export default async function HotelDetailPage({ params }: { params: { id: string
   if (!hotel) notFound();
 
   const gallery = hotel.gallery ? JSON.parse(hotel.gallery) : [];
-  const featuredImage = gallery[0] || '/placeholder.png';
+  const featuredImage = gallery[0] || DEFAULT_TOURISM_IMAGE;
 
   return (
     <div className="pb-24 bg-white dark:bg-black">
       {/* Hero Header */}
       <div className="relative h-[65vh] w-full overflow-hidden">
-        <Image 
+        <SafeImage 
           src={featuredImage} 
           alt={hotel.title}
           fill
@@ -109,7 +111,7 @@ export default async function HotelDetailPage({ params }: { params: { id: string
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                    {gallery.map((img: string, i: number) => (
                      <div key={i} className={`relative rounded-3xl overflow-hidden shadow-lg ${i === 0 ? 'col-span-2 row-span-2 h-[500px]' : 'h-60'}`}>
-                        <Image src={img} alt={`${hotel.title} gallery ${i}`} fill className="object-cover transition-transform duration-700 hover:scale-105" />
+                        <SafeImage src={img} alt={`${hotel.title} gallery ${i}`} fill className="object-cover transition-transform duration-700 hover:scale-105" />
                      </div>
                    ))}
                 </div>

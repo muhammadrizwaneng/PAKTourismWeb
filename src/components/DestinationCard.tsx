@@ -2,6 +2,9 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { MapPin, Star } from 'lucide-react';
 import { Destination, Taxonomy } from '@prisma/client';
+import { DEFAULT_TOURISM_IMAGE } from '@/lib/constants';
+
+import SafeImage from './SafeImage';
 
 interface DestinationCardProps {
   destination: Destination & { 
@@ -15,8 +18,8 @@ export default function DestinationCard({ destination }: DestinationCardProps) {
     <Link href={`/destinations/${destination.id}`} className="group block">
       <div className="bg-white dark:bg-gray-900 rounded-3xl overflow-hidden border border-gray-100 dark:border-gray-800 shadow-sm card-hover flex flex-col h-full">
         <div className="relative h-64 overflow-hidden">
-          <Image 
-            src={destination.featuredImage || '/placeholder.png'} 
+          <SafeImage 
+            src={destination.featuredImage || DEFAULT_TOURISM_IMAGE} 
             alt={destination.title}
             fill
             className="object-cover transition-transform duration-500 group-hover:scale-110"

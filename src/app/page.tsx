@@ -2,6 +2,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { prisma } from '@/lib/db';
 import { Search, MapPin, Star, ArrowRight, ShieldCheck, Headphones, Map } from 'lucide-react';
+import { DEFAULT_TOURISM_IMAGE } from '@/lib/constants';
+import SafeImage from '@/components/SafeImage';
 
 async function getHomeData() {
   const [banners, featuredDestinations, featuredPackages] = await Promise.all([
@@ -115,8 +117,8 @@ export default async function HomePage() {
             {featuredDestinations.map((dest) => (
               <Link key={dest.id} href={`/destinations/${dest.id}`} className="group group block">
                 <div className="relative h-96 rounded-3xl overflow-hidden card-hover">
-                  <Image 
-                    src={dest.featuredImage || '/placeholder.png'} 
+                  <SafeImage 
+                    src={dest.featuredImage || DEFAULT_TOURISM_IMAGE} 
                     alt={dest.title}
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-110"
@@ -148,8 +150,8 @@ export default async function HomePage() {
             {featuredPackages.map((pkg) => (
               <div key={pkg.id} className="bg-white dark:bg-gray-900 rounded-3xl overflow-hidden border border-gray-100 dark:border-gray-800 shadow-sm card-hover">
                 <div className="relative h-64">
-                  <Image 
-                    src={pkg.featuredImage || '/placeholder.png'} 
+                  <SafeImage 
+                    src={pkg.featuredImage || DEFAULT_TOURISM_IMAGE} 
                     alt={pkg.title}
                     fill
                     className="object-cover"

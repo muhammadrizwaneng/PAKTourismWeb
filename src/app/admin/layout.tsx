@@ -38,7 +38,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
             </div>
             <div className="flex flex-col">
               <span className="text-xl font-black text-gray-900 dark:text-white leading-none tracking-tight">PAK</span>
-              <span className="text-primary-600 font-extralight text-sm tracking-widest uppercase">Toursim</span>
+              <span className="text-primary-600 font-extralight text-sm tracking-widest uppercase">Tourism</span>
             </div>
           </Link>
           

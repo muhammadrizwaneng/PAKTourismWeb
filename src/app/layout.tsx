@@ -7,7 +7,7 @@ import Footer from '@/components/Footer';
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 
 export const metadata: Metadata = {
-  title: 'PAKToursim - Explore the Beauty of Pakistan',
+  title: 'PAKTourism - Explore the Beauty of Pakistan',
   description: 'Plan your dream journey to the mountains, cities, and cultural hearts of Pakistan. Book hotels, tour packages, and find expert guides.',
   keywords: 'Pakistan Tourism, Hunza Valley, Skardu, Lahore, Travel Pakistan, Tour Packages Pakistan',
 };

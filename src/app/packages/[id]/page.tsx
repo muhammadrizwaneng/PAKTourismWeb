@@ -1,8 +1,9 @@
 import { prisma } from '@/lib/db';
-import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { CheckCircle2, Clock, Users, ShieldCheck, MapPin, Star } from 'lucide-react';
 import BookingForm from '@/components/BookingForm';
+import { DEFAULT_TOURISM_IMAGE } from '@/lib/constants';
+import SafeImage from '@/components/SafeImage';
 
 async function getPackage(id: string) {
   const pkg = await prisma.tourPackage.findUnique({
@@ -61,8 +62,8 @@ export default async function PackageDetailPage({ params }: { params: { id: stri
             </header>
 
             <section className="relative h-96 rounded-[2.5rem] overflow-hidden shadow-xl">
-               <Image 
-                 src={pkg.featuredImage || '/placeholder.png'} 
+               <SafeImage 
+                 src={pkg.featuredImage || DEFAULT_TOURISM_IMAGE} 
                  alt={pkg.title}
                  fill
                  className="object-cover"

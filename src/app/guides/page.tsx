@@ -2,6 +2,7 @@ import { prisma } from '@/lib/db';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Star, MessageSquare, Phone, Globe, Languages, MapPin } from 'lucide-react';
+import { DEFAULT_USER_IMAGE } from '@/lib/constants';
 
 async function getGuides() {
   return prisma.tourGuide.findMany({
@@ -30,7 +31,7 @@ export default async function GuidesPage() {
             <div key={guide.id} className="bg-white dark:bg-gray-900 rounded-[2.5rem] overflow-hidden border border-gray-100 dark:border-gray-800 shadow-sm p-8 card-hover flex flex-col items-center text-center">
               <div className="relative w-32 h-32 rounded-full overflow-hidden mb-6 ring-4 ring-primary-50 dark:ring-primary-900/20">
                 <Image 
-                  src={guide.photo || '/placeholder.png'} 
+                  src={guide.photo || DEFAULT_USER_IMAGE} 
                   alt={guide.name}
                   fill
                   className="object-cover"
@@ -68,12 +69,12 @@ export default async function GuidesPage() {
               <div className="flex w-full space-x-3 mt-auto">
                 {guide.whatsapp ? (
                   <a 
-                    href={`https://wa.me/${guide.whatsapp.replace(/\+/g, '').replace(/ /g, '')}?text=${encodeURIComponent(`Hello! I discovered your profile on PakToursim — a growing tourism platform that connects travelers with local guides across Pakistan.
+                    href={`https://wa.me/${guide.whatsapp.replace(/\+/g, '').replace(/ /g, '')}?text=${encodeURIComponent(`Hello! I discovered your profile on PakTourism — a growing tourism platform that connects travelers with local guides across Pakistan.
 
 I’m planning a trip and would love to know more about your services, packages, and availability.
 
-You can also explore PakToursim here:
-https://pktoursim.infinityfreeapp.com/
+You can also explore PakTourism here:
+https://pktourism.infinityfreeapp.com/
 
 Looking forward to hearing from you soon. Thank you!`)}`}
                     target="_blank"

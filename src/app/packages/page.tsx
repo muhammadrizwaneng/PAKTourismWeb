@@ -2,6 +2,7 @@ import { prisma } from '@/lib/db';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Search, MapPin, Clock, Users, ArrowRight } from 'lucide-react';
+import { DEFAULT_TOURISM_IMAGE } from '@/lib/constants';
 
 async function getPackages(search?: string, maxPrice?: string) {
   const where: any = {};
@@ -77,7 +78,7 @@ export default async function PackagesPage({
             <div key={pkg.id} className="group bg-white dark:bg-gray-900 rounded-3xl overflow-hidden border border-gray-100 dark:border-gray-800 shadow-sm card-hover flex flex-col h-full">
               <div className="relative h-64 overflow-hidden">
                 <Image 
-                  src={pkg.featuredImage || '/placeholder.png'} 
+                  src={pkg.featuredImage || DEFAULT_TOURISM_IMAGE} 
                   alt={pkg.title}
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-110"

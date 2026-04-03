@@ -13,7 +13,7 @@ const Footer = () => {
                 <img src="/logo.png" alt="Logo" className="w-full h-full object-cover" />
               </div>
               <h3 className="text-2xl font-black tracking-tighter text-white uppercase">
-                PAK<span className="text-primary-500 font-extralight lowercase">Toursim</span>
+                PAK<span className="text-primary-500 font-extralight lowercase">Tourism</span>
               </h3>
             </div>
             <p className="text-sm leading-relaxed text-gray-400">
@@ -75,7 +75,7 @@ const Footer = () => {
         </div>
 
         <div className="mt-16 pt-8 border-t border-gray-900 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500 space-y-4 md:space-y-0">
-          <p>© 2024 PAKToursim. All rights reserved.</p>
+          <p>© 2024 PAKTourism. All rights reserved.</p>
           <div className="flex space-x-6">
             <Link href="#" className="hover:text-gray-300">Privacy Policy</Link>
             <Link href="#" className="hover:text-gray-300">Terms of Service</Link>

@@ -1,8 +1,9 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { prisma } from '@/lib/db';
 import { Star, MessageSquare, Phone, Globe, Languages, ArrowLeft, Award, ThumbsUp, MapPinned } from 'lucide-react';
+import { DEFAULT_USER_IMAGE, DEFAULT_TOURISM_IMAGE } from '@/lib/constants';
+import SafeImage from '@/components/SafeImage';
 
 async function getGuide(id: string) {
   const guide = await prisma.tourGuide.findUnique({
@@ -38,8 +39,8 @@ export default async function GuideDetailPage({ params }: { params: { id: string
           <div className="lg:col-span-4">
             <div className="glass p-8 rounded-[3rem] border-gray-100 dark:border-gray-800 text-center sticky top-28">
               <div className="relative w-48 h-48 rounded-full overflow-hidden mx-auto mb-6 ring-8 ring-primary-50 dark:ring-primary-900/10">
-                <Image 
-                  src={guide.photo || '/placeholder.png'} 
+                <SafeImage 
+                  src={guide.photo || DEFAULT_USER_IMAGE} 
                   alt={guide.name}
                   fill
                   className="object-cover"
@@ -64,12 +65,12 @@ export default async function GuideDetailPage({ params }: { params: { id: string
               <div className="space-y-4">
                 {guide.whatsapp ? (
                   <a 
-                    href={`https://wa.me/${guide.whatsapp.replace(/\+/g, '').replace(/ /g, '')}?text=${encodeURIComponent(`Hello! I discovered your profile on PakToursim — a growing tourism platform that connects travelers with local guides across Pakistan.
+                    href={`https://wa.me/${guide.whatsapp.replace(/\+/g, '').replace(/ /g, '')}?text=${encodeURIComponent(`Hello! I discovered your profile on PakTourism — a growing tourism platform that connects travelers with local guides across Pakistan.
 
 I’m planning a trip and would love to know more about your services, packages, and availability.
 
-You can also explore PakToursim here:
-https://pktoursim.infinityfreeapp.com/
+You can also explore PakTourism here:
+https://pktourism.infinityfreeapp.com/
 
 Looking forward to hearing from you soon. Thank you!`)}`}
                     target="_blank"

@@ -33,11 +33,11 @@ const Navbar = () => {
         <div className="flex justify-between items-center">
           <Link href="/" className="flex items-center group space-x-3">
             <div className="relative w-10 h-10 overflow-hidden rounded-xl bg-primary-600 shadow-lg group-hover:scale-110 transition-transform duration-300">
-               <img src="/logo.png" alt="PAKToursim Logo" className="w-full h-full object-cover" />
+               <img src="/logo.png" alt="PAKTourism Logo" className="w-full h-full object-cover" />
             </div>
             <span className={`text-2xl tracking-tighter transition-all duration-300 ${(!isHome || isScrolled) ? 'text-gray-900 dark:text-white' : 'text-white'}`}>
               <span className="font-black uppercase tracking-tight">PAK</span>
-              <span className="font-extralight text-primary-500">Toursim</span>
+              <span className="font-extralight text-primary-500">Tourism</span>
             </span>
           </Link>
 

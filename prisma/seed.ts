@@ -2,13 +2,18 @@ import { PrismaClient } from '@prisma/client';
 import { PrismaLibSQL } from '@prisma/adapter-libsql';
 import { createClient } from '@libsql/client';
 
-const libsql = createClient({
-  url: process.env.TURSO_DATABASE_URL!,
-  authToken: process.env.TURSO_AUTH_TOKEN,
-});
+let prisma: PrismaClient;
 
-const adapter = new PrismaLibSQL(libsql);
-const prisma = new PrismaClient({ adapter });
+if (process.env.NODE_ENV === 'production') {
+  const libsql = createClient({
+    url: process.env.TURSO_DATABASE_URL!,
+    authToken: process.env.TURSO_AUTH_TOKEN,
+  });
+  const adapter = new PrismaLibSQL(libsql);
+  prisma = new PrismaClient({ adapter } as any);
+} else {
+  prisma = new PrismaClient();
+}
 
 async function main() {
   console.log('🌱 Seeding Comprehensive Pakistan Tourism database...');
@@ -437,7 +442,7 @@ async function main() {
 
       if ((dest as any).attractions) {
         for (const attr of (dest as any).attractions) {
-          await prisma.attraction.upsert({
+          const attraction = await prisma.attraction.upsert({
             where: { slug: attr.slug },
             update: {
               title: attr.title,
@@ -451,9 +456,67 @@ async function main() {
               description: attr.description,
               destinationId: destination.id,
               taxonomyId: attr.taxonomyId,
-              gallery: JSON.stringify([`https://source.unsplash.com/600x400/?${attr.title}`])
+              gallery: JSON.stringify([`https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80`]),
             }
           });
+
+          // Add POIs for specific attractions
+          if (attr.slug === 'malam-jabba') {
+            const pois = [
+              { title: 'Samsons Resort', category: 'Hotel/Resort', address: 'Malam Jabba, Swat', latitude: 34.7936, longitude: 72.5706 },
+              { title: 'Malam Jabba Ski Shop', category: 'Shop', address: 'Base Station, Malam Jabba', latitude: 34.7930, longitude: 72.5710 },
+            ];
+            for (const poi of pois) {
+              await prisma.pointOfInterest.upsert({
+                where: { slug: poi.title.toLowerCase().replace(/ /g, '-') },
+                update: { ...poi, attractionId: attraction.id, destinationId: destination.id },
+                create: { ...poi, slug: poi.title.toLowerCase().replace(/ /g, '-'), attractionId: attraction.id, destinationId: destination.id }
+              });
+            }
+          }
+
+          if (attr.slug === 'fizagat-park') {
+            const pois = [
+              { title: 'River View Restaurant', category: 'Restaurant', address: 'Main Road, Fizagat', latitude: 34.7892, longitude: 72.3601 },
+              { title: 'Mingora General Hospital', category: 'Hospital', address: 'G.T Road, Mingora', latitude: 34.7717, longitude: 72.3602 },
+            ];
+            for (const poi of pois) {
+              await (prisma as any).pointOfInterest.upsert({
+                where: { slug: poi.title.toLowerCase().replace(/ /g, '-') },
+                update: { ...poi, attractionId: attraction.id, destinationId: destination.id },
+                create: { ...poi, slug: poi.title.toLowerCase().replace(/ /g, '-'), attractionId: attraction.id, destinationId: destination.id }
+              });
+            }
+          }
+
+          if (attr.slug === 'badshahi-mosque') {
+            const pois = [
+              { title: 'Haveli Restaurant', category: 'Restaurant', address: 'Fort Road Food Street, Lahore', latitude: 31.5882, longitude: 74.3106 },
+              { title: 'Cuckoo\'s Den', category: 'Restaurant', address: 'Fort Road Food Street, Lahore', latitude: 31.5885, longitude: 74.3108 },
+              { title: 'Minar-e-Pakistan', category: 'Monument', address: 'Greater Iqbal Park, Lahore', latitude: 31.5925, longitude: 74.3095 },
+            ];
+            for (const poi of pois) {
+              await (prisma as any).pointOfInterest.upsert({
+                where: { slug: poi.title.toLowerCase().replace(/ /g, '-') },
+                update: { ...poi, attractionId: attraction.id, destinationId: destination.id },
+                create: { ...poi, slug: poi.title.toLowerCase().replace(/ /g, '-'), attractionId: attraction.id, destinationId: destination.id }
+              });
+            }
+          }
+
+          if (attr.slug === 'lahore-fort') {
+            const pois = [
+              { title: 'Wazir Khan Mosque', category: 'Historical/Religious', address: 'Walled City, Lahore', latitude: 31.5833, longitude: 74.3214 },
+              { title: 'Delhi Gate', category: 'Historical', address: 'Walled City, Lahore', latitude: 31.5822, longitude: 74.3242 },
+            ];
+            for (const poi of pois) {
+              await (prisma as any).pointOfInterest.upsert({
+                where: { slug: poi.title.toLowerCase().replace(/ /g, '-') },
+                update: { ...poi, attractionId: attraction.id, destinationId: destination.id },
+                create: { ...poi, slug: poi.title.toLowerCase().replace(/ /g, '-'), attractionId: attraction.id, destinationId: destination.id }
+              });
+            }
+          }
         }
       }
     }

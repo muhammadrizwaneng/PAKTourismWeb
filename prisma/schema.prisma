@@ -47,6 +47,7 @@ model Destination {
   packages     TourPackage[]
   reviews      Review[]
   plans        Plan[]
+  pointsOfInterest PointOfInterest[]
 }
 
 // ─── Attraction ────────────────────────────────────────────────────────────
@@ -64,6 +65,8 @@ model Attraction {
   taxonomy      Taxonomy?    @relation("AttractionType", fields: [taxonomyId], references: [id])
   createdAt     DateTime     @default(now())
   updatedAt     DateTime     @updatedAt
+
+  pointsOfInterest PointOfInterest[]
 }
 
 // ─── Hotel ─────────────────────────────────────────────────────────────────
@@ -196,4 +199,24 @@ model Banner {
   sortOrder Int      @default(0)
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
+}
+
+// ─── Point of Interest ───────────────────────────────────────────────────────
+model PointOfInterest {
+  id            Int          @id @default(autoincrement())
+  title         String
+  slug          String       @unique
+  description   String?
+  address       String?
+  phone         String?
+  latitude      Float?
+  longitude     Float?
+  gallery       String?      // JSON array of URLs
+  category      String?      // e.g., "Fuel", "Hospital", "Restaurant"
+  attractionId  Int?
+  attraction    Attraction?  @relation(fields: [attractionId], references: [id], onDelete: Cascade)
+  destinationId Int?
+  destination   Destination? @relation(fields: [destinationId], references: [id], onDelete: Cascade)
+  createdAt     DateTime     @default(now())
+  updatedAt     DateTime     @updatedAt
 }

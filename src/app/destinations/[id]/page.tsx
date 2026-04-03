@@ -3,6 +3,10 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { prisma } from '@/lib/db';
 import { MapPin, Calendar, Clock, Ticket, ArrowRight, Star, Hotel as HotelIcon, Package } from 'lucide-react';
+import { HospitalsSection } from '@/components/HospitalsSection';
+import { PetrolPumpsSection } from '@/components/PetrolPumpsSection';
+import { DEFAULT_TOURISM_IMAGE } from '@/lib/constants';
+import SafeImage from '@/components/SafeImage';
 
 async function getDestination(id: string) {
   const destination = await prisma.destination.findUnique({
@@ -12,6 +16,7 @@ async function getDestination(id: string) {
       attractions: true,
       hotels: true,
       packages: true,
+      pointsOfInterest: true,
       reviews: { orderBy: { createdAt: 'desc' }, take: 5 },
       _count: { select: { attractions: true, hotels: true, packages: true, reviews: true } }
     }
@@ -27,12 +32,21 @@ export default async function DestinationDetailPage({ params }: { params: { id: 
 
   const galleryImages = destination.galleryImages ? JSON.parse(destination.galleryImages) : [];
 
+  const hospitals = destination.pointsOfInterest.filter(
+    (p) => p.category?.toLowerCase() === 'hospital'
+  );
+  const petrolPumps = destination.pointsOfInterest.filter(
+    (p) => p.category?.toLowerCase() === 'fuel' || p.category?.toLowerCase().includes('petrol')
+  );
+
+  const cityName = destination.city || destination.title;
+
   return (
     <div className="pb-24 bg-white dark:bg-black">
       {/* Hero Header */}
       <div className="relative h-[70vh] w-full overflow-hidden">
-        <Image 
-          src={destination.featuredImage || '/placeholder.png'} 
+        <SafeImage 
+          src={destination.featuredImage || DEFAULT_TOURISM_IMAGE} 
           alt={destination.title}
           fill
           className="object-cover"
@@ -76,7 +90,7 @@ export default async function DestinationDetailPage({ params }: { params: { id: 
                 <div className="grid grid-cols-2 gap-4">
                    {galleryImages.map((img: string, i: number) => (
                      <div key={i} className={`relative rounded-3xl overflow-hidden shadow-lg ${i === 0 ? 'col-span-2 h-[400px]' : 'h-64'}`}>
-                        <Image src={img} alt={`${destination.title} gallery ${i}`} fill className="object-cover transition-transform duration-700 hover:scale-105" />
+                        <SafeImage src={img} alt={`${destination.title} gallery ${i}`} fill className="object-cover transition-transform duration-700 hover:scale-105" />
                      </div>
                    ))}
                 </div>
@@ -84,7 +98,7 @@ export default async function DestinationDetailPage({ params }: { params: { id: 
             )}
 
             {/* Attractions */}
-            {destination.attractions.length > 0 && (
+            {(destination.attractions.length > 0 || hospitals.length > 0 || petrolPumps.length > 0) && (
               <section className="pt-8">
                 <div className="flex justify-between items-end mb-8">
                   <h2 className="text-3xl font-extrabold text-gray-900 dark:text-white">Must Visit Attractions</h2>
@@ -94,7 +108,7 @@ export default async function DestinationDetailPage({ params }: { params: { id: 
                     <Link key={attr.id} href={`/attractions/${attr.id}`} className="block group">
                       <div className="glass p-6 rounded-[2rem] border-gray-100 dark:border-gray-800 flex flex-col md:flex-row gap-8 transition-all hover:bg-gray-50/50 dark:hover:bg-gray-900/50 shadow-sm hover:shadow-xl">
                          <div className="relative w-full md:w-64 h-48 rounded-2xl overflow-hidden shrink-0">
-                            <Image src={attr.gallery ? JSON.parse(attr.gallery)[0] || '/placeholder.png' : '/placeholder.png'} alt={attr.title} fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
+                            <SafeImage src={attr.gallery ? JSON.parse(attr.gallery)[0] || DEFAULT_TOURISM_IMAGE : DEFAULT_TOURISM_IMAGE} alt={attr.title} fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
                          </div>
                          <div className="flex-grow">
                            <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3 group-hover:text-primary-600 transition-colors">{attr.title}</h3>
@@ -112,6 +126,12 @@ export default async function DestinationDetailPage({ params }: { params: { id: 
                     </Link>
                   ))}
                 </div>
+
+                {/* Hospitals Section */}
+                <HospitalsSection hospitals={hospitals} cityName={cityName} destinationId={destination.id} />
+
+                {/* Petrol Pumps Section */}
+                <PetrolPumpsSection pumps={petrolPumps} cityName={cityName} destinationId={destination.id} />
               </section>
             )}
           </div>
@@ -153,7 +173,7 @@ export default async function DestinationDetailPage({ params }: { params: { id: 
                     <div className="glass border-gray-100 dark:border-gray-800 p-4 rounded-3xl transition-all hover:bg-gray-50/50 dark:hover:bg-gray-900/50 shadow-sm hover:shadow-md">
                        <div className="flex items-center space-x-4">
                           <div className="relative w-20 h-20 rounded-2xl overflow-hidden shrink-0">
-                             <Image src={hotel.gallery ? JSON.parse(hotel.gallery)[0] || '/placeholder.png' : '/placeholder.png'} alt={hotel.title} fill className="object-cover group-hover:scale-110 transition-transform duration-500" />
+                             <SafeImage src={hotel.gallery ? JSON.parse(hotel.gallery)[0] || DEFAULT_TOURISM_IMAGE : DEFAULT_TOURISM_IMAGE} alt={hotel.title} fill className="object-cover group-hover:scale-110 transition-transform duration-500" />
                           </div>
                           <div>
                             <h4 className="font-bold text-gray-900 dark:text-white text-sm mb-1 group-hover:text-primary-600 transition-colors">{hotel.title}</h4>

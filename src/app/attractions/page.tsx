@@ -2,6 +2,7 @@ import { prisma } from '@/lib/db';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Search, MapPin, Clock, Ticket } from 'lucide-react';
+import { DEFAULT_TOURISM_IMAGE } from '@/lib/constants';
 
 async function getAttractions(search?: string) {
   return prisma.attraction.findMany({
@@ -60,7 +61,7 @@ export default async function AttractionsPage({
               <div key={attr.id} className="group bg-white dark:bg-gray-900 rounded-3xl overflow-hidden border border-gray-100 dark:border-gray-800 shadow-sm card-hover">
                 <div className="relative h-64">
                   <Image 
-                    src={gallery[0] || '/placeholder.png'} 
+                    src={gallery[0] || DEFAULT_TOURISM_IMAGE} 
                     alt={attr.title}
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-110"
