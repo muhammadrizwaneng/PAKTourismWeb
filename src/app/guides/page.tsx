@@ -30,7 +30,7 @@ export default async function GuidesPage() {
           {guides.map((guide: any) => (
             <div key={guide.id} className="bg-white dark:bg-gray-900 rounded-[2.5rem] overflow-hidden border border-gray-100 dark:border-gray-800 shadow-sm p-8 card-hover flex flex-col items-center text-center">
               <div className="relative w-32 h-32 rounded-full overflow-hidden mb-6 ring-4 ring-primary-50 dark:ring-primary-900/20">
-                <Image 
+                <SafeImage 
                   src={guide.photo || DEFAULT_USER_IMAGE} 
                   alt={guide.name}
                   fill
