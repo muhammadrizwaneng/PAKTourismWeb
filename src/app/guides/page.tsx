@@ -1,8 +1,8 @@
 import { prisma } from '@/lib/db';
-import Image from 'next/image';
 import Link from 'next/link';
-import { Star, MessageSquare, Phone, Globe, Languages, MapPin } from 'lucide-react';
+import { Star, MessageSquare, Phone, Languages, MapPin, UserCheck } from 'lucide-react';
 import { DEFAULT_USER_IMAGE } from '@/lib/constants';
+import SafeImage from '@/components/SafeImage';
 
 async function getGuides() {
   return prisma.tourGuide.findMany({

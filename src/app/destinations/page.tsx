@@ -38,25 +38,30 @@ export default async function DestinationsPage({
   const provinces = ['Gilgit-Baltistan', 'Punjab', 'Khyber Pakhtunkhwa', 'Sindh', 'Balochistan', 'Azad Kashmir'];
 
   return (
-    <div className="pt-24 min-h-screen bg-gray-50 dark:bg-black">
-      {/* Header */}
-      <div className="bg-white dark:bg-gray-950 border-b border-gray-100 dark:border-gray-900 py-12 md:py-20 mb-8">
-        <div className="max-w-7xl mx-auto px-4">
-          <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 dark:text-white mb-6">Explore Destinations</h1>
-          <p className="text-gray-500 dark:text-gray-400 max-w-2xl text-lg">
-            Discover the most beautiful places in Pakistan. From snow-capped mountains to historical cities and coastal wonders.
+    <div className="min-h-screen bg-gray-50 dark:bg-gray-950">
+      {/* Hero */}
+      <div className="relative pt-24 pb-20 overflow-hidden bg-gradient-to-br from-gray-900 via-primary-950 to-gray-900">
+        <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(circle at 10% 50%, #22c55e 0%, transparent 50%), radial-gradient(circle at 90% 30%, #16a34a 0%, transparent 50%)' }} />
+        <div className="max-w-7xl mx-auto px-4 relative z-10">
+          <p className="section-label text-primary-400 mb-4">Pakistan</p>
+          <h1 className="text-5xl md:text-6xl font-black text-white mb-6 leading-tight">
+            Explore<br />
+            <span className="text-primary-400">Destinations</span>
+          </h1>
+          <p className="text-gray-400 max-w-xl text-lg">
+            From the towering Karakoram to ancient Mughal cities — discover {destinations.length}+ breathtaking places across Pakistan.
           </p>
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 pb-20">
+      <div className="max-w-7xl mx-auto px-4 pt-10 pb-20">
         <div className="flex flex-col lg:flex-row gap-8">
           {/* Filters Sidebar */}
-          <aside className="w-full lg:w-72 space-y-8">
+          <aside className="w-full lg:w-64 space-y-6 shrink-0">
             <div className="glass p-6 rounded-3xl shadow-sm border-gray-100 dark:border-gray-800">
-               <div className="flex items-center space-x-2 mb-6">
-                 <Search size={18} className="text-primary-600" />
-                 <h2 className="font-bold text-gray-900 dark:text-white">Search</h2>
+               <div className="flex items-center space-x-2 mb-5">
+                 <Search size={16} className="text-primary-600" />
+                 <h2 className="font-bold text-gray-900 dark:text-white text-sm">Search</h2>
                </div>
                <form className="relative">
                  <input 
