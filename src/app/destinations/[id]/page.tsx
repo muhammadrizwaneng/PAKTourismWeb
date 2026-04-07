@@ -34,7 +34,7 @@ export default async function DestinationDetailPage({ params }: { params: { id: 
   const galleryImages = destination.galleryImages ? JSON.parse(destination.galleryImages) : [];
 
   const hospitals = destination.pointsOfInterest.filter(
-    (p) => p.category?.toLowerCase() === 'hospital'
+    (p) => p.category === 'Hospital'
   );
   const petrolPumps = destination.pointsOfInterest.filter(
     (p) => p.category?.toLowerCase() === 'fuel' || p.category?.toLowerCase().includes('petrol')
@@ -152,7 +152,6 @@ export default async function DestinationDetailPage({ params }: { params: { id: 
                 </div>
               </section>
             )}
-
             {/* ── Attractions ── */}
             {(destination.attractions.length > 0 || hospitals.length > 0 || petrolPumps.length > 0) && (
               <section>
