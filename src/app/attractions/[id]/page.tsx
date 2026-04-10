@@ -5,6 +5,7 @@ import { MapPin, Clock, Ticket, ArrowLeft, Share2, Info, Compass } from 'lucide-
 import { PointOfInterestGrid } from '@/components/PointOfInterestGrid';
 import { DEFAULT_TOURISM_IMAGE } from '@/lib/constants';
 import SafeImage from '@/components/SafeImage';
+import JsonLd from '@/components/JsonLd';
 
 async function getAttraction(id: string) {
   const attraction = await prisma.attraction.findUnique({
@@ -26,9 +27,38 @@ export default async function AttractionDetailPage({ params }: { params: { id: s
 
   const gallery = attraction.gallery ? JSON.parse(attraction.gallery) : [];
   const featuredImage = gallery[0] || DEFAULT_TOURISM_IMAGE;
+  const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://paktourism.pk';
+
+  const attractionSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'TouristAttraction',
+    name: attraction.title,
+    description: attraction.description || undefined,
+    url: `${SITE_URL}/attractions/${attraction.id}`,
+    image: gallery.length > 0 ? gallery : undefined,
+    isAccessibleForFree: !attraction.entryFee || attraction.entryFee.toLowerCase() === 'free',
+    ...(attraction.entryFee && attraction.entryFee.toLowerCase() !== 'free' ? {
+      offers: {
+        '@type': 'Offer',
+        price: attraction.entryFee,
+        priceCurrency: 'PKR',
+      },
+    } : {}),
+    openingHoursSpecification: attraction.timings ? [{
+      '@type': 'OpeningHoursSpecification',
+      description: attraction.timings,
+    }] : undefined,
+    containedInPlace: {
+      '@type': 'TouristDestination',
+      name: attraction.destination.title,
+      url: `${SITE_URL}/destinations/${attraction.destinationId}`,
+    },
+    ...(attraction.taxonomy ? { additionalType: attraction.taxonomy.name } : {}),
+  };
 
   return (
     <div className="pb-24 bg-white dark:bg-black">
+      <JsonLd data={attractionSchema} />
       {/* Hero Header */}
       <div className="relative h-[60vh] w-full overflow-hidden">
         <SafeImage 
@@ -125,6 +155,23 @@ export default async function AttractionDetailPage({ params }: { params: { id: s
                 </div>
               </section>
             )}
+
+            {/* Tips for Visitors */}
+            <section className="bg-gray-50 dark:bg-gray-900 rounded-[2.5rem] p-8 md:p-12 space-y-5">
+              <h2 className="text-2xl font-extrabold text-gray-900 dark:text-white">Tips for Visiting {attraction.title}</h2>
+              <p className="text-gray-600 dark:text-gray-400 text-base leading-relaxed">
+                When visiting {attraction.title} in {attraction.destination.title}, planning ahead makes a tremendous difference to your experience. Arriving early in the morning — ideally before 9 AM — allows you to explore with fewer crowds, enjoy cooler temperatures, and capture stunning photographs in the soft morning light. Many attractions across Pakistan see the highest footfall on weekends and public holidays, so a weekday visit is strongly recommended for a more peaceful experience.
+              </p>
+              <p className="text-gray-600 dark:text-gray-400 text-base leading-relaxed">
+                Dress modestly and respectfully, as Pakistani culture values conservative attire, especially at religious sites, heritage monuments, and rural communities. Lightweight, loose-fitting clothing that covers the shoulders and knees is appropriate and also practical in the variable mountain and desert climates of Pakistan. Comfortable walking shoes with good grip are essential, as many sites involve uneven terrain, steps, or unpaved paths.
+              </p>
+              <p className="text-gray-600 dark:text-gray-400 text-base leading-relaxed">
+                Hiring a local guide at {attraction.title} is highly recommended. Local guides bring irreplaceable knowledge — they know the stories, the hidden corners, and the best vantage points that no travel guide can fully describe. They also help with language barriers and ensure respectful interactions with local communities and families. PAKTourism connects you with verified, trained guides available for hire directly on our platform.
+              </p>
+              <p className="text-gray-600 dark:text-gray-400 text-base leading-relaxed">
+                Carry sufficient cash, water, and a light snack, particularly if venturing to more remote locations in the vicinity of {attraction.destination.title}. Mobile network coverage can be intermittent in certain mountainous areas of Pakistan, so download offline maps before your trip. Pakistan's northern regions in particular require preparation for altitude — acclimatise gradually and stay well hydrated to enjoy the experience safely.
+              </p>
+            </section>
           </div>
 
           {/* Sidebar */}
@@ -159,12 +206,20 @@ export default async function AttractionDetailPage({ params }: { params: { id: s
               </div>
             </div>
 
-            {/* Weather or Tips suggestion could go here */}
-            <div className="glass p-8 rounded-[2rem] border-gray-100 dark:border-gray-800">
-               <h4 className="font-bold text-gray-900 dark:text-white mb-4">Travel Tip</h4>
-               <p className="text-sm text-gray-500 dark:text-gray-400 italic">
-                 "Make sure to visit during early morning hours to avoid crowds and get the best lighting for your photographs."
+            <div className="glass p-8 rounded-[2rem] border-gray-100 dark:border-gray-800 space-y-4">
+               <h4 className="font-bold text-gray-900 dark:text-white">About {attraction.destination.title}</h4>
+               <p className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed">
+                 {attraction.destination.title} is one of Pakistan's most visited regions, renowned for its natural scenery, cultural heritage, and warm local hospitality. Situated in {attraction.destination.province}, the area offers a rich combination of historical landmarks, outdoor adventure, and authentic cuisine that draws travellers from across Pakistan and around the world.
                </p>
+               <p className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed">
+                 Explore more of what {attraction.destination.title} has to offer — from nearby hotels and tour packages to local guides who know every corner of this remarkable destination.
+               </p>
+               <Link
+                 href={`/destinations/${attraction.destinationId}`}
+                 className="inline-block mt-2 text-xs font-bold text-primary-600 hover:underline"
+               >
+                 Explore {attraction.destination.title} →
+               </Link>
             </div>
           </aside>
         </div>

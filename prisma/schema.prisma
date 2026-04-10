@@ -36,6 +36,7 @@ model Destination {
   longitude      Float?
   featuredImage  String?
   galleryImages  String?      // JSON array of URLs
+  galleryVideos  String?      // JSON array of destination video objects
   taxonomyId     Int?
   taxonomy       Taxonomy?    @relation("DestinationType", fields: [taxonomyId], references: [id])
   isFeatured     Boolean      @default(false)

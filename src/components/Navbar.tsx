@@ -3,14 +3,16 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Menu, X, Phone } from 'lucide-react';
+import { Menu, X, Phone, Heart, Map } from 'lucide-react';
 import { usePathname } from 'next/navigation';
+import { useFavorites } from '@/hooks/useFavorites';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const pathname = usePathname();
   const isHome = pathname === '/';
+  const { favorites, hydrated } = useFavorites();
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 40);
@@ -22,10 +24,10 @@ const Navbar = () => {
 
   const navLinks = [
     { name: 'Destinations', href: '/destinations' },
+    { name: 'Attractions', href: '/attractions' },
     { name: 'Packages', href: '/packages' },
     { name: 'Hotels', href: '/hotels' },
     { name: 'Guides', href: '/guides' },
-    { name: 'My Bookings', href: '/my-bookings' },
   ];
 
   return (
@@ -75,6 +77,37 @@ const Navbar = () => {
 
             
             <div className="flex items-center gap-3">
+              {/* Map link */}
+              <Link
+                href="/map"
+                aria-label="Explore map"
+                className={`hidden md:flex items-center justify-center w-9 h-9 rounded-xl transition-colors ${
+                  solid
+                    ? 'text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-primary-600'
+                    : 'text-white/80 hover:text-white hover:bg-white/10'
+                }`}
+              >
+                <Map size={18} />
+              </Link>
+
+              {/* Wishlist link */}
+              <Link
+                href="/wishlist"
+                aria-label="My wishlist"
+                className={`hidden md:flex items-center justify-center w-9 h-9 rounded-xl transition-colors relative ${
+                  solid
+                    ? 'text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-red-500'
+                    : 'text-white/80 hover:text-white hover:bg-white/10'
+                }`}
+              >
+                <Heart size={18} className={pathname === '/wishlist' ? 'fill-red-500 text-red-500' : ''} />
+                {hydrated && favorites.length > 0 && (
+                  <span className="absolute -top-0.5 -right-0.5 w-4 h-4 bg-red-500 text-white text-[9px] font-black rounded-full flex items-center justify-center">
+                    {favorites.length > 9 ? '9+' : favorites.length}
+                  </span>
+                )}
+              </Link>
+
               <a
                 href="tel:+923000000000"
                 className={`hidden lg:flex items-center gap-2 text-sm font-semibold transition-colors duration-300 ${solid ? 'text-gray-600 dark:text-gray-300 hover:text-primary-600' : 'text-white/80 hover:text-white'}`}
@@ -126,6 +159,19 @@ const Navbar = () => {
                 {link.name}
               </Link>
             ))}
+            {/* Extra pages */}
+            <Link href="/map" onClick={() => setIsOpen(false)} className="flex items-center gap-3 px-4 py-3.5 rounded-xl text-base font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
+              <Map size={17} className="text-primary-500" /> Explore Map
+            </Link>
+            <Link href="/wishlist" onClick={() => setIsOpen(false)} className="flex items-center gap-3 px-4 py-3.5 rounded-xl text-base font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
+              <Heart size={17} className="text-red-500" /> My Wishlist {hydrated && favorites.length > 0 && <span className="ml-auto bg-red-500 text-white text-xs font-black w-5 h-5 rounded-full flex items-center justify-center">{favorites.length}</span>}
+            </Link>
+            <Link href="/checklist" onClick={() => setIsOpen(false)} className="flex items-center gap-3 px-4 py-3.5 rounded-xl text-base font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
+              🧳 Travel Checklist
+            </Link>
+            <Link href="/emergency" onClick={() => setIsOpen(false)} className="flex items-center gap-3 px-4 py-3.5 rounded-xl text-base font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
+              🆘 Emergency Contacts
+            </Link>
             <div className="pt-6 border-t border-gray-100 dark:border-gray-800 mt-4">
               <Link
                 href="/packages"
@@ -143,4 +189,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-

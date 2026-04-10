@@ -3,6 +3,8 @@
     "id": 1,
     "name": "Ali Hassan",
     "slug": "ali-hassan-guide",
+    "city": null,
+    "address": null,
     "description": "Professional mountain guide.",
     "photo": null,
     "phone": "+92-300-1234567",
@@ -18,6 +20,8 @@
     "id": 2,
     "name": "Deluxe Holidays",
     "slug": "deluxe-holidays",
+    "city": "Karachi",
+    "address": "Shaheed-e-Millat / DHA Phase 8",
     "description": "Families & Luxury Groups",
     "photo": null,
     "phone": "+92 301 112 6426",
@@ -27,12 +31,14 @@
     "rating": 0,
     "reviewsText": null,
     "createdAt": "2026-03-17T17:56:22.405Z",
-    "updatedAt": "2026-03-17T17:56:22.405Z"
+    "updatedAt": "2026-03-28T17:44:40.753Z"
   },
   {
     "id": 3,
     "name": "Eventica Travels",
     "slug": "eventica-travels",
+    "city": "Karachi",
+    "address": "Bahadurabad",
     "description": "Couples & Small Families",
     "photo": null,
     "phone": "+92 300 021 5111",
@@ -42,12 +48,14 @@
     "rating": 0,
     "reviewsText": null,
     "createdAt": "2026-03-17T17:56:22.407Z",
-    "updatedAt": "2026-03-17T17:56:22.407Z"
+    "updatedAt": "2026-03-28T17:44:40.755Z"
   },
   {
     "id": 4,
     "name": "Jahangard Travels",
     "slug": "jahangard-travels",
+    "city": "Karachi",
+    "address": "Gulshan-e-Iqbal",
     "description": "Groups & Coastal Tours",
     "photo": null,
     "phone": "+92 321 809 9985",
@@ -57,12 +65,14 @@
     "rating": 0,
     "reviewsText": null,
     "createdAt": "2026-03-17T17:56:22.409Z",
-    "updatedAt": "2026-03-17T17:56:22.409Z"
+    "updatedAt": "2026-03-28T17:44:40.756Z"
   },
   {
     "id": 5,
     "name": "Pakistan Travel & Tours",
     "slug": "pakistan-travel--tours",
+    "city": "Lahore",
+    "address": "Gulberg III",
     "description": "Heritage & Families",
     "photo": null,
     "phone": "+92 300 849 0123",
@@ -72,12 +82,14 @@
     "rating": 0,
     "reviewsText": null,
     "createdAt": "2026-03-17T17:56:22.411Z",
-    "updatedAt": "2026-03-17T17:56:22.411Z"
+    "updatedAt": "2026-03-28T17:44:40.758Z"
   },
   {
     "id": 6,
     "name": "Bliss Travels",
     "slug": "bliss-travels",
+    "city": "Lahore",
+    "address": "Main Boulevard, Gulberg",
     "description": "Large Groups & Corporate",
     "photo": null,
     "phone": "+92 300 117 1171",
@@ -87,12 +99,14 @@
     "rating": 0,
     "reviewsText": null,
     "createdAt": "2026-03-17T17:56:22.413Z",
-    "updatedAt": "2026-03-17T17:56:22.413Z"
+    "updatedAt": "2026-03-28T17:44:40.759Z"
   },
   {
     "id": 7,
     "name": "The Mad Hatters",
     "slug": "the-mad-hatters",
+    "city": "Lahore",
+    "address": "Experiential (Online/Lahore)",
     "description": "Solo Females & Culture",
     "photo": null,
     "phone": "+92 331 441 5313",
@@ -102,12 +116,14 @@
     "rating": 0,
     "reviewsText": null,
     "createdAt": "2026-03-17T17:56:22.415Z",
-    "updatedAt": "2026-03-17T17:56:22.415Z"
+    "updatedAt": "2026-03-28T17:44:40.761Z"
   },
   {
     "id": 8,
     "name": "Click Pakistan",
     "slug": "click-pakistan",
+    "city": "Islamabad",
+    "address": "Blue Area",
     "description": "Families & Honeymoons",
     "photo": null,
     "phone": "+92 311 112 3133",
@@ -117,12 +133,14 @@
     "rating": 0,
     "reviewsText": null,
     "createdAt": "2026-03-17T17:56:22.417Z",
-    "updatedAt": "2026-03-17T17:56:22.417Z"
+    "updatedAt": "2026-03-28T17:44:40.762Z"
   },
   {
     "id": 9,
     "name": "TripMaker.pk",
     "slug": "tripmakerpk",
+    "city": "Islamabad",
+    "address": "Blue Area / F-7",
     "description": "Private Tours (Neelum/Swat)",
     "photo": null,
     "phone": "+92 311 113 4567",
@@ -132,12 +150,14 @@
     "rating": 0,
     "reviewsText": null,
     "createdAt": "2026-03-17T17:56:22.418Z",
-    "updatedAt": "2026-03-17T17:56:22.418Z"
+    "updatedAt": "2026-03-28T17:44:40.763Z"
   },
   {
     "id": 10,
     "name": "Nature Explorer",
     "slug": "nature-explorer",
+    "city": "Islamabad",
+    "address": "Sector G-13/4",
     "description": "Solo & Adventure Groups",
     "photo": null,
     "phone": "+92 348 045 6456",
@@ -147,6 +167,6 @@
     "rating": 0,
     "reviewsText": null,
     "createdAt": "2026-03-17T17:56:22.420Z",
-    "updatedAt": "2026-03-17T17:56:22.420Z"
+    "updatedAt": "2026-03-28T17:44:40.765Z"
   }
 ]

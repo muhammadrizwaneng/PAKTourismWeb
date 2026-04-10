@@ -3,6 +3,7 @@ import { MapPin, ArrowRight, Camera, Package } from 'lucide-react';
 import { Destination, Taxonomy } from '@prisma/client';
 import { DEFAULT_TOURISM_IMAGE } from '@/lib/constants';
 import SafeImage from './SafeImage';
+import FavoriteButton from './FavoriteButton';
 
 interface DestinationCardProps {
   destination: Destination & {
@@ -40,6 +41,20 @@ export default function DestinationCard({ destination }: DestinationCardProps) {
             )}
           </div>
 
+          {/* Wishlist button */}
+          <div className="absolute top-4 right-4">
+            <FavoriteButton
+              size="sm"
+              item={{
+                id: destination.id,
+                type: 'destination',
+                title: destination.title,
+                image: destination.featuredImage || undefined,
+                subtitle: `${destination.city}, ${destination.province}`,
+              }}
+            />
+          </div>
+
           {/* Province pill at bottom */}
           <div className="absolute bottom-4 left-4">
             <span className="inline-flex items-center gap-1.5 bg-black/50 backdrop-blur-sm text-white text-xs font-semibold px-3 py-1.5 rounded-full">
@@ -54,8 +69,8 @@ export default function DestinationCard({ destination }: DestinationCardProps) {
           <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2 group-hover:text-primary-600 transition-colors line-clamp-1">
             {destination.title}
           </h3>
-          <p className="text-gray-500 dark:text-gray-400 text-sm line-clamp-2 mb-5 flex-grow leading-relaxed">
-            {destination.description || 'Explore this amazing destination in Pakistan.'}
+          <p className="text-gray-500 dark:text-gray-400 text-sm line-clamp-4 mb-5 flex-grow leading-relaxed">
+            {destination.description || 'Explore this amazing destination in Pakistan — a land of breathtaking landscapes, rich history, and vibrant culture. From ancient civilizations to modern megacities, discover the true essence of South Asian heritage.'}
           </p>
 
           {/* Stats + CTA */}

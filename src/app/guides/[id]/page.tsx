@@ -4,6 +4,7 @@ import { prisma } from '@/lib/db';
 import { Star, MessageSquare, Phone, Globe, Languages, ArrowLeft, Award, ThumbsUp, MapPinned } from 'lucide-react';
 import { DEFAULT_USER_IMAGE, DEFAULT_TOURISM_IMAGE } from '@/lib/constants';
 import SafeImage from '@/components/SafeImage';
+import JsonLd from '@/components/JsonLd';
 
 async function getGuide(id: string) {
   const guide = await prisma.tourGuide.findUnique({
@@ -19,9 +20,30 @@ export default async function GuideDetailPage({ params }: { params: { id: string
   if (!guide) notFound();
 
   const languages = guide.languages ? JSON.parse(guide.languages) : ['English', 'Urdu'];
+  const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://paktourism.pk';
+
+  const guideSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    name: guide.name,
+    url: `${SITE_URL}/guides/${guide.id}`,
+    image: guide.photo || undefined,
+    jobTitle: 'Tour Guide',
+    description: guide.bio || undefined,
+    knowsLanguage: languages,
+    ...(guide.phone ? { telephone: guide.phone } : {}),
+    ...(guide.whatsapp ? { contactPoint: { '@type': 'ContactPoint', telephone: guide.whatsapp, contactType: 'WhatsApp' } } : {}),
+    ...(guide.rating ? { aggregateRating: { '@type': 'AggregateRating', ratingValue: guide.rating, bestRating: 5, reviewCount: 12 } } : {}),
+    worksFor: {
+      '@type': 'TravelAgency',
+      name: 'PAKTourism',
+      url: SITE_URL,
+    },
+  };
 
   return (
     <div className="pt-24 pb-24 min-h-screen bg-gray-50 dark:bg-black">
+      <JsonLd data={guideSchema} />
       <div className="max-w-6xl mx-auto px-4">
         {/* Navigation */}
         <div className="mb-8">
@@ -130,6 +152,19 @@ Looking forward to hearing from you soon. Thank you!`)}`}
                   </div>
                 </div>
               </div>
+            </section>
+
+            <section className="bg-gray-50 dark:bg-gray-900 p-10 md:p-12 rounded-[3.5rem] border border-gray-50 dark:border-gray-800 space-y-5">
+              <h2 className="text-2xl font-extrabold text-gray-900 dark:text-white">Why Travel with a Local Guide?</h2>
+              <p className="text-base text-gray-600 dark:text-gray-400 leading-relaxed">
+                A local guide transforms an ordinary trip into an extraordinary journey. While travel apps and guidebooks provide general information, a local expert like {guide.name} brings the kind of deep, lived knowledge that no algorithm can replicate. They know which trails are open, which local family serves the best homemade food, and which hidden viewpoint offers the most breathtaking sunrise in {guide.city || 'the region'}.
+              </p>
+              <p className="text-base text-gray-600 dark:text-gray-400 leading-relaxed">
+                Safety is one of the most important reasons to choose a local guide when travelling in Pakistan's mountain regions. Terrain, weather, and road conditions can change rapidly in high-altitude areas such as Gilgit-Baltistan, Khyber-Pakhtunkhwa, and Azad Kashmir. An experienced guide knows the risks, the safe routes, and how to respond quickly in an emergency — ensuring that you and your group remain safe throughout the journey.
+              </p>
+              <p className="text-base text-gray-600 dark:text-gray-400 leading-relaxed">
+                Choosing a local guide also has a meaningful economic impact. Your booking directly supports a local professional and their family, contributing to the sustainable development of tourism in Pakistan's communities. PAKTourism verifies every guide on our platform to ensure they are qualified, trained in first aid and safety protocols, and committed to providing the highest standard of service to international and domestic travelers.
+              </p>
             </section>
 
             <section>

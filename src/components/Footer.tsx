@@ -10,6 +10,10 @@ const Footer = () => {
     { name: 'Tour Packages', href: '/packages' },
     { name: 'Find a Guide', href: '/guides' },
     { name: 'Hotels & Stays', href: '/hotels' },
+    { name: 'Explore Map', href: '/map' },
+    { name: 'My Wishlist', href: '/wishlist' },
+    { name: 'Travel Checklist', href: '/checklist' },
+    { name: 'Emergency Contacts', href: '/emergency' },
     { name: 'My Bookings', href: '/my-bookings' },
   ];
 

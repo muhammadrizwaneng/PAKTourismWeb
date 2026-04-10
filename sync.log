@@ -1,0 +1,43 @@
+
+> pak-tourism-next@0.1.0 db:seed:kptourism
+> ts-node --compiler-options '{"module":"CommonJS"}' prisma/seed-kptourism.ts
+
+=========================================
+STARTING KP TOURISM DATA MIGRATION
+=========================================
+
+1. Importing KP Destinations...
+Destinations Result: {
+  pagesFetched: 2,
+  taxonomiesCreated: 0,
+  destinationsCreated: 0,
+  destinationsUpdated: 20,
+  totalProcessed: 20
+}
+
+1b. Syncing KP Destination Details (Gallery, Videos, Accommodations)...
+Destinations Details Sync Result: {
+  destinationsSynced: 20,
+  attractionsCreated: 0,
+  attractionsUpdated: 175,
+  hotelsCreated: 0,
+  hotelsUpdated: 5
+}
+
+2. Importing KP Attractions...
+Attractions Result: {
+  pagesFetched: 2,
+  destinationsCreated: 0,
+  attractionsCreated: 0,
+  attractionsUpdated: 20,
+  totalProcessed: 20
+}
+
+3. Importing Points of Interest (POIs)...
+Found 20 POIs for category: Petrol Pump
+Found 20 POIs for category: Police Station
+
+4. Importing Helpline data...
+Fetching Helpline Info...
+
+Migration completed successfully.

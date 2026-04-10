@@ -5,6 +5,7 @@ import { prisma } from '@/lib/db';
 import { MapPin, Star, Phone, Globe, MessageSquare, ArrowLeft, Building2, CheckCircle2 } from 'lucide-react';
 import { DEFAULT_TOURISM_IMAGE } from '@/lib/constants';
 import SafeImage from '@/components/SafeImage';
+import JsonLd from '@/components/JsonLd';
 
 async function getHotel(id: string) {
   const hotel = await prisma.hotel.findUnique({
@@ -24,9 +25,47 @@ export default async function HotelDetailPage({ params }: { params: { id: string
 
   const gallery = hotel.gallery ? JSON.parse(hotel.gallery) : [];
   const featuredImage = gallery[0] || DEFAULT_TOURISM_IMAGE;
+  const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://paktourism.pk';
+
+  const hotelSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'LodgingBusiness',
+    name: hotel.title,
+    description: hotel.description || undefined,
+    url: `${SITE_URL}/hotels/${hotel.id}`,
+    image: gallery.length > 0 ? gallery : undefined,
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: hotel.address || undefined,
+      addressLocality: hotel.destination.title,
+      addressCountry: 'PK',
+    },
+    ...(hotel.latitude && hotel.longitude ? {
+      geo: {
+        '@type': 'GeoCoordinates',
+        latitude: hotel.latitude,
+        longitude: hotel.longitude,
+      },
+    } : {}),
+    ...(hotel.phone ? { telephone: hotel.phone } : {}),
+    ...(hotel.email ? { email: hotel.email } : {}),
+    ...(hotel.website ? { sameAs: hotel.website } : {}),
+    starRating: {
+      '@type': 'Rating',
+      ratingValue: hotel.starRating || 3,
+      bestRating: 5,
+    },
+    priceRange: hotel.priceRange || undefined,
+    containedInPlace: {
+      '@type': 'TouristDestination',
+      name: hotel.destination.title,
+      url: `${SITE_URL}/destinations/${hotel.destinationId}`,
+    },
+  };
 
   return (
     <div className="pb-24 bg-white dark:bg-black">
+      <JsonLd data={hotelSchema} />
       {/* Hero Header */}
       <div className="relative h-[65vh] w-full overflow-hidden">
         <SafeImage 
@@ -87,9 +126,15 @@ export default async function HotelDetailPage({ params }: { params: { id: string
           {/* Main Content */}
           <div className="lg:col-span-2 space-y-16">
             <section>
-              <h2 className="text-3xl font-extrabold text-gray-900 dark:text-white mb-8">About the Hotel</h2>
-              <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed whitespace-pre-wrap">
+              <h2 className="text-3xl font-extrabold text-gray-900 dark:text-white mb-8">About {hotel.title}</h2>
+              <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed whitespace-pre-wrap mb-6">
                 {hotel.description || `Experience the best of hospitality at ${hotel.title} located in the heart of ${hotel.destination.title}. This ${hotel.starRating}-star establishment offers comfortable accommodations and world-class service.`}
+              </p>
+              <p className="text-base text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
+                Situated in {hotel.destination.title}, {hotel.destination.province}, {hotel.title} is ideally positioned for guests wishing to explore the region's most celebrated attractions, natural wonders, and cultural landmarks. Whether you're embarking on a mountain trekking expedition, a heritage tour, or a family holiday across Pakistan, a comfortable base makes all the difference — and {hotel.title} delivers on every count.
+              </p>
+              <p className="text-base text-gray-600 dark:text-gray-400 leading-relaxed">
+                {hotel.destination.title} attracts thousands of domestic and international visitors every year, drawn by its unique blend of scenery, history, and locally produced food. Staying here gives you the opportunity to explore at your own pace, with the assurance of professional hospitality and all essential amenities within reach.
               </p>
               
               <div className="mt-12 grid grid-cols-2 md:grid-cols-3 gap-6">
@@ -172,12 +217,28 @@ export default async function HotelDetailPage({ params }: { params: { id: string
 
             <div className="bg-primary-600 p-8 rounded-[2.5rem] text-white">
                <h4 className="font-bold text-xl mb-4">Member Perk</h4>
-               <p className="text-sm text-white/80">
-                 Sign in to get exclusive discounts and free upgrades at this property.
+               <p className="text-sm text-white/80 leading-relaxed">
+                 Create a free PAKTourism account to unlock exclusive member-only discounts, priority booking, room upgrade requests, and personalised travel recommendations tailored to your interests and travel history.
                </p>
                <button className="mt-6 w-full bg-white text-primary-600 py-3 rounded-xl font-bold text-sm">
                  Join / Sign In
                </button>
+            </div>
+
+            <div className="glass p-8 rounded-[2.5rem] border-gray-100 dark:border-gray-800 space-y-4">
+              <h4 className="font-bold text-gray-900 dark:text-white">About {hotel.destination.title}</h4>
+              <p className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed">
+                {hotel.destination.title} is a celebrated destination in {hotel.destination.province}, offering a compelling mix of natural beauty, historical significance, and vibrant local culture. Travellers here can explore ancient landmarks, sample traditional cuisine, and experience the legendary warmth of Pakistani hospitality.
+              </p>
+              <p className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed">
+                Staying at {hotel.title} places you at the heart of {hotel.destination.title}, with easy access to the region's most popular attractions, bazaars, and scenic viewpoints.
+              </p>
+              <Link
+                href={`/destinations/${hotel.destinationId}`}
+                className="inline-block mt-1 text-xs font-bold text-primary-600 hover:underline"
+              >
+                Explore {hotel.destination.title} →
+              </Link>
             </div>
           </aside>
         </div>

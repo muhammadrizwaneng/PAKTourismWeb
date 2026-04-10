@@ -1,6 +1,7 @@
 import { prisma } from '@/lib/db';
 import Link from 'next/link';
-import { Plus, Edit2, Trash2, MapPin, Map as MapIcon } from 'lucide-react';
+import { Plus, Edit2, MapPin, Map as MapIcon } from 'lucide-react';
+import DeleteDestinationButton from './DeleteDestinationButton';
 
 async function getDestinations() {
   return await prisma.destination.findMany({
@@ -86,9 +87,7 @@ export default async function DestinationsAdminPage() {
                     <button className="p-2.5 rounded-lg text-gray-400 hover:text-primary-600 hover:bg-primary-50 dark:hover:bg-primary-900/10 transition-all">
                       <Edit2 size={16} />
                     </button>
-                    <button className="p-2.5 rounded-lg text-gray-400 hover:text-red-600 hover:bg-red-50 dark:hover:bg-red-900/10 transition-all">
-                      <Trash2 size={16} />
-                    </button>
+                    <DeleteDestinationButton id={dest.id} />
                   </div>
                 </td>
               </tr>
