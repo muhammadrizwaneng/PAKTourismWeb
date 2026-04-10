@@ -125,7 +125,6 @@ export default async function DestinationsPage({
 
       <div className="max-w-7xl mx-auto px-4 pt-10 pb-20">
         <div className="flex flex-col lg:flex-row gap-8">
-          {/* Filters Sidebar */}
           <aside className="w-full lg:w-64 space-y-6 shrink-0">
             <div className="glass p-6 rounded-3xl shadow-sm border-gray-100 dark:border-gray-800">
               <div className="flex items-center space-x-2 mb-6">
