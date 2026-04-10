@@ -1,14 +1,25 @@
 import Link from 'next/link';
 import { MapPin, ArrowRight, Camera, Package } from 'lucide-react';
-import { Destination, Taxonomy } from '@prisma/client';
 import { DEFAULT_TOURISM_IMAGE } from '@/lib/constants';
 import SafeImage from './SafeImage';
 import FavoriteButton from './FavoriteButton';
 
 interface DestinationCardProps {
-  destination: Destination & {
-    taxonomy: Taxonomy | null;
-    _count: { attractions: number; hotels: number; packages: number };
+  destination: {
+    id: number;
+    title: string;
+    description: string | null;
+    city: string | null;
+    province: string | null;
+    featuredImage: string | null;
+    isFeatured: boolean;
+    taxonomy: {
+      name: string;
+    } | null;
+    _count: {
+      attractions: number;
+      packages: number;
+    };
   };
 }
 

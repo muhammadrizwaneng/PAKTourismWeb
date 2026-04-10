@@ -17,6 +17,8 @@
     "db:seed:hospitals": "ts-node --compiler-options '{\"module\":\"CommonJS\"}' prisma/seed-hospitals.ts",
     "db:seed:kptourism": "ts-node --compiler-options '{\"module\":\"CommonJS\"}' prisma/seed-kptourism.ts",
     "db:seed:gb-tourism": "ts-node -T --compiler-options '{\"module\":\"CommonJS\",\"moduleResolution\":\"node\"}' scripts/import-gb-tourism.ts",
+    "db:sync:turso": "ts-node --compiler-options '{\"module\":\"CommonJS\"}' scripts/sync-local-to-turso.ts",
+    "db:migrate:turso": "ts-node --compiler-options '{\"module\":\"CommonJS\"}' scripts/migrate-turso.ts",
     "db:studio": "prisma studio",
     "postinstall": "prisma generate"
   },

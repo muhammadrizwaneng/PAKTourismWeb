@@ -29,7 +29,7 @@ export default async function GuideDetailPage({ params }: { params: { id: string
     url: `${SITE_URL}/guides/${guide.id}`,
     image: guide.photo || undefined,
     jobTitle: 'Tour Guide',
-    description: guide.bio || undefined,
+    description: guide.description || undefined,
     knowsLanguage: languages,
     ...(guide.phone ? { telephone: guide.phone } : {}),
     ...(guide.whatsapp ? { contactPoint: { '@type': 'ContactPoint', telephone: guide.whatsapp, contactType: 'WhatsApp' } } : {}),

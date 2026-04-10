@@ -28,7 +28,7 @@ async function main() {
     console.log("Testing upload for:", normalizedUrl);
     
     try {
-      const upUrl = await uploadRemoteImageSafe(normalizedUrl, 'pak-tourism/test', 'test-upload-sync');
+      const upUrl = await uploadRemoteImageSafe(normalizedUrl ?? '', 'pak-tourism/test', 'test-upload-sync');
       console.log("Upload resolved with URL:", upUrl);
     } catch(e) {
       console.error("Upload threw an error:", e);
