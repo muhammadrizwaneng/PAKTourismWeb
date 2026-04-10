@@ -74,7 +74,6 @@ export default async function DestinationsPage({
 
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-950">
-      {/* Hero */}
       <div className="relative pt-24 pb-20 overflow-hidden bg-gradient-to-br from-gray-900 via-primary-950 to-gray-900">
         <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(circle at 10% 50%, #22c55e 0%, transparent 50%), radial-gradient(circle at 90% 30%, #16a34a 0%, transparent 50%)' }} />
         <div className="max-w-7xl mx-auto px-4 relative z-10">
