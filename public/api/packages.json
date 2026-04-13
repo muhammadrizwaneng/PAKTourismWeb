@@ -18,5 +18,205 @@
     "destination": {
       "title": "Lahore"
     }
+  },
+  {
+    "id": 3,
+    "title": "K2 Base Camp Expedition",
+    "slug": "k2-base-camp-expedition",
+    "description": "A legendary 20-day trek to the base of the world's second-highest peak. This journey takes you through the heart of the Karakoram, witnessing the Baltoro Glacier and the breathtaking Concordia.",
+    "destinationId": 25,
+    "price": 250000,
+    "durationDays": 20,
+    "maxPeople": 12,
+    "featuredImage": "https://images.unsplash.com/photo-1591193680687-32dc1f91b65e?auto=format&fit=crop&q=80",
+    "gallery": "[]",
+    "includes": "[\"Certified Mountain Guide\", \"All Camping Gear\", \"Porters for Personal Gear\", \"Domestic Flights (Skardu-Islamabad)\", \"All Meals\"]",
+    "excludes": "[\"International Flights\", \"Personal Insurance\", \"Tips for Staff\"]",
+    "isFeatured": true,
+    "createdAt": "2026-04-10T10:14:29.000Z",
+    "updatedAt": "2026-04-10T10:14:29.000Z",
+    "destination": {
+      "title": "Skardu"
+    }
+  },
+  {
+    "id": 4,
+    "title": "Hunza Autumn Gold Tour",
+    "slug": "hunza-autumn-gold-tour",
+    "description": "Experience the magical transformation of Hunza Valley as the apricot and cherry trees turn brilliant shades of gold and orange. Includes visits to Karimabad, Altit and Baltit Forts, and Hussaini Suspension Bridge.",
+    "destinationId": 27,
+    "price": 65000,
+    "durationDays": 7,
+    "maxPeople": 10,
+    "featuredImage": "https://images.unsplash.com/photo-1589982840479-799480922878?auto=format&fit=crop&q=80",
+    "gallery": "[]",
+    "includes": "[\"Luxury Accommodation\", \"Private 4x4 Transport\", \"Entry Fees to Forts\", \"English Speaking Guide\", \"Kashmiri Tea Sessions\"]",
+    "excludes": "[\"Lunches\", \"Personal Shopping\", \"Boating Fees at Attabad Lake\"]",
+    "isFeatured": true,
+    "createdAt": "2026-04-10T10:14:29.000Z",
+    "updatedAt": "2026-04-10T10:14:29.000Z",
+    "destination": {
+      "title": "Gilgit"
+    }
+  },
+  {
+    "id": 5,
+    "title": "Swat Valley Discovery",
+    "slug": "swat-valley-discovery",
+    "description": "Explore the \"Switzerland of the East.\" This 4-day trip covers Malam Jabba, Kalam, and the Ushu Forest. Perfect for families and nature lovers seeking alpine meadows and rushing rivers.",
+    "destinationId": 16,
+    "price": 35000,
+    "durationDays": 4,
+    "maxPeople": 15,
+    "featuredImage": "https://images.unsplash.com/photo-1627894460591-7649ccf4544d?auto=format&fit=crop&q=80",
+    "gallery": "[]",
+    "includes": "[\"3-star Hotel Stay\", \"Dedicated Driver\", \"Traditional Pashtun BBQ Dinner\", \"Photography Support\"]",
+    "excludes": "[\"Skiing Equipment Rental\", \"Personal Snacks\"]",
+    "isFeatured": false,
+    "createdAt": "2026-04-10T10:14:29.000Z",
+    "updatedAt": "2026-04-10T10:14:29.000Z",
+    "destination": {
+      "title": "Swat Valley"
+    }
+  },
+  {
+    "id": 6,
+    "title": "Naran-Kaghan High Meadows",
+    "slug": "naran-kaghan-high-meadows",
+    "description": "A classic north-bound circuit featuring Lake Saif-ul-Malook, Lulusar Lake, and Babusar Top. Experience the lush green valleys and the crystal clear waters of the Kunhar River.",
+    "destinationId": 19,
+    "price": 48000,
+    "durationDays": 5,
+    "maxPeople": 12,
+    "featuredImage": "https://images.unsplash.com/photo-1549445100-3443e248b1aa?auto=format&fit=crop&q=80",
+    "gallery": "[]",
+    "includes": "[\"Transport by Jeep/Hiace\", \"Hotel Accommodation\", \"Breakfast\", \"Guided Hike to Ansoo Lake\"]",
+    "excludes": "[\"Dinner\", \"Horse Riding Fees\"]",
+    "isFeatured": true,
+    "createdAt": "2026-04-10T10:14:29.000Z",
+    "updatedAt": "2026-04-10T10:14:29.000Z",
+    "destination": {
+      "title": "Naran & Kaghan Valley"
+    }
+  },
+  {
+    "id": 7,
+    "title": "Lahore Food & Heritage Tour",
+    "slug": "lahore-food-heritage-tour",
+    "description": "Immerse yourself in the cultural capital of Pakistan. A 2-day deep dive into the Walled City (Androon Shehar), the Badshahi Mosque, and the legendary food streets of Gawalmandi.",
+    "destinationId": 2,
+    "price": 15000,
+    "durationDays": 2,
+    "maxPeople": 20,
+    "featuredImage": "https://images.unsplash.com/photo-1622659982722-fbc9246607bd?auto=format&fit=crop&q=80",
+    "gallery": "[]",
+    "includes": "[\"Walled City Heritage Guide\", \"Street Food Tasting Menu\", \"Badshahi Mosque Entry\", \"Rickshaw Rides\"]",
+    "excludes": "[\"Heavy Souvenir Shopping\", \"Hotel Stay\"]",
+    "isFeatured": false,
+    "createdAt": "2026-04-10T10:14:29.000Z",
+    "updatedAt": "2026-04-10T10:14:29.000Z",
+    "destination": {
+      "title": "Lahore"
+    }
+  },
+  {
+    "id": 8,
+    "title": "Murree Snow Weekend",
+    "slug": "murree-snow-weekend",
+    "description": "A perfect quick getaway from Islamabad. Enjoy the snowfall, the scenic chairlifts of Patriata, and the cozy vibes of the Mall Road. Ideal for a refreshing weekend break.",
+    "destinationId": 5,
+    "price": 22000,
+    "durationDays": 3,
+    "maxPeople": 8,
+    "featuredImage": "https://images.unsplash.com/photo-1596464716127-f2a82984de30?auto=format&fit=crop&q=80",
+    "gallery": "[]",
+    "includes": "[\"Cozy Guesthouse Stay\", \"Round-trip Transport from Islamabad\", \"Mall Road Walking Tour\", \"Chairman Lift Fees\"]",
+    "excludes": "[\"Ski/Snowboard Rental\", \"Extra Heaters in Room\"]",
+    "isFeatured": false,
+    "createdAt": "2026-04-10T10:14:29.000Z",
+    "updatedAt": "2026-04-10T10:14:29.000Z",
+    "destination": {
+      "title": "Murree"
+    }
+  },
+  {
+    "id": 9,
+    "title": "Karachi Mangrove & Beach Retreat",
+    "slug": "karachi-mangrove-beach-retreat",
+    "description": "Discover the hidden coastal gems of Karachi. Ride through the lush Mangroves of Kemari and spend a night at a luxury hut in Turtle Beach. Seafood dinner included.",
+    "destinationId": 10,
+    "price": 18500,
+    "durationDays": 2,
+    "maxPeople": 10,
+    "featuredImage": "https://images.unsplash.com/photo-1540339832862-4745aa61b936?auto=format&fit=crop&q=80",
+    "gallery": "[]",
+    "includes": "[\"Private Hut at Turtle Beach\", \"Yacht/Boat Ride through Mangroves\", \"Fresh Seafood Platter\", \"Security Support\"]",
+    "excludes": "[\"Personal Parasailing Fees\", \"Deep Sea Fishing Gear\"]",
+    "isFeatured": false,
+    "createdAt": "2026-04-10T10:14:29.000Z",
+    "updatedAt": "2026-04-10T10:14:29.000Z",
+    "destination": {
+      "title": "Karachi"
+    }
+  },
+  {
+    "id": 10,
+    "title": "Mohenjo-Daro Legacy Tour",
+    "slug": "mohenjo-daro-legacy-tour",
+    "description": "Step back 5,000 years into the Indus Valley Civilization. A 3-day expert-led tour of the Mohenjo-Daro ruins, the museum, and the nearby Kot Diji Fort. Essential for history buffs.",
+    "destinationId": 14,
+    "price": 42000,
+    "durationDays": 3,
+    "maxPeople": 10,
+    "featuredImage": "https://images.unsplash.com/photo-1596395819057-e37f55a8516d?auto=format&fit=crop&q=80",
+    "gallery": "[]",
+    "includes": "[\"Archeology Special Guide\", \"Airport Transfers (Sukkur/Larkana)\", \"Hotel in Sukkur\", \"Museum Entry Fees\"]",
+    "excludes": "[\"Personal Porter for Luggage\", \"Extra Beverages\"]",
+    "isFeatured": false,
+    "createdAt": "2026-04-10T10:14:29.000Z",
+    "updatedAt": "2026-04-10T10:14:29.000Z",
+    "destination": {
+      "title": "Mohenjo-Daro"
+    }
+  },
+  {
+    "id": 11,
+    "title": "Chitral Kalash Valley Discovery",
+    "slug": "chitral-kalash-valley-discovery",
+    "description": "Visit the unique Kalash people in their secluded valleys. Learn about their ancient polytheistic traditions, witness the local dancing, and enjoy the pristine beauty of the Hindu Kush.",
+    "destinationId": 17,
+    "price": 75000,
+    "durationDays": 6,
+    "maxPeople": 8,
+    "featuredImage": "https://images.unsplash.com/photo-1527845649931-e8d9101ae0ca?auto=format&fit=crop&q=80",
+    "gallery": "[]",
+    "includes": "[\"Traditional Kalash Homestay\", \"Private 4x4 Jeep\", \"Kalasha Cultural Workshop\", \"All Meals\", \"Donation to Community Fund\"]",
+    "excludes": "[\"Personal Souvenirs (Kalash Hats/Robes)\", \"Alcoholic Beverages\"]",
+    "isFeatured": true,
+    "createdAt": "2026-04-10T10:14:29.000Z",
+    "updatedAt": "2026-04-10T10:14:29.000Z",
+    "destination": {
+      "title": "Chitral"
+    }
+  },
+  {
+    "id": 12,
+    "title": "Islamabad Urban Insights",
+    "slug": "islamabad-urban-insights",
+    "description": "A modern look at the capital. Hike Trial 3 or 5, visit the Faisal Mosque, and enjoy dinner at Monal with panoramic views of the city. Perfect for transit travelers.",
+    "destinationId": 4,
+    "price": 12000,
+    "durationDays": 2,
+    "maxPeople": 15,
+    "featuredImage": "https://images.unsplash.com/photo-1533154101036-70228d45140e?auto=format&fit=crop&q=80",
+    "gallery": "[]",
+    "includes": "[\"Hiking Guide\", \"Faisal Mosque Access\", \"Monal Dinner Reservation (Fixed Menu)\", \"City Tour Transport\"]",
+    "excludes": "[\"Hotel Stay\", \"Private Shopping Transfers\"]",
+    "isFeatured": false,
+    "createdAt": "2026-04-10T10:14:29.000Z",
+    "updatedAt": "2026-04-10T10:14:29.000Z",
+    "destination": {
+      "title": "Islamabad"
+    }
   }
 ]

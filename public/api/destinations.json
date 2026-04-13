@@ -9,17 +9,17 @@
     "bestTime": "October to March",
     "latitude": 31.5204,
     "longitude": 74.3587,
-    "featuredImage": "https://images.unsplash.com/photo-1599982890963-3aabd60064d2?w=800",
+    "featuredImage": "https://res.cloudinary.com/dnrqj5cgh/image/upload/v1775826076/pak-tourism/zxka4otdspgicuvraqji.png",
     "galleryImages": "[]",
     "galleryVideos": null,
     "taxonomyId": 3,
     "isFeatured": true,
     "createdAt": "2026-03-17T07:30:05.118Z",
-    "updatedAt": "2026-03-28T17:44:40.611Z",
+    "updatedAt": "2026-04-10T13:01:17.585Z",
     "_count": {
       "attractions": 6,
       "hotels": 4,
-      "packages": 1
+      "packages": 2
     }
   },
   {
@@ -42,7 +42,7 @@
     "_count": {
       "attractions": 3,
       "hotels": 3,
-      "packages": 0
+      "packages": 1
     }
   },
   {
@@ -65,7 +65,7 @@
     "_count": {
       "attractions": 1,
       "hotels": 2,
-      "packages": 0
+      "packages": 1
     }
   },
   {
@@ -180,7 +180,7 @@
     "_count": {
       "attractions": 2,
       "hotels": 3,
-      "packages": 0
+      "packages": 1
     }
   },
   {
@@ -272,7 +272,7 @@
     "_count": {
       "attractions": 0,
       "hotels": 0,
-      "packages": 0
+      "packages": 1
     }
   },
   {
@@ -318,7 +318,7 @@
     "_count": {
       "attractions": 2,
       "hotels": 2,
-      "packages": 0
+      "packages": 1
     }
   },
   {
@@ -341,7 +341,7 @@
     "_count": {
       "attractions": 2,
       "hotels": 0,
-      "packages": 0
+      "packages": 1
     }
   },
   {
@@ -387,7 +387,7 @@
     "_count": {
       "attractions": 1,
       "hotels": 2,
-      "packages": 0
+      "packages": 1
     }
   },
   {
@@ -525,7 +525,7 @@
     "_count": {
       "attractions": 2,
       "hotels": 2,
-      "packages": 0
+      "packages": 1
     }
   },
   {
@@ -548,7 +548,7 @@
     "_count": {
       "attractions": 10,
       "hotels": 0,
-      "packages": 0
+      "packages": 1
     }
   },
   {
