@@ -4,6 +4,19 @@ import { apiSuccess, apiError, slugify } from '@/lib/utils';
 import { CreatePackageSchema } from '@/lib/validations';
 import { syncDataToJson } from '@/lib/sync/data-sync';
 
+export async function GET(_req: NextRequest, { params }: { params: { id: string } }) {
+  try {
+    const pkg = await prisma.tourPackage.findUnique({
+      where: { id: parseInt(params.id) },
+      include: { destination: { select: { id: true, title: true } } },
+    });
+    if (!pkg) return NextResponse.json(apiError('Package not found'), { status: 404 });
+    return NextResponse.json(apiSuccess(pkg));
+  } catch (error: any) {
+    return NextResponse.json(apiError(error.message), { status: 500 });
+  }
+}
+
 export async function PUT(req: NextRequest, { params }: { params: { id: string } }) {
   try {
     const id = parseInt(params.id);

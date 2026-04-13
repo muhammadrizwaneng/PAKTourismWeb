@@ -5,6 +5,16 @@ import { CreateHotelSchema } from '@/lib/validations';
 import { slugify } from '@/lib/utils';
 import { syncDataToJson } from '@/lib/sync/data-sync';
 
+export async function GET(_req: NextRequest, { params }: { params: { id: string } }) {
+  try {
+    const hotel = await prisma.hotel.findUnique({ where: { id: parseInt(params.id) } });
+    if (!hotel) return NextResponse.json(apiError('Hotel not found'), { status: 404 });
+    return NextResponse.json(apiSuccess(hotel));
+  } catch (error: any) {
+    return NextResponse.json(apiError(error.message), { status: 500 });
+  }
+}
+
 export async function PUT(req: NextRequest, { params }: { params: { id: string } }) {
   try {
     const id = parseInt(params.id);
