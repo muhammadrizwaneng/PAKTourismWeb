@@ -30,16 +30,16 @@
       "description": "The capital city of Pakistan, known for its greenery and modern infrastructure.",
       "city": "Islamabad",
       "province": "Punjab",
-      "bestTime": null,
+      "bestTime": "",
       "latitude": 33.6844,
       "longitude": 73.0479,
-      "featuredImage": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80",
-      "galleryImages": null,
+      "featuredImage": "https://res.cloudinary.com/dnrqj5cgh/image/upload/v1776075704/pak-tourism/e1mnbx5wzfwm89kin863.jpg",
+      "galleryImages": "[]",
       "galleryVideos": null,
       "taxonomyId": 8,
       "isFeatured": true,
       "createdAt": "2026-03-17T16:23:57.457Z",
-      "updatedAt": "2026-03-28T17:44:40.630Z",
+      "updatedAt": "2026-04-13T10:21:54.751Z",
       "_count": {
         "attractions": 3,
         "hotels": 3,
@@ -12226,5 +12226,5 @@
       "updatedAt": "2026-03-17T07:30:05.121Z"
     }
   ],
-  "timestamp": "2026-04-10T13:01:17.608Z"
+  "timestamp": "2026-04-13T10:21:54.775Z"
 }

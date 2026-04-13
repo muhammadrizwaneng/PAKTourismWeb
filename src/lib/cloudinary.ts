@@ -9,7 +9,7 @@ cloudinary.config({
 export const uploadImage = async (fileUri: string, folder: string = 'pak-tourism') => {
   try {
     const result = await cloudinary.uploader.upload(fileUri, {
-      folder: folder,
+      folder,
       resource_type: 'auto',
     });
     return result.secure_url;
