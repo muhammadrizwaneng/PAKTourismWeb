@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { revalidatePath } from 'next/cache';
 import { prisma } from '@/lib/db';
 import { UpdateDestinationSchema } from '@/lib/validations';
 import { apiSuccess, apiError, slugify, toJson } from '@/lib/utils';
@@ -41,6 +42,12 @@ export async function PUT(
     });
 
     await syncDataToJson();
+
+    // Invalidate cached pages so Vercel serves fresh data
+    revalidatePath('/');
+    revalidatePath('/destinations');
+    revalidatePath(`/destinations/${id}`);
+
     return NextResponse.json(apiSuccess(destination));
   } catch (error: any) {
     if (error.name === 'ZodError') {
@@ -59,6 +66,10 @@ export async function DELETE(
     const id = parseInt(params.id);
     await prisma.destination.delete({ where: { id } });
     await syncDataToJson();
+
+    revalidatePath('/');
+    revalidatePath('/destinations');
+
     return NextResponse.json(apiSuccess({ message: 'Deleted successfully' }));
   } catch (error: any) {
     return NextResponse.json(apiError('Failed to delete destination'), { status: 500 });

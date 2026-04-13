@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { revalidatePath } from 'next/cache';
 import { prisma } from '@/lib/db';
 import { CreateDestinationSchema, UpdateDestinationSchema } from '@/lib/validations';
 import { apiSuccess, apiError, slugify, toJson } from '@/lib/utils';
@@ -33,6 +34,10 @@ export async function POST(req: NextRequest) {
     });
 
     await syncDataToJson();
+
+    revalidatePath('/');
+    revalidatePath('/destinations');
+
     return NextResponse.json(apiSuccess(destination));
   } catch (error: any) {
     if (error.name === 'ZodError') {
