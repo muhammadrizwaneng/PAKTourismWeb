@@ -7,9 +7,10 @@ import {
 import { DEFAULT_TOURISM_IMAGE } from '@/lib/constants';
 import SafeImage from '@/components/SafeImage';
 import JsonLd from '@/components/JsonLd';
+import HeroSlideshow from '@/components/HeroSlideshow';
 
 async function getHomeData() {
-  const [featuredDestinations, featuredPackages, allAttractions] = await Promise.all([
+  const [featuredDestinations, featuredPackages, allAttractions, heroBanners] = await Promise.all([
     prisma.destination.findMany({
       where: { isFeatured: true },
       take: 6,
@@ -32,6 +33,10 @@ async function getHomeData() {
       orderBy: { createdAt: 'asc' },
       take: 50,
     }),
+    prisma.banner.findMany({
+      where: { isActive: true },
+      orderBy: { sortOrder: 'asc' },
+    }).catch(() => []),
   ]);
 
   // Pick the 6 richest: most gallery images (longer JSON string = more photos)
@@ -40,11 +45,11 @@ async function getHomeData() {
     .sort((a: AttractionItem, b: AttractionItem) => (b.gallery?.length ?? 0) - (a.gallery?.length ?? 0))
     .slice(0, 6);
 
-  return { featuredDestinations, featuredPackages, popularAttractions };
+  return { featuredDestinations, featuredPackages, popularAttractions, heroBanners };
 }
 
 export default async function HomePage() {
-  const { featuredDestinations, featuredPackages, popularAttractions } = await getHomeData();
+  const { featuredDestinations, featuredPackages, popularAttractions, heroBanners } = await getHomeData();
 
   const stats = [
     { value: '50+', label: 'Destinations', icon: MapPin },
@@ -117,20 +122,9 @@ export default async function HomePage() {
       <JsonLd data={[destinationsSchema, attractionsSchema]} />
 
       {/* ═══════════════════════ HERO ═══════════════════════ */}
-      <section className="relative h-screen min-h-[600px] flex items-end overflow-hidden">
-        <video
-          autoPlay loop muted playsInline
-          className="absolute inset-0 w-full h-full object-cover"
-        >
-          <source src="/hero_video.mp4" type="video/mp4" />
-        </video>
-        {/* Gradient overlay */}
-        <div className="absolute inset-0 hero-overlay" />
-        {/* Top fade for navbar readability */}
-        <div className="absolute top-0 inset-x-0 h-32 bg-gradient-to-b from-black/40 to-transparent" />
-
+      <HeroSlideshow banners={heroBanners}>
         {/* Content anchored to bottom */}
-        <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16 md:pb-24">
+        <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16 md:pb-24">
           {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-5 py-2 mb-6">
             <span className="w-2 h-2 bg-primary-400 rounded-full animate-pulse" />
@@ -182,7 +176,7 @@ export default async function HomePage() {
             ))}
           </div>
         </div>
-      </section>
+      </HeroSlideshow>
 
       {/* ═══════════════════════ STATS ═══════════════════════ */}
       <section className="bg-white dark:bg-gray-900 border-b border-gray-100 dark:border-gray-800">

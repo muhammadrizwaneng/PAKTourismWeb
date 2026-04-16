@@ -195,6 +195,7 @@ model Banner {
   title     String
   subtitle  String?
   imageUrl  String
+  videoUrl  String?  // Cloudinary video URL for video banners
   linkUrl   String?
   isActive  Boolean  @default(true)
   sortOrder Int      @default(0)

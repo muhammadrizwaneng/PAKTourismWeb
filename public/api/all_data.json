@@ -12215,16 +12215,29 @@
   ],
   "banners": [
     {
-      "id": 1,
-      "title": "Discover the Beauty of Pakistan",
-      "subtitle": "Mountains, History, Culture",
-      "imageUrl": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600",
-      "linkUrl": "/destinations",
+      "id": 2,
+      "title": "Discover the Mountains of Pakistan",
+      "subtitle": "Pakistan's most breathtaking valleys await you",
+      "imageUrl": "https://res.cloudinary.com/dnrqj5cgh/image/upload/v1776340333/pak-tourism/w4p83h9mzvjfkwxevtxf.jpg",
+      "videoUrl": "https://res.cloudinary.com/dnrqj5cgh/video/upload/v1776340479/hero_video_uahb3b.mp4",
+      "linkUrl": null,
       "isActive": true,
       "sortOrder": 1,
-      "createdAt": "2026-03-17T07:30:05.121Z",
-      "updatedAt": "2026-03-17T07:30:05.121Z"
+      "createdAt": "2026-04-16T11:59:39.855Z",
+      "updatedAt": "2026-04-16T11:59:39.855Z"
+    },
+    {
+      "id": 3,
+      "title": "River",
+      "subtitle": "River",
+      "imageUrl": "https://res.cloudinary.com/dnrqj5cgh/image/upload/v1776340867/pak-tourism/yhvoefqtzobdnnwp0vfn.jpg",
+      "videoUrl": null,
+      "linkUrl": null,
+      "isActive": true,
+      "sortOrder": 1,
+      "createdAt": "2026-04-16T12:01:09.312Z",
+      "updatedAt": "2026-04-16T12:01:09.312Z"
     }
   ],
-  "timestamp": "2026-04-13T10:21:54.775Z"
+  "timestamp": "2026-04-16T12:01:09.330Z"
 }

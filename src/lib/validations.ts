@@ -113,6 +113,7 @@ export const CreateBannerSchema = z.object({
   title: z.string().min(2),
   subtitle: z.string().optional(),
   imageUrl: z.string().url(),
+  videoUrl: z.string().url().optional().or(z.literal('')),
   linkUrl: z.string().url().optional().or(z.literal('')),
   isActive: z.boolean().optional(),
   sortOrder: z.number().int().optional(),
