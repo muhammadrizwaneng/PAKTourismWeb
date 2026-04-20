@@ -11,6 +11,7 @@ export const uploadImage = async (fileUri: string, folder: string = 'pak-tourism
     const result = await cloudinary.uploader.upload(fileUri, {
       folder,
       resource_type: 'auto',
+      transformation: [{ width: 800, height: 600, crop: 'fill', gravity: 'auto' }],
     });
     return result.secure_url;
   } catch (error) {

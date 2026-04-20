@@ -6,7 +6,7 @@ import Cropper from 'react-easy-crop';
 import type { Area } from 'react-easy-crop';
 
 const CROP_WIDTH = 800;
-const CROP_HEIGHT = 500;
+const CROP_HEIGHT = 600;
 const ASPECT = CROP_WIDTH / CROP_HEIGHT;
 
 async function getCroppedBlob(imageSrc: string, pixelCrop: Area): Promise<Blob> {
