@@ -28,6 +28,7 @@ async function main() {
     { id: 6, name: 'Religious', type: 'attraction' },
     { id: 7, name: 'Lake', type: 'attraction' },
     { id: 8, name: 'Urban/City', type: 'destination' },
+    { id: 9, name: 'Entertainment & Fun', type: 'attraction' },
   ];
 
   for (const tax of taxonomies) {
