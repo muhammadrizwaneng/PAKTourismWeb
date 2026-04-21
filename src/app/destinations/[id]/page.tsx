@@ -28,8 +28,8 @@ async function getDestination(id: string) {
     where: { id: parseInt(id) },
     include: {
       taxonomy: true,
-      attractions: { take: 6 },
-      hotels: { take: 6 },
+      attractions: true,
+      hotels:true,
       packages: true,
       pointsOfInterest: true,
       reviews: { orderBy: { createdAt: 'desc' }, take: 5 },
@@ -218,7 +218,6 @@ export default async function DestinationDetailPage({ params }: { params: { id: 
                 <h2 className="text-3xl font-black text-gray-900 dark:text-white mb-8 tracking-tight">
                   Must-Visit Attractions
                 </h2>
-
                 {/* Grid cards */}
                 {destination.attractions.length > 0 && (
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-6">
