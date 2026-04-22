@@ -188,7 +188,7 @@ export default async function DestinationDetailPage({ params }: { params: { id: 
             </section>
 
             {/* Travel guide */}
-            <section className="bg-gray-50 dark:bg-gray-900 rounded-3xl p-7 md:p-10 border border-gray-100 dark:border-gray-800 space-y-5">
+            {/* <section className="bg-gray-50 dark:bg-gray-900 rounded-3xl p-7 md:p-10 border border-gray-100 dark:border-gray-800 space-y-5">
               <p className="section-label mb-1">Visitor Guide</p>
               <h2 className="text-2xl font-black text-gray-900 dark:text-white">
                 Travelling to {destination.title}
@@ -211,7 +211,7 @@ export default async function DestinationDetailPage({ params }: { params: { id: 
               <p className="text-gray-600 dark:text-gray-400 text-base leading-relaxed">
                 Mobile connectivity in {destination.title} is generally good for Jazz, Telenor, and Zong subscribers within the main urban area. If you are travelling on an international SIM, consider purchasing a local prepaid SIM at the airport or at any registered network outlet in the city — the cost is minimal and the coverage gain is substantial. For travellers moving between {destination.title} and remote areas of {destination.province}, downloading offline maps via Google Maps or Maps.me before departing urban coverage zones is strongly recommended.
               </p>
-            </section>
+            </section> */}
             {(destination.attractions.length > 0 || hospitals.length > 0 || petrolPumps.length > 0) && (
               <section>
                 <p className="section-label mb-2">Explore</p>

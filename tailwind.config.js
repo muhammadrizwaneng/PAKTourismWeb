@@ -9,21 +9,25 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          50:  '#f0fdf4',
-          100: '#dcfce7',
-          200: '#bbf7d0',
-          300: '#86efac',
-          400: '#4ade80',
-          500: '#22c55e',
-          600: '#16a34a',
-          700: '#15803d',
-          800: '#166534',
-          900: '#14532d',
-          950: '#052e16',
+          50:  '#e6f6f0',
+          100: '#ccece1',
+          200: '#99d9c4',
+          300: '#66c6a6',
+          400: '#33b389',
+          500: '#00aa6c', // TripAdvisor Green
+          600: '#009961',
+          700: '#008856',
+          800: '#00774b',
+          900: '#006641',
+          950: '#00442b',
         },
         emerald: {
           DEFAULT: '#059669',
         },
+      },
+      boxShadow: {
+        'ta': '0 4px 12px rgba(0,0,0,0.08), 0 0 1px rgba(0,0,0,0.1)',
+        'ta-hover': '0 12px 24px rgba(0,0,0,0.12), 0 0 1px rgba(0,0,0,0.1)',
       },
       fontFamily: {
         sans: ['var(--font-inter)', 'system-ui', 'sans-serif'],
