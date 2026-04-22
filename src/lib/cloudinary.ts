@@ -53,4 +53,30 @@ export const uploadRemoteImageSafe = async (
   }
 };
 
+/**
+ * Extract the Cloudinary public_id from a secure URL.
+ * e.g. https://res.cloudinary.com/demo/image/upload/v123/pak-tourism/photo.jpg
+ * → pak-tourism/photo
+ */
+export const getPublicIdFromUrl = (url: string): string | null => {
+  try {
+    const uploadIndex = url.indexOf('/upload/');
+    if (uploadIndex === -1) return null;
+    let path = url.slice(uploadIndex + '/upload/'.length);
+    // Strip optional version segment (v<digits>/)
+    path = path.replace(/^v\d+\//, '');
+    // Strip file extension
+    path = path.replace(/\.[^/.]+$/, '');
+    return path;
+  } catch {
+    return null;
+  }
+};
+
+export const deleteImage = async (url: string): Promise<void> => {
+  const publicId = getPublicIdFromUrl(url);
+  if (!publicId) throw new Error('Could not extract public_id from URL');
+  await cloudinary.uploader.destroy(publicId);
+};
+
 export default cloudinary;

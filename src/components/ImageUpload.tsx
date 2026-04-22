@@ -129,7 +129,16 @@ export default function ImageUpload({
     setCropSrc(null);
   };
 
-  const removeImage = (url: string) => {
+  const removeImage = async (url: string) => {
+    // Fire-and-forget: delete from Cloudinary in the background
+    if (url && url.includes('res.cloudinary.com')) {
+      fetch('/api/admin/delete-image', {
+        method: 'DELETE',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ url }),
+      }).catch((err) => console.error('Failed to delete image from Cloudinary:', err));
+    }
+
     if (multiple && Array.isArray(value)) {
       onChange(value.filter((item) => item !== url));
     } else {
