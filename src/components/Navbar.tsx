@@ -109,7 +109,7 @@ const Navbar = () => {
               </Link>
 
               <a
-                href="tel:+923000000000"
+                href="tel:+923000795296"
                 className={`hidden lg:flex items-center gap-2 text-sm font-semibold transition-colors duration-300 ${solid ? 'text-gray-600 dark:text-gray-300 hover:text-primary-600' : 'text-white/80 hover:text-white'}`}
               >
                 <Phone size={15} />
