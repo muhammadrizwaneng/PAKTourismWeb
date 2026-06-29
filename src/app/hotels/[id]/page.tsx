@@ -218,7 +218,7 @@ export default async function HotelDetailPage({ params }: { params: { id: string
             <div className="bg-primary-600 p-8 rounded-[2.5rem] text-white">
                <h4 className="font-bold text-xl mb-4">Member Perk</h4>
                <p className="text-sm text-white/80 leading-relaxed">
-                 Create a free PAKTourism account to unlock exclusive member-only discounts, priority booking, room upgrade requests, and personalised travel recommendations tailored to your interests and travel history.
+                 Create a free PAKEZY account to unlock exclusive member-only discounts, priority booking, room upgrade requests, and personalised travel recommendations tailored to your interests and travel history.
                </p>
                <button className="mt-6 w-full bg-white text-primary-600 py-3 rounded-xl font-bold text-sm">
                  Join / Sign In

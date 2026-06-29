@@ -47,7 +47,7 @@ export default async function PackageDetailPage({ params }: { params: { id: stri
     },
     provider: {
       '@type': 'TravelAgency',
-      name: 'PAKTourism',
+      name: 'PAKEZY',
       url: SITE_URL,
     },
     duration: `P${pkg.durationDays}D`,
@@ -116,10 +116,10 @@ export default async function PackageDetailPage({ params }: { params: { id: stri
             <section className="space-y-5">
               <h2 className="text-2xl font-extrabold text-gray-900 dark:text-white">Why Choose This Package?</h2>
               <p className="text-base text-gray-600 dark:text-gray-400 leading-relaxed">
-                This package has been carefully crafted by PAKTourism's local travel experts who have personally explored every aspect of the itinerary. Every route, accommodation, activity, and transfer has been selected to maximise your comfort and give you the most rewarding experience possible in {pkg.destination.title}. We work directly with vetted local operators to keep prices fair and quality consistently high.
+                This package has been carefully crafted by PAKEZY's local travel experts who have personally explored every aspect of the itinerary. Every route, accommodation, activity, and transfer has been selected to maximise your comfort and give you the most rewarding experience possible in {pkg.destination.title}. We work directly with vetted local operators to keep prices fair and quality consistently high.
               </p>
               <p className="text-base text-gray-600 dark:text-gray-400 leading-relaxed">
-                Pakistan's tourism landscape is diverse and rapidly growing. By booking through PAKTourism, you benefit from our deep network of verified local guides, trusted guesthouses and hotels, and experienced drivers who know the roads and terrain intimately. We handle all the logistics so you can focus entirely on the experience.
+                Pakistan's tourism landscape is diverse and rapidly growing. By booking through PAKEZY, you benefit from our deep network of verified local guides, trusted guesthouses and hotels, and experienced drivers who know the roads and terrain intimately. We handle all the logistics so you can focus entirely on the experience.
               </p>
               <p className="text-base text-gray-600 dark:text-gray-400 leading-relaxed">
                 Our group sizes are intentionally kept small — a maximum of {pkg.maxPeople || 10} persons — to ensure personalised attention, a more intimate atmosphere, and minimal environmental impact on the destinations we visit. We believe responsible tourism benefits local communities and preserves Pakistan's natural and cultural heritage for future generations.
@@ -167,7 +167,7 @@ export default async function PackageDetailPage({ params }: { params: { id: stri
                    <h4 className="font-bold text-gray-900 dark:text-white text-sm">Secure Booking Guarantee</h4>
                  </div>
                  <p className="text-xs text-gray-500 leading-relaxed">
-                   Your booking is processed securely through PAKTourism's verified payment system. Once submitted, our team will confirm your reservation within 24 hours and send full trip details including meeting point, packing list, and emergency contacts. All payments are protected and refundable as per our cancellation policy.
+                   Your booking is processed securely through PAKEZY's verified payment system. Once submitted, our team will confirm your reservation within 24 hours and send full trip details including meeting point, packing list, and emergency contacts. All payments are protected and refundable as per our cancellation policy.
                  </p>
               </div>
             </div>

@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import { Phone, AlertTriangle, Heart, Shield, Flame, Ambulance, Car } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Emergency Contacts Pakistan — PakTourism',
+  title: 'Emergency Contacts Pakistan — PAKEZY',
   description: 'Important emergency numbers for travelers in Pakistan. Police, Ambulance, Fire, PTDC and more.',
 };
 

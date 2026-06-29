@@ -36,7 +36,7 @@ export default async function GuideDetailPage({ params }: { params: { id: string
     ...(guide.rating ? { aggregateRating: { '@type': 'AggregateRating', ratingValue: guide.rating, bestRating: 5, reviewCount: 12 } } : {}),
     worksFor: {
       '@type': 'TravelAgency',
-      name: 'PAKTourism',
+      name: 'PAKEZY',
       url: SITE_URL,
     },
   };
@@ -87,11 +87,11 @@ export default async function GuideDetailPage({ params }: { params: { id: string
               <div className="space-y-4">
                 {guide.whatsapp ? (
                   <a 
-                    href={`https://wa.me/${guide.whatsapp.replace(/\+/g, '').replace(/ /g, '')}?text=${encodeURIComponent(`Hello! I discovered your profile on PakTourism — a growing tourism platform that connects travelers with local guides across Pakistan.
+                    href={`https://wa.me/${guide.whatsapp.replace(/\+/g, '').replace(/ /g, '')}?text=${encodeURIComponent(`Hello! I discovered your profile on PAKEZY — a growing tourism platform that connects travelers with local guides across Pakistan.
 
 I’m planning a trip and would love to know more about your services, packages, and availability.
 
-You can also explore PakTourism here:
+You can also explore PAKEZY here:
 https://pktourism.infinityfreeapp.com/
 
 Looking forward to hearing from you soon. Thank you!`)}`}
@@ -163,7 +163,7 @@ Looking forward to hearing from you soon. Thank you!`)}`}
                 Safety is one of the most important reasons to choose a local guide when travelling in Pakistan's mountain regions. Terrain, weather, and road conditions can change rapidly in high-altitude areas such as Gilgit-Baltistan, Khyber-Pakhtunkhwa, and Azad Kashmir. An experienced guide knows the risks, the safe routes, and how to respond quickly in an emergency — ensuring that you and your group remain safe throughout the journey.
               </p>
               <p className="text-base text-gray-600 dark:text-gray-400 leading-relaxed">
-                Choosing a local guide also has a meaningful economic impact. Your booking directly supports a local professional and their family, contributing to the sustainable development of tourism in Pakistan's communities. PAKTourism verifies every guide on our platform to ensure they are qualified, trained in first aid and safety protocols, and committed to providing the highest standard of service to international and domestic travelers.
+                Choosing a local guide also has a meaningful economic impact. Your booking directly supports a local professional and their family, contributing to the sustainable development of tourism in Pakistan's communities. PAKEZY verifies every guide on our platform to ensure they are qualified, trained in first aid and safety protocols, and committed to providing the highest standard of service to international and domestic travelers.
               </p>
             </section>
 

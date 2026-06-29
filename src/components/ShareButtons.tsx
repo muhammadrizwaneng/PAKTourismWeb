@@ -14,7 +14,7 @@ export default function ShareButtons({ title, url }: ShareButtonProps) {
 
   const shareUrl = url ?? (typeof window !== 'undefined' ? window.location.href : '');
   const encodedUrl = encodeURIComponent(shareUrl);
-  const encodedTitle = encodeURIComponent(`${title} — PakTourism`);
+  const encodedTitle = encodeURIComponent(`${title} — PAKEZY`);
 
   const handleCopy = async () => {
     try {

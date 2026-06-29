@@ -55,14 +55,14 @@ const Footer = () => {
           <div className="space-y-5 sm:col-span-2 lg:col-span-1">
             <Link href="/" className="flex items-center gap-3 group w-fit">
               <div className="relative w-10 h-10 rounded-xl overflow-hidden ring-2 ring-primary-500/20">
-                <Image src="/logo.png" alt="PakTourism" fill className="object-cover" sizes="40px" />
+                <Image src="/icon.png" alt="PAKEZY" fill className="object-cover" sizes="40px" />
               </div>
               <span className="text-xl font-black tracking-tighter text-white">
-                PAK<span className="text-primary-500">Tourism</span>
+                PAKE<span className="text-primary-500">ZY</span>
               </span>
             </Link>
             <p className="text-sm leading-relaxed text-gray-500 max-w-xs">
-              Discover the hidden gems of Pakistan — from the peaks of Karakoram to the historic streets of Lahore, we guide you through it all.
+              Smart Travel. Global Connection. Discover the hidden gems of Pakistan — from the peaks of Karakoram to the historic streets of Lahore.
             </p>
             <div className="flex items-center gap-4">
               <Link href="#" aria-label="Facebook" className="w-9 h-9 rounded-xl bg-gray-900 hover:bg-primary-600 flex items-center justify-center text-gray-400 hover:text-white transition-all">
@@ -131,7 +131,7 @@ const Footer = () => {
                 <div className="w-8 h-8 bg-gray-900 rounded-lg flex items-center justify-center text-primary-500 shrink-0">
                   <Mail size={15} />
                 </div>
-                <a href="mailto:info@paktourism.com" className="text-sm hover:text-primary-400 transition-colors">info@paktourism.com</a>
+                <a href="mailto:info@pakezy.com" className="text-sm hover:text-primary-400 transition-colors">info@pakezy.com</a>
               </li>
             </ul>
           </div>
@@ -140,7 +140,7 @@ const Footer = () => {
 
         {/* Bottom bar */}
         <div className="mt-14 pt-6 border-t border-gray-800 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-gray-600">
-          <p>© {currentYear} PAKTourism. All rights reserved.</p>
+          <p>© {currentYear} PAKEZY. All rights reserved.</p>
           <div className="flex gap-6">
             <Link href="#" className="hover:text-gray-400 transition-colors">Privacy Policy</Link>
             <Link href="#" className="hover:text-gray-400 transition-colors">Terms of Service</Link>

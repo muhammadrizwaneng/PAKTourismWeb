@@ -34,11 +34,11 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
         <div className="p-8">
           <Link href="/" className="flex items-center space-x-3 mb-10 group">
             <div className="w-10 h-10 rounded-xl overflow-hidden bg-primary-600 shadow-lg shadow-primary-500/20">
-              <img src="/logo.png" alt="Logo" className="w-full h-full object-cover" />
+              <img src="/icon.png" alt="PAKEZY" className="w-full h-full object-cover" />
             </div>
             <div className="flex flex-col">
-              <span className="text-xl font-black text-gray-900 dark:text-white leading-none tracking-tight">PAK</span>
-              <span className="text-primary-600 font-extralight text-sm tracking-widest uppercase">Tourism</span>
+              <span className="text-xl font-black text-gray-900 dark:text-white leading-none tracking-tight">PAKE</span>
+              <span className="text-primary-600 font-extralight text-sm tracking-widest uppercase">ZY</span>
             </div>
           </Link>
           

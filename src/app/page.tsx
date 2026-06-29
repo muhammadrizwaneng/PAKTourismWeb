@@ -62,7 +62,7 @@ export default async function HomePage() {
     {
       icon: HeartHandshake,
       title: 'Trusted Guides',
-      desc: 'Every guide on PAKTourism is personally vetted, background-checked, and holds formal local training. Our guides know the terrain, culture, and hidden gems — ensuring every journey is safe, enriching, and truly authentic.',
+      desc: 'Every guide on PAKEZY is personally vetted, background-checked, and holds formal local training. Our guides know the terrain, culture, and hidden gems — ensuring every journey is safe, enriching, and truly authentic.',
     },
     {
       icon: Clock,
@@ -395,10 +395,10 @@ export default async function HomePage() {
       <section className="py-20 md:py-28 bg-white dark:bg-gray-950">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-14">
-            <p className="section-label mb-2">Why PakTourism</p>
+            <p className="section-label mb-2">Why PAKEZY</p>
             <h2 className="section-title">Travel smarter, not harder</h2>
             <p className="mt-4 text-gray-500 dark:text-gray-400 text-base max-w-2xl mx-auto leading-relaxed">
-              Planning a trip to Pakistan should be exciting, not stressful. That's why thousands of travelers choose PAKTourism every year. We take care of every detail — from verified local guides and handpicked accommodations to real-time support — so you can focus entirely on the experience.
+              Planning a trip to Pakistan should be exciting, not stressful. That's why thousands of travelers choose PAKEZY every year. We take care of every detail — from verified local guides and handpicked accommodations to real-time support — so you can focus entirely on the experience.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -559,7 +559,7 @@ export default async function HomePage() {
                 Beyond its natural wonders, Pakistan holds a treasure trove of cultural heritage. The ancient city of Taxila is an UNESCO World Heritage Site, while the Lahore Fort and Shalimar Gardens represent the pinnacle of Mughal architectural achievement. The bustling bazaars of Peshawar and the colonial avenues of Karachi tell the story of a nation shaped by centuries of trade, art, and conquest.
               </p>
               <p className="text-gray-600 dark:text-gray-300 text-base leading-relaxed">
-                Pakistani hospitality is legendary — locals are renowned for welcoming strangers with warmth, generosity, and genuine pride in sharing their homeland. Whether you're a solo backpacker, a family on holiday, or a group of adventure seekers, Pakistan offers experiences that will stay with you for a lifetime. Start your journey today with PAKTourism — your trusted guide to the very best of this remarkable country.
+                Pakistani hospitality is legendary — locals are renowned for welcoming strangers with warmth, generosity, and genuine pride in sharing their homeland. Whether you're a solo backpacker, a family on holiday, or a group of adventure seekers, Pakistan offers experiences that will stay with you for a lifetime. Start your journey today with PAKEZY — your trusted guide to the very best of this remarkable country.
               </p>
             </div>
             <div className="grid grid-cols-2 gap-4">
@@ -609,7 +609,7 @@ export default async function HomePage() {
               <div>
                 <h3 className="text-base font-black text-gray-900 dark:text-white mb-2">Is Pakistan safe for tourists?</h3>
                 <p className="text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
-                  Yes — the vast majority of Pakistan, including all major tourist areas such as Lahore, Islamabad, Hunza, Skardu, Swat, and the Karakoram Highway, is safe and welcoming for international visitors. Millions of tourists travel to Pakistan every year without incident. PAKTourism works exclusively with verified local guides and reputable operators to ensure your safety at every step of your journey.
+                  Yes — the vast majority of Pakistan, including all major tourist areas such as Lahore, Islamabad, Hunza, Skardu, Swat, and the Karakoram Highway, is safe and welcoming for international visitors. Millions of tourists travel to Pakistan every year without incident. PAKEZY works exclusively with verified local guides and reputable operators to ensure your safety at every step of your journey.
                 </p>
               </div>
               <div>
@@ -645,7 +645,7 @@ export default async function HomePage() {
                 </p>
               </div>
               <div>
-                <h3 className="text-base font-black text-gray-900 dark:text-white mb-2">How do I book a tour package through PAKTourism?</h3>
+                <h3 className="text-base font-black text-gray-900 dark:text-white mb-2">How do I book a tour package through PAKEZY?</h3>
                 <p className="text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
                   Simply browse our featured packages on this page or visit the Tour Packages section to see all available options. Each package listing includes a full itinerary, price, group size, and booking form. You can submit a booking request online, and our team will confirm availability and guide you through the payment process within 24 hours. Custom itineraries are also available on request.
                 </p>
@@ -653,7 +653,7 @@ export default async function HomePage() {
               <div>
                 <h3 className="text-base font-black text-gray-900 dark:text-white mb-2">What types of accommodation are available in Pakistan?</h3>
                 <p className="text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
-                  Pakistan offers a full range of accommodation options. Major cities like Lahore, Karachi, and Islamabad have five-star international hotels alongside boutique guesthouses. In northern mountain towns such as Hunza, Skardu, and Gilgit, you'll find clean and comfortable mid-range hotels, traditional stone guesthouses, and scenic camping sites beside glacial rivers and lakes. PAKTourism lists only vetted and reviewed properties.
+                  Pakistan offers a full range of accommodation options. Major cities like Lahore, Karachi, and Islamabad have five-star international hotels alongside boutique guesthouses. In northern mountain towns such as Hunza, Skardu, and Gilgit, you'll find clean and comfortable mid-range hotels, traditional stone guesthouses, and scenic camping sites beside glacial rivers and lakes. PAKEZY lists only vetted and reviewed properties.
                 </p>
               </div>
             </div>

@@ -318,7 +318,7 @@ export default async function DestinationsPage({
                 Pakistan is divided into four provinces, two autonomous territories, and the Islamabad Capital Territory — each offering a completely different travel experience. Understanding the geography helps you plan more efficiently and ensures you don't miss hidden gems that lie just off the beaten path.
               </p>
               <p className="text-gray-600 dark:text-gray-400 text-base leading-relaxed">
-                Whether you're a first-time visitor looking for iconic landmarks, an adventure traveller chasing K2 base camp, a history enthusiast tracing the Silk Route, or a family seeking comfortable hill station escapes — Pakistan has a destination for you. PAKTourism has curated and verified every listing on this page to give you accurate, up-to-date information for confident trip planning.
+                Whether you're a first-time visitor looking for iconic landmarks, an adventure traveller chasing K2 base camp, a history enthusiast tracing the Silk Route, or a family seeking comfortable hill station escapes — Pakistan has a destination for you. PAKEZY has curated and verified every listing on this page to give you accurate, up-to-date information for confident trip planning.
               </p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
@@ -353,7 +353,7 @@ export default async function DestinationsPage({
                   { q: "What is the primary mode of travel?", a: "Air travel is common for long distances (Islamabad to Gilgit/Skardu). For overland, dedicated tourist coaches like Daewoo operate between major cities, while private 4x4 rentals are best for mountain exploration." },
                   { q: "Are ATMs widely available?", a: "Major cities have plenty of ATMs that accept international cards. However, in northern mountain regions and remote parts of Balochistan, cash is king. Always carry enough local currency when heading away from urban hubs." },
                   { q: "What should I pack for the mountains?", a: "Layers are essential. Even in summer, nights in Gilgit-Baltistan can be cold. Pack waterproof gear, sturdy hiking boots, and high-SPF sunscreen as the sun is exceptionally strong at high altitudes." },
-                  { q: "How do I find verified local guides?", a: "PAKTourism provides a platform to connect with background-checked local guides. We emphasize hiring community-based guides to support the local economy and ensure the most authentic experience." },
+                  { q: "How do I find verified local guides?", a: "PAKEZY provides a platform to connect with background-checked local guides. We emphasize hiring community-based guides to support the local economy and ensure the most authentic experience." },
                   { q: "What are the visa requirements?", a: "Pakistan offers e-visas and Visa-on-Arrival (for many countries) specifically for tourism. The process is now streamlined and digital. Check the official NADRA portal for the latest requirements for your nationality." }
                 ].map((faq, i) => (
                   <div key={i}>
@@ -462,7 +462,7 @@ export default async function DestinationsPage({
                     If there is one defining characteristic that unites all Pakistanis, it is their legendary hospitality. Derived from the ancient traditions of the Silk Road and reinforced by religious values, welcoming travelers is considered a sacred duty. Whether you are in the bustling neighborhoods of Karachi or a remote shepherd's hut in the upper Hunza, you will likely be greeted with "Assalamu Alaikum" and an invitation for tea.
                   </p>
                   <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed text-justify">
-                    This warmth is not just a gesture; it's a way of life. Travelers often find that the most memorable parts of their journey aren't the majestic peaks or historic forts, but the conversations over "Chai" and the generosity of complete strangers. At PAKTourism, we believe that understanding this cultural core is essential for a respectful and rewarding travel experience in Pakistan.
+                    This warmth is not just a gesture; it's a way of life. Travelers often find that the most memorable parts of their journey aren't the majestic peaks or historic forts, but the conversations over "Chai" and the generosity of complete strangers. At PAKEZY, we believe that understanding this cultural core is essential for a respectful and rewarding travel experience in Pakistan.
                   </p>
                 </div>
                 <div className="break-inside-avoid">
@@ -594,7 +594,7 @@ export default async function DestinationsPage({
                       In the waters of the Indus River, the Indus Blind Dolphin (locally known as the Bhulan) is one of the world's most unique freshwater mammals. These functionally blind dolphins rely on echolocation to navigate the murky river waters. Conservation programs in Sindh have been vital in preventing their extinction due to pollution and river dams. Along the coast of Balochistan, Hingol National Park serves as a critical habitat for the Ibex, Urial, and various migratory birds that travel from as far as Siberia during the winter months.
                     </p>
                     <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-6 text-justify">
-                      Pakistan's commitment to "Green Growth" is evident in the "Ten Billion Tree Tsunami" project, which aims to restore depleted forests and combat climate change. Ecotourism is the new frontier for Pakistan, and at PAKTourism, we prioritize destinations that practice sustainable tourism. By visiting protected areas like the Margalla Hills National Park or the wetlands of Haleji, travelers contribute directly to the "Green Economy," ensuring that Pakistan's natural heritage remains intact for future generations to explore and cherish.
+                      Pakistan's commitment to "Green Growth" is evident in the "Ten Billion Tree Tsunami" project, which aims to restore depleted forests and combat climate change. Ecotourism is the new frontier for Pakistan, and at PAKEZY, we prioritize destinations that practice sustainable tourism. By visiting protected areas like the Margalla Hills National Park or the wetlands of Haleji, travelers contribute directly to the "Green Economy," ensuring that Pakistan's natural heritage remains intact for future generations to explore and cherish.
                     </p>
                   </div>
                   <div>
@@ -623,7 +623,7 @@ export default async function DestinationsPage({
                       The legacy of the Silk Route is alive in the "Bazaars" of our historic cities. Whether you are in Qissa Khwani (the Street of Storytellers) in Peshawar or the Raja Bazaar of Rawalpindi, you are witnessing a commercial tradition that has remained virtually unchanged for centuries. The spices, the precious stones from the northern mines, and the hand-knotted carpets still find their way across these ancient routes, now bolstered by modern infrastructure like the China-Pakistan Economic Corridor (CPEC).
                     </p>
                     <p className="text-gray-600 dark:text-gray-400 text-base leading-relaxed text-justify">
-                      At PAKTourism, we invite you to be more than just a tourist; we invite you to be a modern-day traveler on the Silk Route. Every step you take in our northern valleys is a step back in time, following in the footsteps of explorers like Marco Polo and Ibn Battuta. Our mission is to preserve the stories, the monuments, and the timeless spirit of these ancient pathways, ensuring that the Legend of the Silk Route continues to inspire the global imagination.
+                      At PAKEZY, we invite you to be more than just a tourist; we invite you to be a modern-day traveler on the Silk Route. Every step you take in our northern valleys is a step back in time, following in the footsteps of explorers like Marco Polo and Ibn Battuta. Our mission is to preserve the stories, the monuments, and the timeless spirit of these ancient pathways, ensuring that the Legend of the Silk Route continues to inspire the global imagination.
                     </p>
                   </div>
                 </div>

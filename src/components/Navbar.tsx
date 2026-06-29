@@ -44,14 +44,14 @@ const Navbar = () => {
             {/* Logo */}
             <Link href="/" className="flex items-center gap-3 group" onClick={() => setIsOpen(false)}>
               <div className="relative w-10 h-10 rounded-xl overflow-hidden shadow-md ring-2 ring-primary-500/20 group-hover:ring-primary-500/50 transition-all duration-300">
-                <Image src="/logo.png" alt="PakTourism" fill className="object-cover" sizes="40px" />
+                <Image src="/icon.png" alt="PAKEZY" fill className="object-cover" sizes="40px" />
               </div>
               <div className="flex flex-col leading-none">
                 <span className={`text-xl font-black tracking-tighter transition-colors duration-300 ${solid ? 'text-gray-900 dark:text-white' : 'text-white'}`}>
-                  PAK<span className="text-primary-500">Tourism</span>
+                  PAKE<span className="text-primary-500">ZY</span>
                 </span>
-                <span className={`text-[10px] tracking-[0.15em] uppercase font-medium transition-colors duration-300 ${solid ? 'text-gray-400' : 'text-white/60'}`}>
-                  Explore Pakistan
+                <span className={`text-[10px] tracking-[0.1em] uppercase font-medium transition-colors duration-300 ${solid ? 'text-gray-400' : 'text-white/60'}`}>
+                  Smart Travel. Global Connection.
                 </span>
               </div>
             </Link>

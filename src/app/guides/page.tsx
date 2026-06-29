@@ -38,13 +38,13 @@ export default async function GuidesPage({
           <p className="text-xs font-bold uppercase tracking-[0.3em] text-primary-600 mb-4">Local Expertise</p>
           <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 dark:text-white mb-6">Expert Tour Guides in Pakistan</h1>
           <p className="text-gray-500 dark:text-gray-400 max-w-2xl mx-auto text-lg leading-relaxed mb-4">
-            Connect with certified local experts who know every corner of Pakistan. From veteran mountaineers who have summited K2 and Nanga Parbat to cultural historians who can recite 2,000 years of Gandharan Buddhist history from memory — PAKTourism's guide network is the finest in the country.
+            Connect with certified local experts who know every corner of Pakistan. From veteran mountaineers who have summited K2 and Nanga Parbat to cultural historians who can recite 2,000 years of Gandharan Buddhist history from memory — PAKEZY's guide network is the finest in the country.
           </p>
           <p className="text-gray-500 dark:text-gray-400 max-w-2xl mx-auto text-base leading-relaxed mb-4">
             A great guide transforms a holiday into an education. In Pakistan, where landscapes change dramatically every hundred kilometres and where ancient languages, traditions, and cuisines sit side by side with contemporary urban culture, an informed local companion makes the difference between skimming the surface and truly understanding a place.
           </p>
           <p className="text-gray-500 dark:text-gray-400 max-w-2xl mx-auto text-base leading-relaxed mb-4">
-            Every guide listed on PAKTourism has been verified through a registration process that confirms their professional credentials, language proficiency, first-aid certification (for mountain guides), and regional knowledge. Reviews from previous travellers are published alongside each profile without moderation bias, so you can make an informed choice before booking.
+            Every guide listed on PAKEZY has been verified through a registration process that confirms their professional credentials, language proficiency, first-aid certification (for mountain guides), and regional knowledge. Reviews from previous travellers are published alongside each profile without moderation bias, so you can make an informed choice before booking.
           </p>
           <p className="text-gray-500 dark:text-gray-400 max-w-2xl mx-auto text-base leading-relaxed">
             Whether you need a half-day walking tour of Lahore's Walled City, a week-long trekking partner for the Fairy Meadows, or a full-month escort across multiple provinces, our guides offer flexible arrangements to suit every travel style and budget.
@@ -98,11 +98,11 @@ export default async function GuidesPage({
               <div className="flex w-full space-x-3 mt-auto">
                 {guide.whatsapp ? (
                   <a 
-                    href={`https://wa.me/${guide.whatsapp.replace(/\+/g, '').replace(/ /g, '')}?text=${encodeURIComponent(`Hello! I discovered your profile on PakTourism — a growing tourism platform that connects travelers with local guides across Pakistan.
+                    href={`https://wa.me/${guide.whatsapp.replace(/\+/g, '').replace(/ /g, '')}?text=${encodeURIComponent(`Hello! I discovered your profile on PAKEZY — a growing tourism platform that connects travelers with local guides across Pakistan.
 
 I’m planning a trip and would love to know more about your services, packages, and availability.
 
-You can also explore PakTourism here:
+You can also explore PAKEZY here:
 https://pktourism.infinityfreeapp.com/
 
 Looking forward to hearing from you soon. Thank you!`)}`}
@@ -267,12 +267,12 @@ Looking forward to hearing from you soon. Thank you!`)}`}
       <section className="bg-white dark:bg-gray-900 border-t border-gray-100 dark:border-gray-800 py-20">
         <div className="max-w-7xl mx-auto px-4">
           <p className="text-xs font-bold uppercase tracking-[0.3em] text-primary-600 mb-3">Simple Process</p>
-          <h2 className="text-2xl md:text-3xl font-black text-gray-900 dark:text-white mb-10">How to Book a Guide Through PAKTourism</h2>
+          <h2 className="text-2xl md:text-3xl font-black text-gray-900 dark:text-white mb-10">How to Book a Guide Through PAKEZY</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
             {([
               ['Browse Profiles', 'Filter guides by city, specialisation, language, and rating. Read verified reviews from previous travellers and check availability for your travel dates.'],
               ['Message Directly', 'Use the WhatsApp or phone contact on each guide profile to speak directly with the guide before booking. Discuss your itinerary, group size, fitness level, and any special requirements.'],
-              ['Agree Terms', 'Confirm dates, daily rates or package price, inclusions (transport, meals, accommodation), and cancellation terms directly with your guide. PAKTourism recommends getting the agreed scope in writing via WhatsApp.'],
+              ['Agree Terms', 'Confirm dates, daily rates or package price, inclusions (transport, meals, accommodation), and cancellation terms directly with your guide. PAKEZY recommends getting the agreed scope in writing via WhatsApp.'],
               ['Travel with Confidence', 'Meet your guide and begin your journey. Rate and review your experience after the trip to help future travellers make informed decisions.'],
             ] as [string, string][]).map(([title, desc], i) => (
               <div key={title} className="space-y-3">
@@ -290,16 +290,16 @@ Looking forward to hearing from you soon. Thank you!`)}`}
                 Guide rates in Pakistan are among the most affordable in Asia relative to the quality of experience delivered. City and cultural heritage guides typically charge PKR 3,000–8,000 per day for an individual or couple, with group discounts available. Half-day rates for city walking tours usually run PKR 1,500–4,000. Mountain and trekking guides charge PKR 5,000–15,000 per day depending on altitude and technical difficulty, with separate porter fees typically ranging from PKR 2,500–5,000 per porter per day.
               </p>
               <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
-                For K2 Base Camp and other expeditions requiring government permits, the licensed guide fee is set by the Alpine Club of Pakistan and is non-negotiable. All mountain guide fees listed on PAKTourism profiles are in Pakistani Rupees; USD and EUR equivalents can be agreed at the time of booking. Tipping is appreciated but not expected — a customary tip of 10–15% of the total guide fee is the norm for good service.
+                For K2 Base Camp and other expeditions requiring government permits, the licensed guide fee is set by the Alpine Club of Pakistan and is non-negotiable. All mountain guide fees listed on PAKEZY profiles are in Pakistani Rupees; USD and EUR equivalents can be agreed at the time of booking. Tipping is appreciated but not expected — a customary tip of 10–15% of the total guide fee is the norm for good service.
               </p>
             </div>
             <div className="space-y-4">
               <h3 className="text-lg font-black text-gray-900 dark:text-white">Becoming a Listed Guide</h3>
               <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
-                PAKTourism welcomes applications from professional tour guides across all provinces of Pakistan. To be listed, guides must submit proof of a valid PTDC (Pakistan Tourism Development Corporation) guide licence, a government-issued CNIC, proof of language proficiency in at least one language beyond Urdu, and two references from previous international clients or a registered tour operator. Mountain guides additionally require a valid first-aid certificate and proof of successful completion of at least five commercial high-altitude treks.
+                PAKEZY welcomes applications from professional tour guides across all provinces of Pakistan. To be listed, guides must submit proof of a valid PTDC (Pakistan Tourism Development Corporation) guide licence, a government-issued CNIC, proof of language proficiency in at least one language beyond Urdu, and two references from previous international clients or a registered tour operator. Mountain guides additionally require a valid first-aid certificate and proof of successful completion of at least five commercial high-altitude treks.
               </p>
               <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
-                Once approved, guides receive a verified profile page, visibility to thousands of monthly visitors from Pakistan's international tourism audience, and a direct booking contact mechanism via WhatsApp and phone. Listing on PAKTourism is currently free. We charge no commission on bookings arranged through the platform. Our goal is to grow Pakistan's tourism economy by connecting travellers directly with the people who make the country's experiences exceptional.
+                Once approved, guides receive a verified profile page, visibility to thousands of monthly visitors from Pakistan's international tourism audience, and a direct booking contact mechanism via WhatsApp and phone. Listing on PAKEZY is currently free. We charge no commission on bookings arranged through the platform. Our goal is to grow Pakistan's tourism economy by connecting travellers directly with the people who make the country's experiences exceptional.
               </p>
             </div>
           </div>
@@ -319,11 +319,11 @@ Looking forward to hearing from you soon. Thank you!`)}`}
               },
               {
                 q: 'How do I know a guide is genuine and not a scam?',
-                a: "Every guide on PAKTourism has been verified against their PTDC guide licence number before their profile is published. We cross-check licence numbers against the PTDC register annually. When messaging a guide, ask them to share their licence card via WhatsApp before confirming any booking or making any payment. A professional guide will always provide this without hesitation. We also publish unmoderated traveller reviews on each profile, so you can read direct accounts from previous clients.",
+                a: "Every guide on PAKEZY has been verified against their PTDC guide licence number before their profile is published. We cross-check licence numbers against the PTDC register annually. When messaging a guide, ask them to share their licence card via WhatsApp before confirming any booking or making any payment. A professional guide will always provide this without hesitation. We also publish unmoderated traveller reviews on each profile, so you can read direct accounts from previous clients.",
               },
               {
                 q: 'Can female travellers hire female guides?',
-                a: 'Yes. PAKTourism actively encourages the listing of female tour guides, and we have certified female guides available for cultural and city tours in Lahore, Islamabad, Karachi, and Peshawar. Female guides are particularly popular with women travelling solo or in women-only groups who want to explore local markets, home cooking experiences, and cultural sites with maximum comfort. The number of female certified mountain guides in Pakistan is growing, supported by initiatives from the Karakoram Club and Women on Wheels Pakistan.',
+                a: 'Yes. PAKEZY actively encourages the listing of female tour guides, and we have certified female guides available for cultural and city tours in Lahore, Islamabad, Karachi, and Peshawar. Female guides are particularly popular with women travelling solo or in women-only groups who want to explore local markets, home cooking experiences, and cultural sites with maximum comfort. The number of female certified mountain guides in Pakistan is growing, supported by initiatives from the Karakoram Club and Women on Wheels Pakistan.',
               },
               {
                 q: 'What languages do Pakistan guides speak?',
@@ -331,7 +331,7 @@ Looking forward to hearing from you soon. Thank you!`)}`}
               },
               {
                 q: 'What is the cancellation policy if I need to cancel a booked guide?',
-                a: 'Cancellation terms are agreed directly between you and your guide at the time of booking, as PAKTourism facilitates the connection but does not process payments or enforce contract terms. Industry standard in Pakistan is: full refund for cancellations 14 or more days before the start date; 50% refund for cancellations 7–14 days before; no refund within 7 days unless the cancellation is due to a verifiable emergency or a government-issued travel restriction. Always confirm and document the cancellation policy with your guide before paying any deposit.',
+                a: 'Cancellation terms are agreed directly between you and your guide at the time of booking, as PAKEZY facilitates the connection but does not process payments or enforce contract terms. Industry standard in Pakistan is: full refund for cancellations 14 or more days before the start date; 50% refund for cancellations 7–14 days before; no refund within 7 days unless the cancellation is due to a verifiable emergency or a government-issued travel restriction. Always confirm and document the cancellation policy with your guide before paying any deposit.',
               },
               {
                 q: 'Do guides provide transport, or do I need to arrange it separately?',

@@ -34,7 +34,7 @@ const DEFAULT_ITEMS: ChecklistItem[] = [
   { id: 't2', text: 'Universal charger & adapters', checked: false, category: 'Tech & Gear' },
   { id: 't3', text: 'Camera / extra memory cards', checked: false, category: 'Tech & Gear' },
   { id: 't4', text: 'Offline maps downloaded', checked: false, category: 'Tech & Gear' },
-  { id: 't5', text: 'Offline PakTourism bookmarks saved', checked: false, category: 'Tech & Gear' },
+  { id: 't5', text: 'Offline PAKEZY bookmarks saved', checked: false, category: 'Tech & Gear' },
   // Food & Water
   { id: 'f1', text: 'Reusable water bottle (2L minimum)', checked: false, category: 'Food & Water' },
   { id: 'f2', text: 'High-energy snacks (nuts, bars)', checked: false, category: 'Food & Water' },

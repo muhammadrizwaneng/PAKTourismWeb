@@ -11,9 +11,9 @@ const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://paktourism.pk';
 const websiteSchema = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
-  name: 'PAKTourism',
+  name: 'PAKEZY',
   url: SITE_URL,
-  description: 'Plan your dream journey to the mountains, cities, and cultural hearts of Pakistan.',
+  description: 'Smart Travel. Global Connection. Plan your dream journey to the mountains, cities, and cultural hearts of Pakistan.',
   potentialAction: {
     '@type': 'SearchAction',
     target: `${SITE_URL}/destinations?search={search_term_string}`,
@@ -24,10 +24,10 @@ const websiteSchema = {
 const organizationSchema = {
   '@context': 'https://schema.org',
   '@type': 'TravelAgency',
-  name: 'PAKTourism',
+  name: 'PAKEZY',
   url: SITE_URL,
   logo: `${SITE_URL}/logo.png`,
-  description: 'Pakistan\'s #1 travel platform. Book hotels, tour packages, and find expert guides.',
+  description: 'Smart Travel. Global Connection. Pakistan\'s #1 travel platform. Book hotels, tour packages, and find expert guides.',
   address: {
     '@type': 'PostalAddress',
     addressCountry: 'PK',
@@ -41,12 +41,15 @@ const organizationSchema = {
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 
 export const metadata: Metadata = {
-  title: 'PAKTourism - Explore the Beauty of Pakistan',
-  description: 'Plan your dream journey to the mountains, cities, and cultural hearts of Pakistan. Book hotels, tour packages, and find expert guides.',
-  keywords: 'Pakistan Tourism, Hunza Valley, Skardu, Lahore, Travel Pakistan, Tour Packages Pakistan',
+  title: 'PAKEZY - Smart Travel. Global Connection.',
+  description: 'Smart Travel. Global Connection. Plan your dream journey to the mountains, cities, and cultural hearts of Pakistan. Book hotels, tour packages, and find expert guides.',
+  keywords: 'PAKEZY, Pakistan Tourism, Hunza Valley, Skardu, Lahore, Travel Pakistan, Tour Packages Pakistan',
   icons: {
-    icon: '/logo.png',
-    apple: '/logo.png',
+    icon: [
+      { url: '/favicon.png', sizes: '32x32', type: 'image/png' },
+      { url: '/icon-192.png', sizes: '192x192', type: 'image/png' },
+    ],
+    apple: '/apple-icon.png',
   },
 };
 

@@ -66,7 +66,7 @@ export default async function HotelsPage({
             From five-star luxury in the city to cosy mountain lodges and restored heritage havelis — find the perfect stay across Pakistan. Our verified directory covers hotels, guesthouses, and boutique retreats in every province, from Karachi's oceanfront to the glacier valleys of Gilgit-Baltistan.
           </p>
           <p className="text-gray-500 max-w-2xl text-base leading-relaxed mb-10">
-            Pakistan's accommodation sector has grown rapidly over the past five years. New luxury properties have opened in Islamabad, Lahore, Hunza, and Skardu, while community-run guesthouses in the north continue to offer some of the most memorable and affordable hospitality in Asia. PAKTourism lists and verifies properties across the full spectrum — so whether you're travelling on a shoestring or in search of a spa retreat, you'll find your ideal base here.
+            Pakistan's accommodation sector has grown rapidly over the past five years. New luxury properties have opened in Islamabad, Lahore, Hunza, and Skardu, while community-run guesthouses in the north continue to offer some of the most memorable and affordable hospitality in Asia. PAKEZY lists and verifies properties across the full spectrum — so whether you're travelling on a shoestring or in search of a spa retreat, you'll find your ideal base here.
           </p>
 
           {/* Search */}
@@ -116,7 +116,7 @@ export default async function HotelsPage({
                 Star ratings in Pakistan follow the Tourism Development Corporation's official classification system, which assesses properties on safety, facilities, staff training, cleanliness, and food quality. A verified 3-star property in Pakistan invariably meets the standards of a comfortable mid-range stay. Five-star properties in Islamabad, Lahore, and Karachi are internationally managed and typically meet the standards of equivalent-rated hotels in Dubai or London at a fraction of the price.
               </p>
               <p className="text-gray-600 dark:text-gray-400 text-base leading-relaxed">
-                For mountain and valley travel, the community-run guesthouses of Hunza, Skardu, Chitral, and the Neelum Valley represent some of the best-value accommodation in Asia. These family-run properties typically include breakfast and dinner, and the hosts' local knowledge of trails, weather patterns, and seasonal conditions is invaluable. PAKTourism verifies contact details, pricing, and facilities at all listed guesthouses annually.
+                For mountain and valley travel, the community-run guesthouses of Hunza, Skardu, Chitral, and the Neelum Valley represent some of the best-value accommodation in Asia. These family-run properties typically include breakfast and dinner, and the hosts' local knowledge of trails, weather patterns, and seasonal conditions is invaluable. PAKEZY verifies contact details, pricing, and facilities at all listed guesthouses annually.
               </p>
             </div>
             <div className="space-y-4">
@@ -285,7 +285,7 @@ export default async function HotelsPage({
                 },
                 {
                   q: 'Is it safe to book hotels online in Pakistan?',
-                  a: 'Booking hotels online through PAKTourism and other established platforms is safe and practical. For city properties, platforms like Booking.com, Agoda, and direct hotel websites are fully functional. For guesthouses in Hunza, Skardu, Swat, and the Neelum Valley, it is often best to book directly via WhatsApp — the property\'s contact is listed on each PAKTourism hotel page. Always confirm your booking 24 hours before arrival, particularly for remote properties where communication can be intermittent.',
+                  a: 'Booking hotels online through PAKEZY and other established platforms is safe and practical. For city properties, platforms like Booking.com, Agoda, and direct hotel websites are fully functional. For guesthouses in Hunza, Skardu, Swat, and the Neelum Valley, it is often best to book directly via WhatsApp — the property\'s contact is listed on each PAKEZY hotel page. Always confirm your booking 24 hours before arrival, particularly for remote properties where communication can be intermittent.',
                 },
                 {
                   q: 'What is the typical check-in and check-out time in Pakistani hotels?',
@@ -333,7 +333,7 @@ export default async function HotelsPage({
                   Our modern accommodation landscape reflects this thousand-year history. Whether you are staying in a historic haveli in the walled city of Lahore or a luxury retreat overlooking the Karakorams, you will encounter a level of personal attentiveness that is rare in the global travel market. The interaction begins not at the front desk, but often with a welcoming cup of Kashmiri tea or a traditional greeting that marks the start of a genuine connection between the traveler and the community.
                 </p>
                 <p>
-                  At PAKTourism, we curate hotels that understand this cultural value. We look beyond the thread count and the infinity pools to find properties that provide a window into the soul of Pakistan. Our listed stays are verified not just for their facilities, but for their commitment to providing a safe, authentic, and warm environment for both domestic and international adventurers seeking to discover the true essence of South Asian warmth.
+                  At PAKEZY, we curate hotels that understand this cultural value. We look beyond the thread count and the infinity pools to find properties that provide a window into the soul of Pakistan. Our listed stays are verified not just for their facilities, but for their commitment to providing a safe, authentic, and warm environment for both domestic and international adventurers seeking to discover the true essence of South Asian warmth.
                 </p>
               </div>
             </div>
@@ -427,7 +427,7 @@ export default async function HotelsPage({
               </div>
               <div className="break-inside-avoid p-8 rounded-[2rem] bg-primary-600 text-white flex flex-col items-center justify-center text-center p-12">
                 <Star size={40} className="mb-4 text-primary-200" />
-                <h3 className="font-bold text-xl mb-4">Verified by PAKTourism</h3>
+                <h3 className="font-bold text-xl mb-4">Verified by PAKEZY</h3>
                 <p className="text-sm text-primary-100 leading-relaxed">Every property listed on our platform undergoes a rigorous quality and safety check so you can book with total peace of mind.</p>
               </div>
             </div>

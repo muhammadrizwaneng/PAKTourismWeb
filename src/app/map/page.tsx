@@ -4,7 +4,7 @@ import { prisma } from '@/lib/db';
 import { MapPin, Layers } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Explore Map — PakTourism',
+  title: 'Explore Map — PAKEZY',
   description: 'Discover all of Pakistan\'s top destinations on an interactive map.',
 };
 

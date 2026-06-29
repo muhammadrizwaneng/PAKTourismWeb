@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import ChecklistPageClient from './ChecklistPageClient';
 
 export const metadata: Metadata = {
-  title: 'Travel Checklist — PakTourism',
+  title: 'Travel Checklist — PAKEZY',
   description: 'Never forget a thing. Use our Pakistan travel packing checklist.',
 };
 

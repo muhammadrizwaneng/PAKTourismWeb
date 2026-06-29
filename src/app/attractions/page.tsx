@@ -156,7 +156,7 @@ export default async function AttractionsPage({
                   The country's northern regions — particularly Gilgit-Baltistan and Khyber Pakhtunkhwa — are home to an unparalleled concentration of high-altitude natural wonders. Glaciers, mountain lakes, ancient caravan trails, and towering peaks create landscapes that rival anything in the Alps or Himalayas. Meanwhile, the southern provinces of Punjab, Sindh, and Balochistan hold the archaeological and architectural legacy of some of humanity's oldest and most sophisticated civilisations, including Mohenjo-daro, Taxila, and the Indus Valley sites.
                 </p>
                 <p className="text-gray-600 dark:text-gray-400 text-base leading-relaxed">
-                  Whether you're a heritage enthusiast, a nature lover, a photographer, or an adrenaline seeker, you'll find that Pakistan's attractions consistently exceed expectations. PAKTourism curates and verifies every listing on this page, providing accurate entry fee information, operating hours, and local context to help you plan with confidence.
+                  Whether you're a heritage enthusiast, a nature lover, a photographer, or an adrenaline seeker, you'll find that Pakistan's attractions consistently exceed expectations. PAKEZY curates and verifies every listing on this page, providing accurate entry fee information, operating hours, and local context to help you plan with confidence.
                 </p>
                 <p className="text-gray-600 dark:text-gray-400 text-base leading-relaxed">
                   Pakistan holds seven UNESCO World Heritage Sites — the Lahore Fort and Shalamar Gardens, the archaeological ruins of Mohenjo-daro, the Buddhist ruins of Takht-i-Bahi, the fort and Shalamar Gardens of Lahore, the historical monuments of Makli, the Rohtas Fort, and the ancient trading post of Taxila. Each of these sites represents a pinnacle of human achievement in its era and is freely accessible to international visitors with minimal ticketing requirements.
@@ -302,7 +302,7 @@ export default async function AttractionsPage({
                 },
                 {
                   q: 'Do I need a visa to visit Pakistan and its attractions?',
-                  a: 'Pakistan now offers visa-on-arrival and e-visa facilities to citizens of over 100 countries, making it significantly easier to visit than in previous years. Citizens of many Western, Gulf, and Asian countries can obtain an e-visa online within days. Visitors to certain sensitive areas — particularly near the Chinese, Afghan, or Indian borders — may require additional permits beyond the standard visa. PAKTourism recommends verifying your specific requirements via the National Database and Registration Authority (NADRA) e-visa portal before travel.',
+                  a: 'Pakistan now offers visa-on-arrival and e-visa facilities to citizens of over 100 countries, making it significantly easier to visit than in previous years. Citizens of many Western, Gulf, and Asian countries can obtain an e-visa online within days. Visitors to certain sensitive areas — particularly near the Chinese, Afghan, or Indian borders — may require additional permits beyond the standard visa. PAKEZY recommends verifying your specific requirements via the National Database and Registration Authority (NADRA) e-visa portal before travel.',
                 },
                 {
                   q: 'What is the best time of year to visit Pakistan\'s attractions?',
@@ -310,7 +310,7 @@ export default async function AttractionsPage({
                 },
                 {
                   q: 'How do I get around to visit different attractions?',
-                  a: 'Pakistan has a growing network of transport options. Domestic flights connect Islamabad, Lahore, Karachi, Peshawar, Quetta, Skardu, and Gilgit. For overland travel, NATCO buses operate on the Karakoram Highway, and private coaches connect major cities. Within cities, ride-hailing apps like Careem and InDrive are widely available. In remote mountain areas, hiring a local driver with a 4WD vehicle is the most practical option — PAKTourism can connect you with verified local transport providers.',
+                  a: 'Pakistan has a growing network of transport options. Domestic flights connect Islamabad, Lahore, Karachi, Peshawar, Quetta, Skardu, and Gilgit. For overland travel, NATCO buses operate on the Karakoram Highway, and private coaches connect major cities. Within cities, ride-hailing apps like Careem and InDrive are widely available. In remote mountain areas, hiring a local driver with a 4WD vehicle is the most practical option — PAKEZY can connect you with verified local transport providers.',
                 },
                 {
                   q: 'Are Pakistan\'s attractions expensive to visit?',
@@ -318,7 +318,7 @@ export default async function AttractionsPage({
                 },
                 {
                   q: 'Can I visit Pakistan\'s attractions independently or do I need a guide?',
-                  a: 'Most of Pakistan\'s major cultural and urban attractions — Lahore Fort, Badshahi Mosque, Mohenjo-daro, Taxila Museum — can be visited completely independently with a transport connection. However, for trekking routes above base camp level, remote archaeological sites in Balochistan, and certain restricted zones near borders, a licensed guide is either required by regulation or strongly recommended for safety. PAKTourism\'s guide directory lists certified professionals for every major trekking and heritage route in the country.',
+                  a: 'Most of Pakistan\'s major cultural and urban attractions — Lahore Fort, Badshahi Mosque, Mohenjo-daro, Taxila Museum — can be visited completely independently with a transport connection. However, for trekking routes above base camp level, remote archaeological sites in Balochistan, and certain restricted zones near borders, a licensed guide is either required by regulation or strongly recommended for safety. PAKEZY\'s guide directory lists certified professionals for every major trekking and heritage route in the country.',
                 },
                 {
                   q: 'What should I pack for visiting Pakistan\'s diverse attractions?',
@@ -333,8 +333,8 @@ export default async function AttractionsPage({
                   a: 'Photography is permitted at the vast majority of Pakistan\'s attractions and is actively encouraged as a way to showcase the country\'s beauty to the world. A small number of military installations and sensitive government buildings prohibit photography, and these are clearly signed. At religious sites — mosques, shrines, and temples — photography of interiors is often allowed but visitors should check with staff and always ask permission before photographing worshippers. In rural communities, asking before photographing people is both courteous and culturally important.',
                 },
                 {
-                  q: 'How does PAKTourism verify the attractions listed on this page?',
-                  a: 'Every attraction in the PAKTourism directory has been researched and verified by our team of local tourism experts and field correspondents across all provinces. We cross-reference entry fees and opening hours with official provincial tourism authority data and update listings regularly. User-submitted reviews and corrections are reviewed by our moderation team before being published. Our goal is to be the most accurate and comprehensive English-language resource for Pakistan\'s tourism attractions, updated to reflect real conditions on the ground rather than outdated guidebook entries.',
+                  q: 'How does PAKEZY verify the attractions listed on this page?',
+                  a: 'Every attraction in the PAKEZY directory has been researched and verified by our team of local tourism experts and field correspondents across all provinces. We cross-reference entry fees and opening hours with official provincial tourism authority data and update listings regularly. User-submitted reviews and corrections are reviewed by our moderation team before being published. Our goal is to be the most accurate and comprehensive English-language resource for Pakistan\'s tourism attractions, updated to reflect real conditions on the ground rather than outdated guidebook entries.',
                 },
               ] as { q: string; a: string }[]).map(({ q, a }, i) => (
                 <div key={i} className="border-b border-gray-200 dark:border-gray-800 pb-8 last:border-0">
@@ -358,7 +358,7 @@ export default async function AttractionsPage({
                   Pakistan's attractions span an enormous range of categories — archaeological sites, natural wonders, forts and palaces, religious landmarks, wildlife reserves, and adventure hotspots. Many of the country's most celebrated sites are in remote areas that require some planning: checking road conditions, booking accommodation in advance during peak season (May to September in the north), and securing appropriate permits for restricted zones near the Line of Control or international borders.
                 </p>
                 <p className="text-gray-600 dark:text-gray-400 text-base leading-relaxed">
-                  Entry fees at government-managed attractions are generally very affordable by international standards, and most natural sites remain free of charge. However, hiring a local guide is strongly recommended not only for safety in mountain terrain but also for the depth of cultural and historical context they provide. PAKTourism connects you with verified, professionally trained guides across all major provinces.
+                  Entry fees at government-managed attractions are generally very affordable by international standards, and most natural sites remain free of charge. However, hiring a local guide is strongly recommended not only for safety in mountain terrain but also for the depth of cultural and historical context they provide. PAKEZY connects you with verified, professionally trained guides across all major provinces.
                 </p>
                 <p className="text-gray-600 dark:text-gray-400 text-base leading-relaxed">
                   Photography is widely welcomed across Pakistan's attractions, and locals are generally friendly and enthusiastic about having visitors explore and document their regions. Always ask permission before photographing people, particularly in religious sites and rural communities. Responsible, respectful tourism directly benefits local economies and encourages the preservation of Pakistan's irreplaceable natural and cultural heritage.
@@ -373,7 +373,7 @@ export default async function AttractionsPage({
                     'Download offline maps before heading to areas with limited mobile coverage.',
                     'Dress modestly — shoulders and knees covered is appropriate across Pakistan.',
                     'Acclimatise gradually before visiting high-altitude attractions above 3,000m.',
-                    'Book a local guide through PAKTourism for mountain treks and border-region sites.',
+                    'Book a local guide through PAKEZY for mountain treks and border-region sites.',
                     'Check seasonal road closures — many northern passes close from November to April.',
                     'Pakistan Standard Time (PST) is UTC+5; plan travel connections accordingly.',
                   ].map((tip, i) => (

@@ -67,7 +67,7 @@ export default async function PackagesPage({
             <span className="text-primary-400">Tour Packages</span>
           </h1>
           <p className="text-gray-400 max-w-2xl text-lg leading-relaxed mb-3">
-            All-inclusive itineraries crafted by expert local guides. Book once, worry never. Each PAKTourism package covers accommodation, transport, guided excursions, and entry fees — giving you a complete Pakistan experience without the logistics overhead.
+            All-inclusive itineraries crafted by expert local guides. Book once, worry never. Each PAKEZY package covers accommodation, transport, guided excursions, and entry fees — giving you a complete Pakistan experience without the logistics overhead.
           </p>
           <p className="text-gray-500 max-w-2xl text-base leading-relaxed mb-10">
             From three-day cultural weekends in Lahore to fifteen-day Karakoram expeditions, our packages span every province, every budget, and every travel style. Every itinerary is designed and priced by guides who live and work in the destination — not by a call centre thousands of kilometres away.
@@ -260,7 +260,7 @@ export default async function PackagesPage({
                   Pakistan has long been the "holy grail" for mountaineers and world travelers. From the early explorations of the Karakoram by colonial cartographers to the first ascent of K2 in 1954, these lands have defined the limits of human endurance and curiosity. Our tour packages are designed to carry forward this legacy, offering modern adventurers a structured way to experience the same awe-inspiring landscapes that captivated the pioneers of high-altitude exploration.
                 </p>
                 <p>
-                  Beyond the high peaks, the "Golden Age" of adventure in Pakistan is also about the deep cultural rivers that flow through the Indus Valley. Our itineraries are crafted to mirror the ancient pilgrimage routes and trade corridors that once connected the Gandharan civilizations with the empires of the West. When you book a package through PAKTourism, you aren't just taking a holiday; you are walking through the pages of living history.
+                  Beyond the high peaks, the "Golden Age" of adventure in Pakistan is also about the deep cultural rivers that flow through the Indus Valley. Our itineraries are crafted to mirror the ancient pilgrimage routes and trade corridors that once connected the Gandharan civilizations with the empires of the West. When you book a package through PAKEZY, you aren't just taking a holiday; you are walking through the pages of living history.
                 </p>
                 <p>
                   Today, adventure in Pakistan is undergoing a renaissance. With improved road networks like the Karakoram Highway and a new generation of certified local guides, remote valleys like Shimshal and Hushe have become accessible to those with a spirit of discovery. We pride ourselves on working with operators who respect these lands, ensuring that the adventure of today doesn't compromise the beauty of tomorrow.
@@ -386,7 +386,7 @@ export default async function PackagesPage({
                   <div className="space-y-4">
                     <h3 className="text-2xl font-black text-gray-900 dark:text-white tracking-tight">Financial Security & Guarantees</h3>
                     <p className="text-gray-600 dark:text-gray-400 leading-relaxed text-justify">
-                      Booking through PAKTourism means your financial investment is secure. We only work with licensed tour operators who have established track records and local registrations. Our platform acts as a bridge of trust, ensuring that the services described in your itinerary are exactly what you experience on the ground.
+                      Booking through PAKEZY means your financial investment is secure. We only work with licensed tour operators who have established track records and local registrations. Our platform acts as a bridge of trust, ensuring that the services described in your itinerary are exactly what you experience on the ground.
                     </p>
                   </div>
                </div>
@@ -449,18 +449,18 @@ export default async function PackagesPage({
               },
               {
                 q: 'Are the package prices per person or per group?',
-                a: 'All PAKTourism package prices are quoted per person, based on the group size specified in the listing. Most packages show pricing for groups of 2–4 people. Solo travellers are welcome on all packages but may pay a single-supplement surcharge to cover the fixed costs of private transport and accommodation. For large groups (8 or more people), contact us directly for bespoke group pricing, which typically offers a 10–15% saving over the listed per-person rate.',
+                a: 'All PAKEZY package prices are quoted per person, based on the group size specified in the listing. Most packages show pricing for groups of 2–4 people. Solo travellers are welcome on all packages but may pay a single-supplement surcharge to cover the fixed costs of private transport and accommodation. For large groups (8 or more people), contact us directly for bespoke group pricing, which typically offers a 10–15% saving over the listed per-person rate.',
               },
               {
                 q: 'What happens if the weather disrupts the itinerary?',
-                a: 'Weather disruptions — particularly road closures from landslides and flash floods in the northern mountains — are a real possibility during the June and July monsoon period. All PAKTourism packages include a guaranteed rebooking credit valid for 12 months if a disruption results in more than one missed scheduled day of activities. Our on-ground guides carry satellite communication devices and have established protocols for safe diversions and emergency accommodation in the most remote trekking areas.',
+                a: 'Weather disruptions — particularly road closures from landslides and flash floods in the northern mountains — are a real possibility during the June and July monsoon period. All PAKEZY packages include a guaranteed rebooking credit valid for 12 months if a disruption results in more than one missed scheduled day of activities. Our on-ground guides carry satellite communication devices and have established protocols for safe diversions and emergency accommodation in the most remote trekking areas.',
               },
               {
                 q: 'Do I need travel insurance to book a Pakistan tour package?',
                 a: 'Travel insurance with medical evacuation cover is strongly recommended for all mountain and trekking packages. For high-altitude treks above 5,000 metres — particularly the K2 Base Camp, Gondogoro La, and Nanga Parbat circuits — comprehensive insurance including helicopter evacuation cover is effectively a requirement. For cultural tours in cities and lowland areas, standard travel insurance covering cancellation, medical, and personal liability is sufficient. We recommend World Nomads or Allianz Travel for international visitors.',
               },
               {
-                q: 'What level of fitness is required for PAKTourism packages?',
+                q: 'What level of fitness is required for PAKEZY packages?',
                 a: 'Fitness requirements vary widely by package type. City and cultural heritage tours require only basic mobility — comfortable walking for 4–6 hours per day on even surfaces. Valley packages with gentle village-to-village walks require moderate fitness. High-altitude trekking packages above 4,000 metres require good cardiovascular fitness, established hiking experience, and the ability to carry a day pack for 6–8 hours. K2 Base Camp packages require expedition-level fitness with multi-day trekking experience at altitude. Each package listing specifies the fitness level required.',
               },
               {
@@ -472,7 +472,7 @@ export default async function PackagesPage({
                 a: 'Pakistan uses the Pakistani Rupee (PKR). At current exchange rates, USD 1 ≈ PKR 280. ATMs are reliable in cities and towns, but very limited or non-existent in remote mountain areas — carry sufficient PKR cash before departing urban centres for any trekking or rural tour. Budget an additional PKR 2,000–4,000 per day for personal purchases, tips for porters and guesthouse staff, and optional local activities not included in your package price.',
               },
               {
-                q: 'Can PAKTourism create a custom itinerary for us?',
+                q: 'Can PAKEZY create a custom itinerary for us?',
                 a: 'Absolutely. Many of our most popular packages started as custom requests before being added to the standard directory. We offer bespoke itinerary design for groups travelling to any region of Pakistan, combining elements from our existing packages or building entirely new routes. Custom itineraries are particularly popular for honeymoon tours, photography expeditions, corporate team-building retreats, and extended multi-region journeys covering three or more provinces. Contact us with your dates, group size, interests, and budget, and we\'ll respond with a detailed proposal within 48 hours.',
               },
             ] as { q: string; a: string }[]).map(({ q, a }, i) => (
