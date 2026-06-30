@@ -142,6 +142,7 @@ const Footer = () => {
         <div className="mt-14 pt-6 border-t border-gray-800 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-gray-600">
           <p>© {currentYear} PAKEZY. All rights reserved.</p>
           <div className="flex gap-6">
+            <Link href="/account-deletion" className="hover:text-gray-400 transition-colors">Account Deletion</Link>
             <Link href="#" className="hover:text-gray-400 transition-colors">Privacy Policy</Link>
             <Link href="#" className="hover:text-gray-400 transition-colors">Terms of Service</Link>
             <Link href="#" className="hover:text-gray-400 transition-colors">Sitemap</Link>
